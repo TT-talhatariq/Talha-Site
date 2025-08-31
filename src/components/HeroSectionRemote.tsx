@@ -42,7 +42,7 @@ const HeroSection = () => {
                   }}
                   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg lg-mb:0 mb-6"
                 >
-                  START MY REMOTE CAREER NOW
+                 START RIGHT NOW
                 </button>
               </div>
               
