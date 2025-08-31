@@ -96,7 +96,7 @@ const Testimonials = ({ href = '/checkout-web-dev' }: TestimonialsProps) => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 lg:mb-0 mb-8">
             <p className="text-lg text-gray-600 mb-6">
               Ready to join these successful students? 🚀
             </p>

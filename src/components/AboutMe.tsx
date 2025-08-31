@@ -26,7 +26,7 @@ const AboutMe = ({
         
 
         {/* Stats Section */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/50 shadow-xl">
+        <div className="bg-white/80 backdrop-blur-sm rounded-3xl lg:p-8 px-4 py-8 border border-white/50 shadow-xl">
           <div className="text-center mb-12">
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
               My <span className="text-orange-500">Achievements</span> & <span className="text-blue-600">Proof</span>

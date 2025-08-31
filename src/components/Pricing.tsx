@@ -170,7 +170,7 @@ const Pricing = ({
 
         {/* Value Proposition */}
         <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/50 shadow-lg">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl lg:p-8 px-4 py-8 border border-white/50 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">
               What You Get When You Enroll Today:
             </h3>

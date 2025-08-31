@@ -211,7 +211,7 @@ export default function CheckoutWebDev() {
             </div>
             {/* Form Section */}
             <div className="lg:col-span-2">
-              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/50 shadow-xl">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl lg:p-8 px-4 py-8 border border-white/50 shadow-xl">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {/* Personal Information */}
                   <div>

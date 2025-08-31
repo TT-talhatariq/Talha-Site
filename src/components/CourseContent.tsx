@@ -14,7 +14,7 @@ const CourseContent = ({ modules }: { modules: Module[] }) => {
  
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-white via-orange-50/20 to-blue-50/30 relative overflow-hidden">
+    <section className="py-4 lg:py-24 bg-gradient-to-br from-white via-orange-50/20 to-blue-50/30 relative overflow-hidden">
       {/* Background elements similar to other sections */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-blue-200/30 via-blue-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-orange-200/30 via-orange-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
@@ -33,7 +33,7 @@ const CourseContent = ({ modules }: { modules: Module[] }) => {
           {modules.map((module, index) => (
             <div 
               key={index}
-              className={`${module.bgGradient} backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-xl border border-white/50 transition-all duration-300 hover:transform hover:scale-[1.01]`}
+              className={`${module.bgGradient} backdrop-blur-sm rounded-3xl p-4 lg:p-8 shadow-lg hover:shadow-xl border border-white/50 transition-all duration-300 hover:transform hover:scale-[1.01]`}
             >
               <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 {/* Content Section */}
