@@ -1,19 +1,21 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import NavBar from './NavBar';
 
-const HeroSection = () => {
-  return (
-    <>
-      {/* Navigation - Outside of section for proper sticky behavior */}
-      <NavBar />
 
-      <section className="relative bg-gradient-to-br from-white via-blue-50/30 to-orange-100/50 overflow-hidden">
-        {/* Enhanced background elements */}
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-200/40 via-blue-100/30 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tl from-orange-200/50 via-orange-100/40 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-gradient-to-r from-purple-100/30 to-pink-100/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse animation-delay-4000"></div>
+const HeroSection = () => {
+  return (  
+    <>
+    <NavBar
+      href="/checkout-remote-work"
+    />
+    <section className="relative bg-gradient-to-br from-white via-blue-50/30 to-orange-100/50 overflow-hidden">
+      {/* Enhanced background elements */}
+      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-200/40 via-blue-100/30 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tl from-orange-200/50 via-orange-100/40 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
+      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-gradient-to-r from-purple-100/30 to-pink-100/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse animation-delay-4000"></div>
+      
+
       
       <div className="relative z-10 container mx-auto py-8">
         {/* Centered content layout */}
@@ -22,13 +24,13 @@ const HeroSection = () => {
             <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
               <div className="space-y-2">
                 <p className="text-blue-600 text-sm font-semibold tracking-wide uppercase">
-                  LEARN HOW YOU CAN
+                  WORK GLOBALLY & EARN IN USD
                 </p>
                 <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-gray-900">
-                  Master <span className="text-orange-500">Web Dev</span> with <span className="text-blue-600">15+ Projects</span> and Unlock the <span className="text-orange-500">9+ Proven Methods</span> to Earn atleast <span className="text-green-600">500k+ a month</span>
+                  Land <span className="text-orange-500">Remote Jobs</span> & Earn <span className="text-green-600">$1500-$5000</span> Monthly through <span className="text-blue-600">Upwork, LinkedIn</span> & <span className="text-orange-500">Global Companies</span>
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                Strategies with <span className="text-blue-600 font-semibold">Guaranteed Results!</span>
+                Learn proven strategies to work from Pakistan for <span className="text-blue-600 font-semibold">international clients</span> and build a global career!
                 </p>
               </div>
               
@@ -40,15 +42,28 @@ const HeroSection = () => {
                   }}
                   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg lg-mb:0 mb-6"
                 >
-                  YES, I WANT TO START RIGHT NOW
+                  START MY REMOTE CAREER NOW
                 </button>
               </div>
               
-           
+              {/* <p className="text-sm text-gray-500 italic">
+                Join today and lock in for the lowest-ever price
+              </p> */}
+{/*               
+              <div className="flex items-center justify-center lg:justify-start space-x-12">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-orange-500">36k+</div>
+                  <div className="text-gray-600 text-sm">Trusted By</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-orange-500">9+</div>
+                  <div className="text-gray-600 text-sm">Latest Modules</div>
+                </div>
+              </div> */}
             </div>
             
-            <div className="lg:w-1/2 flex justify-end">
-              <div className="relative">
+            <div className="lg:w-1/2 flex  ">
+              <div className="relative w-full h-full">
                 <div className="bg-white rounded-2xl p-1 shadow-xl border border-gray-200">
                   <div className="rounded-xl overflow-hidden">
                     <iframe 
@@ -71,7 +86,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      </section>
+    </section>
     </>
   );
 };

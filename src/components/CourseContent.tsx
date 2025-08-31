@@ -1,174 +1,94 @@
+import Image from 'next/image';
 import React from 'react';
 
-const CourseContent = () => {
-  const modules = [
-    {
-      number: "01",
-      title: "Web Development - Advance",
-      subtitle: "Master the fundamentals of modern web development",
-      items: [
-        "HTML (Basics to Advance)",
-        "CSS (Basics to Advance)", 
-        "JavaScript (Basic to Advance)",
-        "15+ Projects",
-        "2 Grand Project for Portfolio",
-        "Mastering UI/UX Design"
-      ],
-      color: "from-blue-500 to-cyan-500",
-      icon: "💻"
-    },
-    {
-      number: "02",
-      title: "Unlock 9 Proven Ways to Earn",
-      subtitle: "Discover multiple income streams using your skills",
-      items: [
-        "Freelancing (Upwork, LinkedIn)",
-        "Jobs (Onsite, and Remote)",
-        "Teaching - a detailed guide",
-        "Digital Products Mastery",
-        "Unlock LinkedIn for Projects",
-        "Blogs and Consultations",
-        "One Man Web Design Agency"
-      ],
-      color: "from-green-500 to-emerald-500",
-      icon: "💰"
-    },
-    {
-      number: "03", 
-      title: "Crack Upwork like a Pro",
-      subtitle: "Master the art of freelancing on Upwork",
-      items: [
-        "Creating a Perfect profile",
-        "Writing an Effective Profile Description",
-        "Setting Up killer portfolio & Project Catalogs",
-        "The Art of Choosing a Job",
-        "Winning Job Proposals",
-        "Upwork Badges, Contracts, Invites, Agency & much more",
-        "Win Projects in Crazy Amount"
-      ],
-      color: "from-orange-500 to-red-500",
-      icon: "🎯"
-    },
-    {
-      number: "04",
-      title: "Master LinkedIn for Remote Jobs",
-      subtitle: "Build your professional brand and network",
-      items: [
-        "LinkedIn & Personal Branding",
-        "How to choose a Niche",
-        "Potential of LinkedIn",
-        "How to make a Killer & Convincing profile",
-        "Strategy to Create Content",
-        "3C model for success on LinkedIn",
-        "Secrets to networking"
-      ],
-      color: "from-purple-500 to-pink-500",
-      icon: "💼"
-    },
-    {
-      number: "05",
-      title: "Get Job Offers in Bulk",
-      subtitle: "Land high-paying positions with confidence",
-      items: [
-        "Finding High Paying Jobs",
-        "Making Job Winning Resume",
-        "Technical Interview Cracking Tips",
-        "HR Interview Cracking Insights",
-        "Ace Jobs Like a Pro"
-      ],
-      color: "from-indigo-500 to-blue-500",
-      icon: "🚀"
-    }
-  ];
+interface Module {
+  number: string;
+  title: string;
+  items: string[];
+  image: string;
+  imageAlt: string;
+  bgGradient: string;
+}
+
+const CourseContent = ({ modules }: { modules: Module[] }) => {
+ 
 
   return (
-    <section className="py-20 bg-gray-900 relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 opacity-50"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-white via-orange-50/20 to-blue-50/30 relative overflow-hidden">
+      {/* Background elements similar to other sections */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-blue-200/30 via-blue-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-orange-200/30 via-orange-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Course <span className="text-orange-400">Curriculum</span>
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            Course <span className="text-orange-500">Curriculum</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Five Modules That Will Take You From An Absolute Beginner To Ready To Land Your First Client!
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-12 container mx-auto">
           {modules.map((module, index) => (
             <div 
               key={index}
-              className="group relative"
+              className={`${module.bgGradient} backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-lg hover:shadow-xl border border-white/50 transition-all duration-300 hover:transform hover:scale-[1.01]`}
             >
-              <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:transform hover:scale-[1.02]">
-                <div className="flex flex-col lg:flex-row items-start gap-6">
-                  {/* Module number and icon */}
-                  <div className="flex-shrink-0">
-                    <div className={`w-20 h-20 bg-gradient-to-r ${module.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg`}>
-                      {module.icon}
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                {/* Content Section */}
+                <div className="lg:w-1/2 space-y-6">
+                                    <div className="flex items-center gap-4 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center font-bold text-lg text-white shadow-lg">
+                      {module.number}
                     </div>
-                    <div className="text-center mt-2">
-                      <span className="text-xs text-gray-400 font-semibold tracking-wider">MODULE</span>
-                      <div className={`text-2xl font-bold bg-gradient-to-r ${module.color} bg-clip-text text-transparent`}>
-                        {module.number}
-                      </div>
-                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-900">
+                      Module {module.number}: {module.title}
+                    </h3>
                   </div>
                   
-                  {/* Module content */}
-                  <div className="flex-1">
-                    <div className="mb-6">
-                      <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
-                        {module.title}
-                      </h3>
-                      <p className="text-gray-400 text-lg">
-                        {module.subtitle}
-                      </p>
+                  <div className="grid grid-cols-1  gap-4">
+                    {module.items.map((item, itemIndex) => (
+                      <div 
+                        key={itemIndex}
+                        className="flex items-center space-x-3 lg:ml-12"
+                      >
+                        <div className="flex-shrink-0 w-6 h-6 rounded flex items-center justify-center mt-0.5">
+                          ✅
+                        </div>
+                        <span className="text-gray-700 text-base leading-snug">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Image Section */}
+                <div className="lg:w-1/2 flex justify-center">
+                  <div className="relative w-full max-w-lg lg:max-w-xl">
+                    {/* Enhanced shadow effect similar to IsThisForYou */}
+                    <div className="absolute -inset-1 bg-gradient-to-br from-blue-400/30 via-blue-300/20 to-transparent rounded-2xl blur-sm opacity-60"></div>
+                    <div className="absolute -inset-2 bg-gradient-to-br from-orange-400/20 via-orange-300/15 to-transparent rounded-2xl blur-md opacity-40"></div>
+                    
+                    <div className="relative aspect-video bg-white rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden backdrop-blur-sm">
+                      <Image
+                        src={module.image} 
+                        alt={module.imageAlt}
+                        className="w-full h-full object-cover"
+                        width={700}
+                      height={500}
+                      />
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      {module.items.map((item, itemIndex) => (
-                        <div 
-                          key={itemIndex}
-                          className="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors"
-                        >
-                          <div className={`w-2 h-2 bg-gradient-to-r ${module.color} rounded-full flex-shrink-0`}></div>
-                          <span className="text-sm lg:text-base">{item}</span>
-                        </div>
-                      ))}
-                    </div>
+                    {/* Subtle decorative elements */}
+                    <div className="absolute -bottom-3 -right-3 w-6 h-6 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-30 animate-pulse"></div>
+                    <div className="absolute -top-3 -left-3 w-4 h-4 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-40 animate-pulse animation-delay-1000"></div>
                   </div>
                 </div>
               </div>
-              
-              {/* Connecting line for next module */}
-              {index < modules.length - 1 && (
-                <div className="flex justify-center py-4">
-                  <div className="w-px h-8 bg-gradient-to-b from-gray-600 to-transparent"></div>
-                </div>
-              )}
             </div>
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 inline-block">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Ready to Transform Your Career?
-            </h3>
-            <p className="text-white opacity-90 mb-6">
-              Join 300+ students who are already building their future
-            </p>
-            <button className="bg-white text-orange-500 font-bold py-4 px-8 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
-              Start Learning Today
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );

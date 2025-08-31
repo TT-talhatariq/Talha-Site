@@ -108,3 +108,25 @@ button {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
 }
+
+/* Animated underline effect */
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+/* globals.css */
+.floating-whatsapp {
+  position: fixed;
+  right: 1.5rem;   /* ~right-6 */
+  bottom: 1.5rem;  /* ~bottom-6 */
+  z-index: 9999;   /* ~z-50 */
+}

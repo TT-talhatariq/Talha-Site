@@ -34,17 +34,9 @@ const FAQ = () => {
       answer: "You get access to our exclusive community, direct support from me, live Q&A sessions, project reviews, and career guidance. We're here to support you throughout your learning journey."
     },
     {
-      question: "Can I really start earning within 30 days?",
-      answer: "Many of our students start earning within 30-60 days of completing the course. We provide you with 9 proven methods to monetize your skills, step-by-step guidance, and ongoing support to help you succeed."
-    },
-    {
       question: "Is there a money-back guarantee?",
       answer: "Yes! We offer a 30-day money-back guarantee. If you're not satisfied with the course content or feel it doesn't meet your expectations, we'll refund your money, no questions asked."
     },
-    {
-      question: "What tools/software do I need?",
-      answer: "You just need a computer with internet access. All the tools we use in the course are free, including code editors, design tools, and development environments. We'll guide you through setting everything up."
-    }
   ];
 
   const toggleFAQ = (index: number) => {
@@ -118,47 +110,8 @@ const FAQ = () => {
           </div>
         </div>
 
-        {/* Additional support section */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white inline-block max-w-2xl">
-            <h3 className="text-2xl font-bold mb-4">
-              Still have questions?
-            </h3>
-            <p className="text-lg mb-6 opacity-90">
-              I&apos;m here to help! Feel free to reach out if you have any other questions about the course.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-colors">
-                Contact Support
-              </button>
-              <button className="border border-white text-white hover:bg-white hover:text-blue-600 font-bold py-3 px-6 rounded-full transition-colors">
-                WhatsApp Me
-              </button>
-            </div>
-          </div>
-        </div>
+   
 
-        {/* Trust badges */}
-        <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-gray-600">
-          <div className="flex items-center space-x-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium">30-Day Money Back Guarantee</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium">Lifetime Access</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            <span className="text-sm font-medium">300+ Happy Students</span>
-          </div>
-        </div>
       </div>
     </section>
   );
