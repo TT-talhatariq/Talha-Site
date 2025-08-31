@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StickyBottomButton from "@/components/StickyBottomButton";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Talha's Web Development Masterclass",
-  description: "Master Web Dev with 15+ Projects and Unlock 9+ Proven Methods to Earn atleast 500k+ a month",
+  title: "Courses by Talha Tariq ",
+  description: "Master Web Dev & Work Globally from Home and earn location, financial freedom and time freedom",
 };
 
 export default function RootLayout({

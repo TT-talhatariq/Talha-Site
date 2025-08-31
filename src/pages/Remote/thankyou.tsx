@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import StickyBottomButton from "@/components/StickyBottomButton";
 
 export default function ThankYouWebDev() {
   return (
@@ -111,6 +112,7 @@ export default function ThankYouWebDev() {
           </div>
         </div>
       </div>
+      <StickyBottomButton />
     </div>
   );
 }
