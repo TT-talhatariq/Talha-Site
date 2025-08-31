@@ -3,7 +3,7 @@ import React from 'react';
 
 const StickyBottomButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "923001234567"; // Replace with your actual WhatsApp number
+    const phoneNumber = "923257460090"; // Replace with your actual WhatsApp number
     const message = "Hi Talha! I'm interested in your course and want to start right now. Can you help me get started?";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
