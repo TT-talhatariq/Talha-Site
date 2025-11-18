@@ -199,6 +199,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Consultation CTA Section */}
+      <section className="py-16 lg:py-20 relative bg-gradient-to-br from-blue-50/50 via-white to-orange-50/30 overflow-hidden">
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-gradient-to-br from-blue-200/30 via-blue-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-gradient-to-tl from-orange-200/30 via-orange-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse animation-delay-2000"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-white via-blue-50/40 to-orange-50/30 rounded-3xl p-8 lg:p-12 shadow-xl border border-white/50 backdrop-blur-sm">
+              <div className="text-center space-y-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                  Need <span className="text-blue-600">Personalized Guidance</span>?
+                </h2>
+                <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+                  Book a 1-on-1 consultation with Talha. Get personalized help with remote work, freelancing, LinkedIn optimization, resume review, or career strategy.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4 mb-6">
+                  <div className="flex items-center space-x-2 bg-white/80 rounded-full px-4 py-2 border border-blue-200">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-sm font-medium text-gray-700">Remote Work Strategy</span>
+                  </div>
+                  <div className="flex items-center space-x-2 bg-white/80 rounded-full px-4 py-2 border border-blue-200">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-sm font-medium text-gray-700">LinkedIn Optimization</span>
+                  </div>
+                  <div className="flex items-center space-x-2 bg-white/80 rounded-full px-4 py-2 border border-blue-200">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-sm font-medium text-gray-700">Resume & Interview Prep</span>
+                  </div>
+                </div>
+                <Link href="/consultation">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all shadow-lg hover:shadow-xl text-lg">
+                    📅 Book Your Consultation
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
