@@ -56,10 +56,12 @@ export default function CheckoutWebDev() {
       if (result.ParsedResults && result.ParsedResults[0]) {
         const extractedText = result.ParsedResults[0].ParsedText.toLowerCase();
         setOcrResult(extractedText);
+        // console.log(extractedText);
+        
         
         // Validate payment screenshot
         const validPaymentKeywords = [
-        'Talha Tariq', '03257460090'
+        'Talha Tariq', '03257460090', 'talha tariq'
         ];
         
         const hasValidKeywords = validPaymentKeywords.some(keyword => 
@@ -121,6 +123,8 @@ export default function CheckoutWebDev() {
         console.log('Enrollment email sent successfully');
       } catch (emailError) {
         console.error('Email sending failed:', emailError);
+
+        
         // Continue with enrollment even if email fails
       }
       
@@ -130,13 +134,17 @@ export default function CheckoutWebDev() {
       // Only redirect after all processing is complete
       router.push('/thank-you-web-dev');
     } catch (error) {
+      // console.log(errors);
       console.error('Submission error:', error);
       setIsProcessing(false);
       alert('Error submitting form. Please try again.');
+
     } finally {
       setIsProcessing(false);
     }
   };
+  // console.log(errors);
+  
 
         
 
@@ -266,12 +274,12 @@ export default function CheckoutWebDev() {
                     <h3 className="text-xl font-bold text-gray-900 mb-6">💳 Payment Details</h3>
                     
                     {/* Bank Transfer Details */}
-                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-2xl p-6 mb-6">
+                    <div className="bg-gradient-to-r from-blue-50 to-amber-50 border border-blue-200 rounded-2xl p-6 mb-6">
                       <h4 className="text-lg font-bold text-blue-900 mb-4">💳 Online Bank Transfer Details</h4>
                       <div className="space-y-4 text-gray-800">
                         <div className="flex items-center">
                           <span className="font-semibold">🏦 Bank:</span>
-                          <span className="ml-2">Alfalah Bank</span>
+                          <span className="ml-2">Meezan Bank</span>
                         </div>
                         <div className="flex items-center">
                           <span className="font-semibold">👤 Name:</span>
@@ -279,12 +287,12 @@ export default function CheckoutWebDev() {
                         </div>
                         <div>
                           <div className="font-semibold mb-1">💳 Account Number:</div>
-                          <div className="font-mono bg-white px-3 py-2 rounded border text-lg">02521008762954</div>
+                          <div className="font-mono bg-white px-3 py-2 rounded border text-lg">02250113348743</div>
                         </div>
                         <div>
                           <div className="font-semibold mb-1">🌐 IBAN:</div>
                           <div className="font-mono bg-blue-50 px-4 py-3 rounded-lg border-2 border-blue-200 text-lg tracking-wider">
-                            PK34 ALFH 0252 0010 0876 2954
+                            PK64 MEZN 0002 2501 1334 8743
                           </div>
                         </div>
                       </div>
@@ -345,11 +353,11 @@ export default function CheckoutWebDev() {
                         <p className="text-green-600 mt-2">✅ {formData.screenshot.name}</p>
                       )}
                     </div>
-                    {ocrResult && (
+                    {/* {ocrResult && (
                       <div className="mt-2 p-3 bg-green-50 border border-green-200 rounded-lg">
                         <p className="text-green-800 text-sm">✅ Payment screenshot verified!</p>
                       </div>
-                    )}
+                    )} */}
                   </div>
 
                   {/* Submit Button */}

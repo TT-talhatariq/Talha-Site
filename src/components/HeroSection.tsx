@@ -51,17 +51,19 @@ const HeroSection = () => {
               <div className="relative">
                 <div className="bg-white rounded-2xl p-1 shadow-xl border border-gray-200">
                   <div className="rounded-xl overflow-hidden">
-                    <iframe 
-                      width="560" 
-                      height="315" 
-                      src="https://www.youtube.com/embed/AMnbOT1UAf8?si=gu-wJUokfgyzxPvm" 
-                      title="Web Development Masterclass Preview" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                      referrerPolicy="strict-origin-when-cross-origin" 
-                      allowFullScreen
+                  <iframe
+                    width="560"
+                    height="315"
                       className="w-full aspect-video rounded-lg"
-                    ></iframe>
+                      title="Web Development Masterclass Preview"
+                      src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&playsinline=1&modestbranding=1&rel=0&showinfo=0"
+                      loading="eager"
+                      allow="autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
+                      allowFullScreen
+                      frameBorder="0"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                    />
+                    
                   </div>
                 </div>
                 

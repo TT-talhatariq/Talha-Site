@@ -17,7 +17,6 @@ export default function RemotePage() {
     "You're TIRED of earning peanuts while watching others live luxuriously from their laptops",
     "You're SICK of begging for salary raises that barely cover inflation",
     "You're DESPERATE to escape the 9-5 prison and work from anywhere in the world",
-    "You're FRUSTRATED seeing your friends earning $3000+ USD while you struggle with local jobs",
     "You're READY to finally break free and join the global workforce earning in USD",
     "You do have skills, but don't know how to get them noticed",
   ];
@@ -81,6 +80,20 @@ export default function RemotePage() {
       ],
       image: "/assets/ss4.png",
       imageAlt: "Remote Job Success"
+    },
+    {
+      number: "5",
+      title: "Resumes & Interview Preparation",
+      bgGradient: "bg-gradient-to-br from-white via-teal-50/40 to-cyan-100/30",
+      items: [
+        "ATS-Optimized Resume That Gets Past Filters",
+        "Resume Templates That Land Interviews",
+        "How to Highlight Remote Work Skills",
+        "Interview Preparation: Common Questions & Answers",
+        "Follow-Up Strategies That Seal the Deal",
+      ],
+      image: "/assets/resume.png",
+      imageAlt: "Resume and Interview Success"
     }
   ];  
 

@@ -66,17 +66,16 @@ const HeroSection = () => {
               <div className="relative w-full h-full">
                 <div className="bg-white rounded-2xl p-1 shadow-xl border border-gray-200">
                   <div className="rounded-xl overflow-hidden">
-                    <iframe 
-                      width="560" 
-                      height="315" 
-                      src="https://www.youtube.com/embed/AMnbOT1UAf8?si=gu-wJUokfgyzxPvm" 
-                      title="Web Development Masterclass Preview" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                      referrerPolicy="strict-origin-when-cross-origin" 
-                      allowFullScreen
-                      className="w-full aspect-video rounded-lg"
-                    ></iframe>
+                  <iframe 
+                    src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0"
+                    title="Web Development Masterclass Preview" 
+                    frameBorder="0" 
+                    allow="autoplay; encrypted-media; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                    className="w-full aspect-video rounded-lg"
+/>
+
                   </div>
                 </div>
                 

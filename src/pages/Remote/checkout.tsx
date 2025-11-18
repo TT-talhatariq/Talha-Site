@@ -59,9 +59,7 @@ export default function CheckoutRemoteWork() {
         
         // Validate payment screenshot for remote work course
         const validPaymentKeywords = [
-          'payment', 'transfer', 'sent', 'received', 'transaction', 'amount',
-          'easypaisa', 'jazzcash', 'sadapay', 'bank', 'account', 'rs', 'pkr',
-          'successful', 'completed', 'paid', '1999', '1,999'
+            'Talha Tariq', '03257460090', 'talha tariq', '0090'
         ];
         
         const hasValidKeywords = validPaymentKeywords.some(keyword => 
@@ -275,7 +273,7 @@ export default function CheckoutRemoteWork() {
                       <div className="space-y-4 text-gray-800">
                         <div className="flex items-center">
                           <span className="font-semibold">🏦 Bank:</span>
-                          <span className="ml-2">Alfalah Bank</span>
+                          <span className="ml-2">Meezan Bank</span>
                         </div>
                         <div className="flex items-center">
                           <span className="font-semibold">👤 Name:</span>
@@ -283,12 +281,12 @@ export default function CheckoutRemoteWork() {
                         </div>
                         <div>
                           <div className="font-semibold mb-1">💳 Account Number:</div>
-                          <div className="font-mono bg-white px-3 py-2 rounded border text-lg">02521008762954</div>
+                          <div className="font-mono bg-white px-3 py-2 rounded border text-lg">02250113348743</div>
                         </div>
                         <div>
                           <div className="font-semibold mb-1">🌐 IBAN:</div>
                           <div className="font-mono bg-blue-50 px-4 py-3 rounded-lg border-2 border-blue-200 text-lg tracking-wider">
-                            PK34 ALFH 0252 0010 0876 2954
+                            PK64 MEZN 0002 2501 1334 8743
                           </div>
                         </div>
                       </div>
@@ -349,11 +347,11 @@ export default function CheckoutRemoteWork() {
                       )}
                     </div>
                   
-                    {ocrResult && (
+                    {/* {ocrResult && (
                       <div className="mt-2 p-3 bg-green-50 border border-green-200 rounded-lg">
                         <p className="text-green-800 text-sm">✅ Payment screenshot verified!</p>
                       </div>
-                    )}
+                    )} */}
                   </div>
 
                   {/* Submit Button */}
