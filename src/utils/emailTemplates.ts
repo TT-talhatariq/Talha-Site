@@ -143,7 +143,7 @@ export const sendEnrollmentEmail = async (formData: FormData, courseType: 'web-d
       emailFormData.append('file', screenshotFile);
     }
 
-    const response = await fetch('https://course-backend-sikg.onrender.com/send-email', {
+    const response = await fetch('https://hm-backend-u080.onrender.com/learn-with-talha/send-email', {
       method: 'POST',
       body: emailFormData
     });
