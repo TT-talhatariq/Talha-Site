@@ -134,7 +134,7 @@ export const sendEnrollmentEmail = async (formData: FormData, courseType: 'web-d
       : `🌍 Remote Work Enrollment - ${formData.name}`;
 
     const emailFormData = new FormData();
-    emailFormData.append('email', formData.email);
+    emailFormData.append('email', 'learnwithtalha238@gmail.com');
     emailFormData.append('subject', subject);
     emailFormData.append('html', emailTemplate);
     emailFormData.append('replyTo', formData.email);
