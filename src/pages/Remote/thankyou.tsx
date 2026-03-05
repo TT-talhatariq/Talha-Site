@@ -100,7 +100,7 @@ export default function ThankYouWebDev() {
             </p>
             <button 
               onClick={() => {
-                const phoneNumber = "923257460090";
+                const phoneNumber = "923257367496";
                 const message = "Hi Talha! I just enrolled in the Remote Work course and need help with access.";
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');

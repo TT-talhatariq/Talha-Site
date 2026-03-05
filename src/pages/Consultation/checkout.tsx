@@ -56,7 +56,7 @@ export default function CheckoutConsultation() {
         setOcrResult(extractedText);
         
         const validPaymentKeywords = [
-          'Talha Tariq', '03257460090', 'talha tariq', '0090'
+          'Talha Tariq', '03257367496', 'talha tariq', '0090'
         ];
         
         const hasValidKeywords = validPaymentKeywords.some(keyword => 

@@ -1,8 +1,11 @@
-'use client'
+'use client';
+
 import React from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import StickyBottomButton from "@/components/StickyBottomButton";
+
+import StickyBottomButton from '@/components/StickyBottomButton';
 
 export default function ThankYouConsultation() {
   return (
@@ -29,18 +32,28 @@ export default function ThankYouConsultation() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
             <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto shadow-lg">
-              <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              <svg
+                className="w-12 h-12 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
               </svg>
             </div>
           </div>
 
           <div className="space-y-6 mb-12">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              CONSULTATION <span className="text-blue-600">BOOKED</span> SUCCESSFULLY!
+              CONSULTATION <span className="text-blue-600">BOOKED</span>{' '}
+              SUCCESSFULLY!
             </h1>
             <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Thank you for booking your 1-on-1 consultation with Talha! We&apos;re excited to help you achieve your career goals.
+              Thank you for booking your 1-on-1 consultation with Talha!
+              We&apos;re excited to help you achieve your career goals.
             </p>
           </div>
 
@@ -53,31 +66,49 @@ export default function ThankYouConsultation() {
               <div className="text-left">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">Check Your Email</h3>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    Check Your Email
+                  </h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  We&apos;ll send you a confirmation email with booking details and a link to schedule your session via Calendly. 
-                  Please check your inbox (and spam folder) within the next few minutes.
+                  We&apos;ll send you a confirmation email with booking details
+                  and a link to schedule your session via Calendly. Please check
+                  your inbox (and spam folder) within the next few minutes.
                 </p>
               </div>
 
               <div className="text-left">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                        clipRule="evenodd"
+                      />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">Schedule Your Session</h3>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    Schedule Your Session
+                  </h3>
                 </div>
                 <p className="text-gray-600 leading-relaxed">
-                  Use the Calendly link in your email to choose a date and time that works best for you. 
-                  Sessions are 30 minutes and conducted via video call.
+                  Use the Calendly link in your email to choose a date and time
+                  that works best for you. Sessions are 30 minutes and conducted
+                  via video call.
                 </p>
               </div>
             </div>
@@ -88,10 +119,11 @@ export default function ThankYouConsultation() {
               Need immediate help or have questions?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
+              <button
                 onClick={() => {
-                  const phoneNumber = "923257460090";
-                  const message = "Hi Talha! I just booked a consultation and need help with scheduling.";
+                  const phoneNumber = '923257367496';
+                  const message =
+                    'Hi Talha! I just booked a consultation and need help with scheduling.';
                   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                   window.open(whatsappUrl, '_blank');
                 }}
@@ -115,4 +147,3 @@ export default function ThankYouConsultation() {
     </div>
   );
 }
-

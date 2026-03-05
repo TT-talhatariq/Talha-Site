@@ -211,6 +211,10 @@ export default function WebDevPage() {
 
   return (
     <div className="relative">
+      {/* Eid Discount Banner */}
+      <div className="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-teal-700 text-white text-center py-3 px-4 font-semibold text-md tracking-wide">
+        <span className="animate-pulse">🎉</span>Eid Discount is LIVE — Limited time only! <span className="animate-pulse">🎉</span>
+      </div>
       <HeroSection />
       {/* <HeroSectionRemote /> */}
       <IsThisForYou points={targetAudiencePoints} />
