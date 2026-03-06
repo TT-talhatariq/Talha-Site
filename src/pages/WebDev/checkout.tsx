@@ -61,7 +61,7 @@ export default function CheckoutWebDev() {
         
         // Validate payment screenshot
         const validPaymentKeywords = [
-        'Talha Tariq', '03257460090', 'talha tariq'
+        'Talha Tariq', '03257460090', 'talha tariq', '0090'
         ];
         
         const hasValidKeywords = validPaymentKeywords.some(keyword => 
