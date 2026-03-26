@@ -35,7 +35,7 @@ const FAQ = () => {
     },
     {
       question: "Is there a money-back guarantee?",
-      answer: "Yes! We offer a 30-day money-back guarantee. If you're not satisfied with the course content or feel it doesn't meet your expectations, we'll refund your money, no questions asked."
+      answer: "Yes! We offer a 7-day money-back guarantee. If you're not satisfied with the course content or feel it doesn't meet your expectations, we'll refund your money, no questions asked."
     },
   ];
 
