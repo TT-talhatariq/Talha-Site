@@ -1,205 +1,230 @@
-import IsThisForYou from '@/components/IsThisForYou';
-import CourseContent from '@/components/CourseContent';
-import Testimonials from '@/components/Testimonials';
+import AboutMe from '@/components/AboutMe';
 import Bonuses from '@/components/Bonuses';
-import Pricing from '@/components/Pricing';
+import CourseContent from '@/components/CourseContent';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
-import AboutMe from '@/components/AboutMe';
 import HeroSectionRemote from '@/components/HeroSectionRemote';
+import IsThisForYou from '@/components/IsThisForYou';
+import Pricing from '@/components/Pricing';
 import StickyBottomButton from '@/components/StickyBottomButton';
-
+import Testimonials from '@/components/Testimonials';
 
 export default function RemotePage() {
   const targetAudiencePoints = [
-    "You want location, time and financial freedom",
-    "You're ANGRY that companies pay foreigners 10x more for the same skills you have",
-    "You're TIRED of earning peanuts while watching others live luxuriously from their laptops",
-    "You're SICK of begging for salary raises that barely cover inflation",
-    "You're DESPERATE to escape the 9-5 prison and work from anywhere in the world",
-    "You're READY to finally break free and join the global workforce earning in USD",
-    "You do have skills, but don't know how to get them noticed",
+    'You want more time, choice of place, and better money.',
+    'It stings when overseas pay is much higher for the same skills.',
+    'You grind on local pay while others earn dollars online.',
+    'Tiny raises that only match prices going up are not a real plan.',
+    'One office job for life does not feel safe anymore.',
+    'You want foreign clients and dollar pay without moving country.',
+    'You have skills. You need a simple path to get seen and paid.',
   ];
 
   const modules = [
     {
-      number: "1",
-      title: "Work Globally & Earn in USD",
-      bgGradient: "bg-gradient-to-br from-white via-blue-50/40 to-indigo-100/30",
+      number: '1',
+      title: 'Remote Work Foundation',
+      bgGradient:
+        'bg-gradient-to-br from-white via-blue-50/40 to-indigo-100/30',
       items: [
-        "Break the 'Local Job' Prison Mentality",
-        "Why Companies Pay 10x More for Remote Workers",
-        "The Psychology of Global Hiring Managers",
-        "How to Land a high paying remote jobs",
-        "Freelancing vs Remote Jobs",
+        'Why more companies hire remote. Why local-only pay often stays low.',
+        'Why Pakistan is a strong place to start remote and earn in dollars.',
+        'Real pay ranges for remote jobs at each level.',
+        'How pay and options can grow over time in a remote career.',
+        'Your first remote job, step by step, even with little experience.',
+        'Pick a focus area so clients are happy to pay you more.',
       ],
-      image: "/assets/earr.png",
-      imageAlt: "Location Freedom Lifestyle"
+      image: '/assets/earr.png',
+      imageAlt: 'Remote work basics and earning in dollars',
     },
     {
-      number: "2", 
-      title: "LinkedIn: Your $3000/Month Money Machine",
-      bgGradient: "bg-gradient-to-br from-white via-green-50/40 to-emerald-100/30",
+      number: '2',
+      title: 'Make a Killer Resume (ATS-Friendly)',
+      bgGradient:
+        'bg-gradient-to-br from-white via-teal-50/40 to-cyan-100/30',
       items: [
-        "How to make a Killer & Convincing profile",
-        "How to Choose a niche and develop a brand",
-        "Strategy to Create Content",
-        "3C model for success on LinkedIn",
-        "Secrets to networking",
-        "How to get work offers in bulk",
+        'Why your resume matters more than you think.',
+        'Tools and steps to build a resume people actually read.',
+        'Write job lines that make recruiters want to call you.',
+        'Order each section so software and people both say yes.',
+        'Small edits that take you from okay to short list.',
+        'Pass ATS checks and still sound like a real person.',
       ],
-      image: "/assets/gif/4.png",
-      imageAlt: "LinkedIn Success Strategy"
+      image: '/assets/resume.png',
+      imageAlt: 'ATS-friendly resume that gets read',
     },
     {
-      number: "3", 
-      title: "Upwork: Beat 99% of Competition",
-      bgGradient: "bg-gradient-to-br from-white via-orange-50/40 to-amber-100/30",
+      number: '3',
+      title: '8 Methods to Hunt Remote Jobs',
+      bgGradient:
+        'bg-gradient-to-br from-white via-purple-50/40 to-violet-100/30',
       items: [
-        "The 'Irresistible Killer Profile' Formula",
-        "Proposal Templates That Win Every Time",
-        "Price Psychology: Charge Premium Rates",
-        "Get 5-Star Reviews Guaranteed",
-        "Scale from 100$ to 3K+/Month",
-        "Insider Tricks Top 1% Use",
+        'Hidden job boards insiders actually use.',
+        'Bypass HR: message hiring managers and decision-makers.',
+        'Company career pages: apply where listings are freshest.',
+        '10+ platforms to find and win remote roles.',
+        'Cold outreach that gets real replies.',
+        'Referrals and warm intros from your network.',
+        'Job alerts and a weekly rhythm so you never start from zero.',
+        'Interview moves that turn screens into real offers.',
       ],
-      image: "/assets/gif/3.png",
-      imageAlt: "Upwork Success Reviews"
+      image: '/assets/ss4.png',
+      imageAlt: 'Remote Job Success',
     },
     {
-      number: "4",
-      title: "Remote Job Hunting Like a Predator",
-      bgGradient: "bg-gradient-to-br from-white via-purple-50/40 to-violet-100/30",
+      number: '4',
+      title: 'LinkedIn: $3K+/Month Remote Job Hunting',
+      bgGradient:
+        'bg-gradient-to-br from-white via-green-50/40 to-emerald-100/30',
       items: [
-        "Hidden Job Boards Only Insiders Know",
-        "Bypass HR & Reach Decision Makers Directly",
-        "Interview Hacks That Guarantee Offers",
-        "Salary Negotiation: Get 50% More Than Asked",
-        "10+ Platforms to apply and win remote jobs",
-        "Cold Outreach That Gets 80% Response Rate"
+        'Personal brand: story, proof, clear who you help.',
+        'Niche formula so you are not another generalist.',
+        'Hidden levers: search, creator mode, featured, strong extras.',
+        'Profile that turns views into DMs: headline to proof, in order.',
+        'Content: hooks, real lessons, soft asks, steady pace.',
+        '3C model: clear message, steady posts, chats to calls.',
+        'Networking and cold DMs: comments, intros, one angle, one ask.',
       ],
-      image: "/assets/ss4.png",
-      imageAlt: "Remote Job Success"
+      image: '/assets/gif/4.png',
+      imageAlt: 'LinkedIn personal brand content and outreach',
     },
     {
-      number: "5",
-      title: "Resumes & Interview Preparation",
-      bgGradient: "bg-gradient-to-br from-white via-teal-50/40 to-cyan-100/30",
+      number: '5',
+      title: 'Crack Upwork like a Pro',
+      bgGradient:
+        'bg-gradient-to-br from-white via-orange-50/40 to-amber-100/30',
       items: [
-        "ATS-Optimized Resume That Gets Past Filters",
-        "Resume Templates That Land Interviews",
-        "How to Highlight Remote Work Skills",
-        "Interview Preparation: Common Questions & Answers",
-        "Follow-Up Strategies That Seal the Deal",
+        'Build a killer profile around photo and title and skills and trust.',
+        'Write an overview that sells your offer and proof in one fast read.',
+        'Show portfolio proof with samples and numbers and short blurbs only.',
+        'Skip junk invites and fight for roles that truly fit you.',
+        'Use premium packages and price floors and walk away from cheap work.',
+        'Send proposals that stack hook and proof and plan and one clear next step.',
+        'Stay strict on search fit while you grow from small wins to four-K months.',
       ],
-      image: "/assets/resume.png",
-      imageAlt: "Resume and Interview Success"
-    }
-  ];  
+      image: '/assets/gif/3.png',
+      imageAlt: 'Upwork profile proposals and premium pricing',
+    },
+    {
+      number: '6',
+      title: 'Cracking Remote Interviews',
+      bgGradient: 'bg-gradient-to-br from-white via-rose-50/40 to-pink-100/30',
+      items: [
+        'Interviews decoded: what companies test for and how to show up sharp.',
+        'Interview types to prep for: recruiter screen, hiring manager, panel, technical, async.',
+        'STAR method: proven structure to win behavioral and story questions.',
+        'Prep that closes: resources, checklists, and drills built for remote interviews.',
+      ],
+      image: '/assets/ss2.png',
+      imageAlt: 'Remote interview prep and STAR method',
+    },
+  ];
 
-    
   const bonuses = [
     {
-      image: "/assets/direct.png",
-      imageAlt: "Direct Access to Mentor",
-      title: "Direct Access to Me",
-      description: "Get personal mentorship and feedback directly from Talha.",
-      highlight: true
-    },
-    {
-      image: "/assets/image.png",
-      imageAlt: "Tech Portal career and job-search tools",
-      title: "Tech Portal Access",
+      image: '/assets/direct.png',
+      imageAlt: 'Direct mentorship with Talha',
+      title: 'Ask Me Directly',
       description:
-        "All-in-one hub: LinkedIn & Upwork AI optimizers, ATS resume tools, portfolio builder, guided career tracks, Interview Lab, application tracker, and more — included free.",
-      highlight: true
+        'Stuck on your profile, a proposal, or an offer? You get real notes from me, not copy-paste replies.',
+      highlight: true,
     },
     {
-      image: "/assets/comm.jpeg",
-      imageAlt: "Community of Learners",
-      title: "Community of 700+ Learners",
-      description: "Join our exclusive community where learners help each other land remote roles.",
-      highlight: false
+      image: '/assets/image.png',
+      imageAlt: 'Tech Portal dashboard and tools',
+      title: 'Tech Portal (All Your Tools in One Place)',
+      description:
+        'LinkedIn and Upwork helpers, resume tools, portfolio space, tracks, interview practice, and application tracking. One login.',
+      highlight: true,
     },
     {
-      image: "/assets/upwork.png",
-      imageAlt: "100% Successful Upwork Proposals",
-      title: "My Private Upwork Proposals",
-      description: "I will give you my private proposals method that I used to get 100% successful job offers.",
-      highlight: true
-    }
-   ];
+      image: '/assets/comm.jpeg',
+      imageAlt: 'Community of remote-work learners',
+      title: '700+ Learners With You',
+      description:
+        'Ask questions, share wins, and stay on track with people doing the same thing.',
+      highlight: false,
+    },
+    {
+      image: '/assets/upwork.png',
+      imageAlt: 'Winning Upwork proposals',
+      title: 'My Proposal Playbook',
+      description:
+        'How I wrote proposals that turned chats into paid work. Copy the shape, use your own words.',
+      highlight: true,
+    },
+  ];
 
-    const pricingValueItems = [
-      {
-        title: "5 Money-Making Modules",
-        description: "LinkedIn, Upwork, Remote Jobs & Scaling Systems"
-      },
-      {
-        title: "Proven Templates",
-        description: "My exact scripts that generated massive income"
-      },
-      {
-        title: "Global Opportunities Access",
-        description: "Hidden job boards & exclusive deal flow"
-      },
-      {
-        title: "Elite Mastermind Community",
-        description: "Network with 700+ students and high-earning remote workers"
-      },
-      {
-        title: "Lifetime Money Updates",
-        description: "Forever access + new strategies as markets evolve"
-      },
-      {
-        title: "Complimentary Resume Book",
-        description: "ATS-ready templates, positioning, and layouts — free with enrollment"
-      }
-    ];
+  const pricingValueItems = [
+    {
+      title: '6 Clear Modules',
+      description:
+        'Basics, resume, job search, LinkedIn, Upwork, then interviews. One path end to end.',
+    },
+    {
+      title: 'Ready-to-Use Templates',
+      description:
+        'Scripts and layouts I used for real clients. Edit them for you.',
+    },
+    {
+      title: 'Where Global Jobs Really Are',
+      description: 'Not only random apply clicks. Built for overseas hiring.',
+    },
+    {
+      title: '700+ People in Your Corner',
+      description: 'Learn with others so you do not quit in week two.',
+    },
+    {
+      title: 'Lifetime Access',
+      description: 'Keep the course and get new tips when hiring changes.',
+    },
+    {
+      title: 'Free Resume Book',
+      description:
+        'Simple layouts that look good to people and to job software.',
+    },
+  ];
 
-    const aboutMeData = {
-        statsImages: [
-        {
-          image: "/assets/upProfile.png",
-          imageAlt: "Upwork Top Rated Profile",
-          title: "Upwork Top Rated Freelancer"
-        },
-        {
-          image: "/assets/fiverr.png",
-          imageAlt: "Fiverr Top Rated Seller",
-          title: "Fiverr Top Rated Seller"
-        },
-        {
-          image: "/assets/remotly.png",
-          imageAlt: "Working Remotely Since Day 1",
-          title: "Working Remotely Since Day 1"
-        },
-        {
-          image: "/assets/earnings.png",
-          imageAlt: "Direct Clients",
-          title: "Direct Clients"
-        },
-        {
-          image: "/assets/public.png",
-          imageAlt: "Remote Work Setup",
-          title: "Public Speaking"
-        }
-      ],
-      href: '/checkout-remote-work'
-     
-    };
+  const aboutMeData = {
+    statsImages: [
+      {
+        image: '/assets/upProfile.png',
+        imageAlt: 'Upwork Top Rated Profile',
+        title: 'Upwork Top Rated Freelancer',
+      },
+      {
+        image: '/assets/fiverr.png',
+        imageAlt: 'Fiverr Top Rated Seller',
+        title: 'Fiverr Top Rated Seller',
+      },
+      {
+        image: '/assets/remotly.png',
+        imageAlt: 'Working Remotely Since Day 1',
+        title: 'Working Remotely Since Day 1',
+      },
+      {
+        image: '/assets/earnings.png',
+        imageAlt: 'Direct Clients',
+        title: 'Direct Clients',
+      },
+      {
+        image: '/assets/public.png',
+        imageAlt: 'Remote Work Setup',
+        title: 'Public Speaking',
+      },
+    ],
+    href: '/checkout-remote-work',
+  };
 
   return (
-    <div >
+    <div>
       <HeroSectionRemote />
       <IsThisForYou points={targetAudiencePoints} />
-     
+
       <CourseContent modules={modules} />
-      <Testimonials
-        href="/checkout-remote-work"
-        />
+      <Testimonials href="/checkout-remote-work" />
       <Bonuses bonuses={bonuses} />
-      <Pricing 
+      <Pricing
         originalPrice="50,000"
         currentPrice="4,497"
         valueItems={pricingValueItems}

@@ -30,7 +30,7 @@ const HeroSection = () => {
                   Land <span className="text-orange-500">Remote Jobs</span> & Earn <span className="text-green-600">$1500-$5000</span> Monthly through <span className="text-blue-600">Upwork, LinkedIn</span> & <span className="text-orange-500">Global Companies</span>
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                Learn proven strategies to work from Pakistan for <span className="text-blue-600 font-semibold">international clients</span> and build a global career!
+                Learn proven strategies to work from Pakistan for <span className="text-blue-600 font-semibold">international clients</span>
                 </p>
               </div>
               
@@ -62,24 +62,24 @@ const HeroSection = () => {
               </div> */}
             </div>
             
-            <div className="lg:w-1/2 flex  ">
-              <div className="relative w-full h-full">
+            <div className="lg:w-1/2 flex justify-end">
+              <div className="relative">
                 <div className="bg-white rounded-2xl p-1 shadow-xl border border-gray-200">
                   <div className="rounded-xl overflow-hidden">
-                  <iframe 
-                    src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0"
-                    title="Web Development Masterclass Preview" 
-                    frameBorder="0" 
-                    allow="autoplay; encrypted-media; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen
-                    className="w-full aspect-video rounded-lg"
-/>
-
+                    <iframe
+                      width="560"
+                      height="325"
+                      className="w-full aspect-video rounded-lg"
+                      title="Remote Work Masterclass Preview"
+                      src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0"
+                      loading="eager"
+                      allow="autoplay; encrypted-media; picture-in-picture; fullscreen; web-share; clipboard-write"
+                      allowFullScreen
+                      frameBorder="0"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                    />
                   </div>
                 </div>
-                
-             
               </div>
             </div>
           </div>

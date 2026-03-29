@@ -25,7 +25,7 @@ const CourseContent = ({ modules }: { modules: Module[] }) => {
             Course <span className="text-orange-500">Curriculum</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Five Modules That Will Take You From An Absolute Beginner To Ready To Land Your First Client!
+            A complete, module-by-module roadmap — from foundations to offers.
           </p>
         </div>
 
