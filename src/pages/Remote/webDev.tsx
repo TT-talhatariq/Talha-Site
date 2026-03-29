@@ -107,10 +107,18 @@ export default function RemotePage() {
       highlight: true
     },
     {
+      image: "/assets/image.png",
+      imageAlt: "Tech Portal career and job-search tools",
+      title: "Tech Portal Access",
+      description:
+        "All-in-one hub: LinkedIn & Upwork AI optimizers, ATS resume tools, portfolio builder, guided career tracks, Interview Lab, application tracker, and more — included free.",
+      highlight: true
+    },
+    {
       image: "/assets/comm.jpeg",
       imageAlt: "Community of Learners",
-      title: "Community of 400+ Learners",
-      description: "Join our exclusive community where passionate learners help each other.",
+      title: "Community of 700+ Learners",
+      description: "Join our exclusive community where learners help each other land remote roles.",
       highlight: false
     },
     {
@@ -119,14 +127,7 @@ export default function RemotePage() {
       title: "My Private Upwork Proposals",
       description: "I will give you my private proposals method that I used to get 100% successful job offers.",
       highlight: true
-    },
-    {
-      image: "/assets/resume.png",
-      imageAlt: "9 Ways to Earn",
-      title: "Guaranteed Job Landing Resume",
-      description: "I will give you a guaranteed job landing resume that will help you get a job.",
-      highlight: false
-          }
+    }
    ];
 
     const pricingValueItems = [
@@ -144,11 +145,15 @@ export default function RemotePage() {
       },
       {
         title: "Elite Mastermind Community",
-        description: "Network with 1000+ high-earning remote workers"
+        description: "Network with 700+ students and high-earning remote workers"
       },
       {
         title: "Lifetime Money Updates",
         description: "Forever access + new strategies as markets evolve"
+      },
+      {
+        title: "Complimentary Resume Book",
+        description: "ATS-ready templates, positioning, and layouts — free with enrollment"
       }
     ];
 
@@ -196,9 +201,9 @@ export default function RemotePage() {
       <Bonuses bonuses={bonuses} />
       <Pricing 
         originalPrice="50,000"
-        currentPrice="2,999"
+        currentPrice="4,497"
         valueItems={pricingValueItems}
-        discountPercentage="94% OFF"
+        discountPercentage="91% OFF"
         href="/checkout-remote-work"
       />
       <FAQ />

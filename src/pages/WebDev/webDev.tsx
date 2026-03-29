@@ -130,6 +130,14 @@ export default function WebDevPage() {
        highlight: true
      },
      {
+       image: "/assets/image.png",
+       imageAlt: "Tech Portal career and job-search tools",
+       title: "Tech Portal Access",
+       description:
+         "All-in-one hub: LinkedIn & Upwork AI optimizers, ATS resume tools, portfolio builder, guided career tracks, Interview Lab, application tracker, included free.",
+       highlight: true
+     },
+     {
        image: "/assets/comm.jpeg",
        imageAlt: "Community of Learners",
        title: "Community of 400+ Learners",
@@ -142,14 +150,7 @@ export default function WebDevPage() {
        title: "My Private Upwork Proposals",
        description: "I will give you my private proposals method that I used to get 100% successful job offers.",
        highlight: true
-     },
-     {
-       image: "/assets/resume.png",
-       imageAlt: "9 Ways to Earn",
-       title: "Guaranteed Job Landing Resume",
-       description: "I will give you a guaranteed job landing resume that will help you get a job.",
-       highlight: false
-           }
+     }
     ];
 
     const pricingValueItems = [
@@ -212,9 +213,9 @@ export default function WebDevPage() {
   return (
     <div className="relative">
       {/* Eid Discount Banner */}
-      <div className="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-teal-700 text-white text-center py-3 px-4 font-semibold text-sm tracking-wide">
-        <span className="animate-pulse">🎉</span>Eid Discount is LIVE — Limited time only! <span className="animate-pulse">🎉</span>
-      </div>
+      {/* <div className="w-full bg-gradient-to-r from-emerald-600 via-green-600 to-teal-700 text-white text-center py-3 px-4 font-semibold text-sm tracking-wide">
+        <span className="animate-pulse">🎉</span>Discount is LIVE — Limited time only! <span className="animate-pulse">🎉</span>
+      </div> */}
       <HeroSection />
       {/* <HeroSectionRemote /> */}
       <IsThisForYou points={targetAudiencePoints} />
@@ -224,9 +225,9 @@ export default function WebDevPage() {
       <Bonuses bonuses={bonuses} />
       <Pricing 
         originalPrice="50,000"
-        currentPrice="2,999"
+        currentPrice="3,797"
         valueItems={pricingValueItems}
-        discountPercentage="94% OFF"
+        discountPercentage="92% OFF"
       />
       <FAQ />
       <AboutMe {...aboutMeData} />

@@ -28,7 +28,7 @@ const HeroSection = () => {
                     LEARN HOW YOU CAN
                   </p>
                   <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-gray-900">
-                    Master <span className="text-orange-500">Web Dev</span> with{' '}
+                    Learn AI-Powered <span className="text-orange-500">Web Dev</span> with{' '}
                     <span className="text-blue-600">15+ Projects</span> and
                     Unlock the{' '}
                     <span className="text-orange-500">9+ Proven Methods</span>{' '}

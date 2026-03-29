@@ -11,7 +11,7 @@ export default function Home() {
       title: "Master Web Development & 9 Proven ways to Earn",
       subtitle: "Complete Frontend & Backend Course",
       description: "Stop watching endless tutorials that lead nowhere! Learn the EXACT skills that got me $4000+ monthly clients. Build 15+ real projects and discover the 9 proven methods I use to earn consistently online.",
-      price: "PKR 2,999",
+      price: "PKR 3,797",
       features: [
         "🚀 15+ Real Projects (Not Boring Tutorials!)",
         "💻 HTML, CSS, JavaScript & React Mastery",
@@ -27,14 +27,14 @@ export default function Home() {
       badgeColor: "bg-blue-600",
       link: "/web-dev",
       originalPrice: "50,000",
-      discount: "94% OFF",
+      discount: "92% OFF",
     },
     {
       id: 2,
       title: "Remote Work Mastery",
       subtitle: "Work Globally & Earn in USD",
       description: "TIRED of earning peanuts while your skills are worth GOLD? Break free from local salary limits! I'll show you the EXACT system I used to land $3000+ USD remote jobs and work with global clients from my bedroom.",
-      price: "2,999",
+      price: "PKR 4,497",
       features: [
         "🌍 LinkedIn Hacks That Get You NOTICED",
         "🎯 Niche Selection for Maximum Earnings",
@@ -50,7 +50,7 @@ export default function Home() {
       badgeColor: "bg-blue-600",
       link: "/remote-work",
       originalPrice: "50,000",
-      discount: "94% OFF",
+      discount: "91% OFF",
     }
   ];
 
@@ -94,7 +94,7 @@ export default function Home() {
               <div className="text-center">
                 <h3 className="text-xl font-bold text-red-700 mb-2">⚠️ WARNING: Limited Time Offer!</h3>
                 <p className="text-red-600 font-semibold">
-                  These courses are currently 94%+ OFF. Prices will return to normal soon. 
+                  These heavy discounts won&apos;t last — prices go back to normal soon. 
                   <span className="block text-sm mt-1">Don&apos;t let this opportunity slip away!</span>
                 </p>
               </div>

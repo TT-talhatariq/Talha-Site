@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { sendEnrollmentEmail } from '@/utils/emailTemplates';
 import { useRouter } from 'next/navigation';
+import { CopyableBankField } from '@/components/CopyableBankField';
 
 export default function CheckoutWebDev() {
   const [formData, setFormData] = useState({
@@ -205,13 +206,13 @@ export default function CheckoutWebDev() {
                     <span className="font-semibold">PKR 50,000</span>
                   </div>
                   <div className="flex justify-between text-green-600">
-                    <span>Eid Discount (94% OFF)</span>
-                    <span>-PKR 47,001</span>
+                    <span>Discount (92% OFF)</span>
+                    <span>-PKR 46,203</span>
                   </div>
                   <hr className="border-gray-200" />
                   <div className="flex justify-between text-xl font-bold">
                     <span>Total</span>
-                    <span className="text-blue-600">PKR 2,999</span>
+                    <span className="text-blue-600">PKR 3,797</span>
                   </div>
                 </div>
 
@@ -285,16 +286,16 @@ export default function CheckoutWebDev() {
                           <span className="font-semibold">👤 Name:</span>
                           <span className="ml-2">TALHA TARIQ ✅</span>
                         </div>
-                        <div>
-                          <div className="font-semibold mb-1">💳 Account Number:</div>
-                          <div className="font-mono bg-white px-3 py-2 rounded border text-lg">02250113348743</div>
-                        </div>
-                        <div>
-                          <div className="font-semibold mb-1">🌐 IBAN:</div>
-                          <div className="font-mono bg-blue-50 px-4 py-3 rounded-lg border-2 border-blue-200 text-lg tracking-wider">
-                            PK64 MEZN 0002 2501 1334 8743
-                          </div>
-                        </div>
+                        <CopyableBankField
+                          label="💳 Account Number:"
+                          displayText="02250113348743"
+                        />
+                        <CopyableBankField
+                          label="🌐 IBAN:"
+                          displayText="PK64 MEZN 0002 2501 1334 8743"
+                          copyText="PK64MEZN0002250113348743"
+                          valueClassName="bg-blue-50 px-4 py-3 rounded-lg border-2 border-blue-200 text-lg tracking-wider"
+                        />
                       </div>
                     </div>
 
@@ -306,15 +307,14 @@ export default function CheckoutWebDev() {
                           <span className="font-semibold">👤 Account Name:</span>
                           <span className="ml-2">Talha Tariq</span>
                         </div>
-                        <div>
-                          <div className="font-semibold mb-1">📞 Number:</div>
-                          <div className="font-mono bg-white px-3 py-2 rounded border text-lg">03257460090</div>
-                        </div>
+                        <CopyableBankField
+                          label="📞 Number:"
+                          displayText="03257460090"
+                        />
                         <div>
                           <div className="font-semibold mb-1">🏦 Apps:</div>
                           <div className="bg-white px-3 py-2 rounded border">
                             <div>JazzCash</div>
-                            <div>SadaPay</div>
                             <div>NayaPay</div>
                           </div>
                         </div>
@@ -326,7 +326,9 @@ export default function CheckoutWebDev() {
                     {/* Value Message */}
                     <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-2xl p-4 mb-6">
                       <p className="text-orange-800 text-center font-semibold">
-                        💡 Don&apos;t judge it by the low price, the value you&apos;ll gain is 1000× more than what you&apos;re paying.
+                        💡 Don&apos;t judge it by the low discounted price, the value
+                        you&apos;ll gain is 1000× more than what you&apos;re
+                        paying.
                       </p>
                     </div>
 
