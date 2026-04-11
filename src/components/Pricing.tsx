@@ -15,6 +15,8 @@ interface PricingProps {
   valueItems: ValueItem[];
   discountPercentage?: string;
   href?: string;
+  /** Set false to hide the reset-style countdown (recommended for offer pages using real scarcity elsewhere). */
+  showCountdown?: boolean;
 }
 
 const Pricing = ({
@@ -23,29 +25,45 @@ const Pricing = ({
   valueItems,
   discountPercentage = '90% OFF',
   href = '/checkout-web-dev',
+  showCountdown = true,
 }: PricingProps) => {
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 8,
-    minutes: 59,
-    seconds: 59,
+  const STORAGE_KEY = 'pricing_countdown_expiry';
+  const DURATION_MS = 8 * 60 * 60 * 1000; // 8 hours
+
+  const getSecondsLeft = () => {
+    const expiry = parseInt(localStorage.getItem(STORAGE_KEY) ?? '0', 10);
+    const secondsLeft = Math.max(0, Math.floor((expiry - Date.now()) / 1000));
+    return secondsLeft;
+  };
+
+  const secondsToState = (total: number) => ({
+    hours: Math.floor(total / 3600),
+    minutes: Math.floor((total % 3600) / 60),
+    seconds: total % 60,
   });
 
+  const [timeLeft, setTimeLeft] = useState({ hours: 8, minutes: 59, seconds: 59 });
+
   useEffect(() => {
+    if (!showCountdown) return;
+
+    // Initialise expiry in localStorage if missing or already expired
+    const existing = parseInt(localStorage.getItem(STORAGE_KEY) ?? '0', 10);
+    if (!existing || existing <= Date.now()) {
+      localStorage.setItem(STORAGE_KEY, String(Date.now() + DURATION_MS));
+    }
+
+    setTimeLeft(secondsToState(getSecondsLeft()));
+
     const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 };
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 };
-        } else if (prev.hours > 0) {
-          return { hours: prev.hours - 1, minutes: 59, seconds: 59 };
-        }
-        return prev;
-      });
+      const secs = getSecondsLeft();
+      setTimeLeft(secondsToState(secs));
+      if (secs <= 0) clearInterval(timer);
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showCountdown]);
 
   return (
     <section
@@ -79,41 +97,34 @@ const Pricing = ({
         {/* Combined Pricing Section */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-4 lg:p-12 border border-white/50 shadow-xl">
-            {/* Countdown Timer */}
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <span className="text-red-500 text-xl">⏰</span>
-                <h3 className="text-gray-900 text-xl font-bold">
-                  Offer Expires In:
-                </h3>
-              </div>
-              <div className="flex justify-center space-x-4">
-                <div className="text-center">
-                  <div className="bg-gradient-to-br from-orange-500 to-red-500 text-white font-bold text-xl lg:text-2xl w-14 h-14 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center shadow-lg">
-                    {timeLeft.hours.toString().padStart(2, '0')}
-                  </div>
-                  <div className="text-gray-700 text-xs mt-2 font-medium">
-                    HOURS
-                  </div>
+            {showCountdown ? (
+              <div className="mb-8 text-center">
+                <div className="mb-4 inline-flex items-center gap-2">
+                  <span className="text-xl text-red-500">⏰</span>
+                  <h3 className="text-xl font-bold text-gray-900">Offer Expires In:</h3>
                 </div>
-                <div className="text-center">
-                  <div className="bg-gradient-to-br from-orange-500 to-red-500 text-white font-bold text-xl lg:text-2xl w-14 h-14 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center shadow-lg">
-                    {timeLeft.minutes.toString().padStart(2, '0')}
+                <div className="flex justify-center space-x-4">
+                  <div className="text-center">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 text-xl font-bold text-white shadow-lg lg:h-16 lg:w-16 lg:text-2xl">
+                      {timeLeft.hours.toString().padStart(2, '0')}
+                    </div>
+                    <div className="mt-2 text-xs font-medium text-gray-700">HOURS</div>
                   </div>
-                  <div className="text-gray-700 text-xs mt-2 font-medium">
-                    MINUTES
+                  <div className="text-center">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 text-xl font-bold text-white shadow-lg lg:h-16 lg:w-16 lg:text-2xl">
+                      {timeLeft.minutes.toString().padStart(2, '0')}
+                    </div>
+                    <div className="mt-2 text-xs font-medium text-gray-700">MINUTES</div>
                   </div>
-                </div>
-                <div className="text-center">
-                  <div className="bg-gradient-to-br from-orange-500 to-red-500 text-white font-bold text-xl lg:text-2xl w-14 h-14 lg:w-16 lg:h-16 rounded-2xl flex items-center justify-center shadow-lg">
-                    {timeLeft.seconds.toString().padStart(2, '0')}
-                  </div>
-                  <div className="text-gray-700 text-xs mt-2 font-medium">
-                    SECONDS
+                  <div className="text-center">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 text-xl font-bold text-white shadow-lg lg:h-16 lg:w-16 lg:text-2xl">
+                      {timeLeft.seconds.toString().padStart(2, '0')}
+                    </div>
+                    <div className="mt-2 text-xs font-medium text-gray-700">SECONDS</div>
                   </div>
                 </div>
               </div>
-            </div>
+            ) : null}
 
             {/* Pricing Comparison */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

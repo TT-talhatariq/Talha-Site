@@ -64,7 +64,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-gray-200 pt-8">
             <p className="text-gray-500 text-sm">
-              © Copyright 2025 Talha Tariq. All Rights Reserved
+              © Copyright 2026 Talha Tariq. All Rights Reserved
             </p>
           </div>
         </div>

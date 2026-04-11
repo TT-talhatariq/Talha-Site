@@ -1,81 +1,90 @@
 import AboutMe from '@/components/AboutMe';
 import Bonuses from '@/components/Bonuses';
-import CourseContent from '@/components/CourseContent';
-import FAQ from '@/components/FAQ';
+import CourseContent, { type CourseModule } from '@/components/CourseContent';
+import FAQ, { remoteWorkFaqs } from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import HeroSectionRemote from '@/components/HeroSectionRemote';
-import IsThisForYou from '@/components/IsThisForYou';
+import IsThisForYou, { type NotForYouPoint } from '@/components/IsThisForYou';
 import Pricing from '@/components/Pricing';
+import {
+  RemoteFalseBeliefsSection,
+  RemoteFinalCtaSection,
+  RemoteGuaranteeSection,
+  RemoteInstructorBioSection,
+  RemoteOpportunitySection,
+  RemoteProblemSection,
+  RemoteStorySection,
+} from '@/components/remote/RemoteMarketingSections';
 import StickyBottomButton from '@/components/StickyBottomButton';
 import Testimonials from '@/components/Testimonials';
 
 export default function RemotePage() {
   const targetAudiencePoints = [
-    'You want more time, choice of place, and better money.',
-    'It stings when overseas pay is much higher for the same skills.',
-    'You grind on local pay while others earn dollars online.',
-    'Tiny raises that only match prices going up are not a real plan.',
-    'One office job for life does not feel safe anymore.',
-    'You want foreign clients and dollar pay without moving country.',
-    'You have skills. You need a simple path to get seen and paid.',
+    'You have a skill — development, design, writing, marketing, data — and want to monetize it globally',
+    "You're employed locally in PKR and want to transition to dollar income without quitting your job first",
+    "You've tried remote applications before and got zero results",
+    'You want to work from home on your own terms',
+    'You can handle professional English in writing and on calls',
   ];
 
-  const modules = [
+  const notForYouPoints: Array<string | NotForYouPoint> = [
+    'You want overnight results without changing anything.',
+    "You're not willing to put in about 2–3 focused hours a day for six weeks.",
+  ];
+
+  const modules: CourseModule[] = [
     {
       number: '1',
       title: 'Remote Work Foundation',
-      bgGradient:
-        'bg-gradient-to-br from-white via-blue-50/40 to-indigo-100/30',
+      subtitle: '"Understand exactly why you haven\'t been hired yet — and what specifically to fix"',
+      bgGradient: 'bg-gradient-to-br from-white via-blue-50/40 to-indigo-100/30',
       items: [
-        'Why more companies hire remote. Why local-only pay often stays low.',
-        'Why Pakistan is a strong place to start remote and earn in dollars.',
-        'Real pay ranges for remote jobs at each level.',
+        'Why remote companies hire and what they\'re actually filtering for',
+        "Pakistan's real advantages for remote work (most people don't know these)",
+        'Actual salary ranges by experience level',
         'How pay and options can grow over time in a remote career.',
-        'Your first remote job, step by step, even with little experience.',
-        'Pick a focus area so clients are happy to pay you more.',
+        'Your first remote job, step by step, even with little experience',
       ],
       image: '/assets/earr.png',
-      imageAlt: 'Remote work basics and earning in dollars',
+      imageAlt: 'Remote work foundation and career path',
     },
     {
       number: '2',
-      title: 'Make a Killer Resume (ATS-Friendly)',
-      bgGradient:
-        'bg-gradient-to-br from-white via-teal-50/40 to-cyan-100/30',
+      title: 'The Killer ATS Resume',
+      subtitle: '"Your resume is live, ATS-optimized, and submitted within 48 hours of finishing this module"',
+      bgGradient: 'bg-gradient-to-br from-white via-teal-50/40 to-cyan-100/30',
       items: [
-        'Why your resume matters more than you think.',
-        'Tools and steps to build a resume people actually read.',
-        'Write job lines that make recruiters want to call you.',
-        'Order each section so software and people both say yes.',
-        'Small edits that take you from okay to short list.',
-        'Pass ATS checks and still sound like a real person.',
+        'How ATS systems work, and the exact mistakes that get your resume auto-rejected',
+        'Resume structure that passes software AND impresses hiring managers',
+        'How to write job descriptions in your resume that make recruiters stop scrolling',
+        'Minor changes that transform a weak application into a strong one',
+        'The exact tools Talha uses to build ATS-friendly resumes in under 2 hours',
       ],
       image: '/assets/resume.png',
-      imageAlt: 'ATS-friendly resume that gets read',
+      imageAlt: 'ATS-optimized resume',
     },
     {
       number: '3',
       title: '8 Methods to Hunt Remote Jobs',
-      bgGradient:
-        'bg-gradient-to-br from-white via-purple-50/40 to-violet-100/30',
+      subtitle: '"A weekly system that produces consistent interview invitations — not random applications"',
+      bgGradient: 'bg-gradient-to-br from-white via-purple-50/40 to-violet-100/30',
       items: [
-        'Hidden job boards insiders actually use.',
-        'Bypass HR: message hiring managers and decision-makers.',
-        'Company career pages: apply where listings are freshest.',
-        '10+ platforms to find and win remote roles.',
-        'Cold outreach that gets real replies.',
-        'Referrals and warm intros from your network.',
-        'Job alerts and a weekly rhythm so you never start from zero.',
-        'Interview moves that turn screens into real offers.',
+        'Insider job boards that most Pakistani professionals have never heard of',
+        'Direct hiring manager outreach, bypass the application queue entirely',
+        'Company career pages: how to target companies that hire Pakistani talent',
+        '10+ remote job discovery platforms with filters',
+        'Cold outreach scripts: templates that get responses',
+        'Referral and warm introduction tactics, even without existing connections',
+        'The weekly job hunt workflow: exactly how many applications, what platforms, what days',
       ],
       image: '/assets/ss4.png',
-      imageAlt: 'Remote Job Success',
+      imageAlt: 'Remote job hunting methods',
     },
     {
       number: '4',
-      title: 'LinkedIn: $3K+/Month Remote Job Hunting',
-      bgGradient:
-        'bg-gradient-to-br from-white via-green-50/40 to-emerald-100/30',
+      title: 'LinkedIn for $3,000+/Month',
+      subtitle: '"Recruiters start finding you. Your DMs start moving. Your profile converts visitors to conversations."',
+      bgGradient: 'bg-gradient-to-br from-white via-green-50/40 to-emerald-100/30',
       items: [
         'Personal brand: story, proof, clear who you help.',
         'Niche formula so you are not another generalist.',
@@ -86,73 +95,74 @@ export default function RemotePage() {
         'Networking and cold DMs: comments, intros, one angle, one ask.',
       ],
       image: '/assets/gif/4.png',
-      imageAlt: 'LinkedIn personal brand content and outreach',
+      imageAlt: 'LinkedIn for remote income',
     },
     {
       number: '5',
-      title: 'Crack Upwork like a Pro',
-      bgGradient:
-        'bg-gradient-to-br from-white via-orange-50/40 to-amber-100/30',
+      title: 'Crack Upwork Like a Pro',
+      subtitle: '"Profile live, niche set, first proposal sent using the winning formula — this week"',
+      bgGradient: 'bg-gradient-to-br from-white via-orange-50/40 to-amber-100/30',
       items: [
-        'Build a killer profile around photo and title and skills and trust.',
-        'Write an overview that sells your offer and proof in one fast read.',
-        'Show portfolio proof with samples and numbers and short blurbs only.',
-        'Skip junk invites and fight for roles that truly fit you.',
-        'Use premium packages and price floors and walk away from cheap work.',
-        'Send proposals that stack hook and proof and plan and one clear next step.',
-        'Stay strict on search fit while you grow from small wins to four-K months.',
+        'Build a killer profile: photo, title, skills, and trust signals — all optimized',
+        'Write an overview that sells your offer and proof in one fast read',
+        'Show portfolio proof with samples, numbers, and short blurbs',
+        'Skip low-quality invites and bid only on roles that truly fit',
+        'Set premium packages and price floors — never race to the bottom',
+        'Write proposals with a strong hook, proof, plan, and one clear next step',
+        'Scale from early wins to $4,000+/month with a disciplined search process',
       ],
       image: '/assets/gif/3.png',
-      imageAlt: 'Upwork profile proposals and premium pricing',
+      imageAlt: 'Upwork profile and proposals',
     },
     {
       number: '6',
       title: 'Cracking Remote Interviews',
+      subtitle: '"You walk into any interview knowing exactly what to say, what they\'re evaluating, and how to close the offer"',
       bgGradient: 'bg-gradient-to-br from-white via-rose-50/40 to-pink-100/30',
       items: [
-        'Interviews decoded: what companies test for and how to show up sharp.',
-        'Interview types to prep for: recruiter screen, hiring manager, panel, technical, async.',
-        'STAR method: proven structure to win behavioral and story questions.',
-        'Prep that closes: resources, checklists, and drills built for remote interviews.',
+        'Interview types: recruiter screens, hiring managers, panels, technical, async',
+        'STAR method for behavioral questions, with examples for tech and non-tech roles',
+        'Technical interview preparation: coding challenges, system design, live demos',
+        'HR interview psychology: what they\'re actually looking for beneath the questions',
       ],
       image: '/assets/ss2.png',
-      imageAlt: 'Remote interview prep and STAR method',
+      imageAlt: 'Remote interviews and negotiation',
     },
   ];
 
   const bonuses = [
     {
-      image: '/assets/direct.png',
-      imageAlt: 'Direct mentorship with Talha',
-      title: 'Ask Me Directly',
+      image: '/assets/upwork.png',
+      imageAlt: 'Proposal Playbook',
+      title: '📋 The Proposal Playbook',
       description:
-        'Stuck on your profile, a proposal, or an offer? You get real notes from me, not copy-paste replies.',
+        'Real proposals that won real clients — deconstructed word by word. Copy the structure, adapt the words, send today.',
       highlight: true,
     },
     {
       image: '/assets/image.png',
-      imageAlt: 'Tech Portal dashboard and tools',
-      title: 'Tech Portal (All Your Tools in One Place)',
+      imageAlt: 'Tech Portal AI Career Suite',
+      title: '🤖 The Tech Portal — AI Career Suite',
       description:
-        'LinkedIn and Upwork helpers, resume tools, portfolio space, tracks, interview practice, and application tracking. One login.',
+        '6 AI-powered tools: LinkedIn Profile Optimizer, Upwork Proposal Generator, ATS Resume Builder, Interview Lab, Portfolio Builder, Application Tracker.',
+      highlight: true,
+    },
+    {
+      image: '/assets/direct.png',
+      imageAlt: 'Ask Me Directly mentorship',
+      title: '📩 Bonus 3: Ask Me Directly',
+      description:
+        'Personal feedback from Talha on your profile, proposals, resume, or offer letter.',
       highlight: true,
     },
     {
       image: '/assets/comm.jpeg',
-      imageAlt: 'Community of remote-work learners',
-      title: '700+ Learners With You',
+      imageAlt: 'Remote worker community',
+      title: '👥 The 700+ Remote Worker Community',
       description:
-        'Ask questions, share wins, and stay on track with people doing the same thing.',
+        'Private network: job leads, proposal reviews, accountability.',
       highlight: false,
-    },
-    {
-      image: '/assets/upwork.png',
-      imageAlt: 'Winning Upwork proposals',
-      title: 'My Proposal Playbook',
-      description:
-        'How I wrote proposals that turned chats into paid work. Copy the shape, use your own words.',
-      highlight: true,
-    },
+    }
   ];
 
   const pricingValueItems = [
@@ -163,8 +173,7 @@ export default function RemotePage() {
     },
     {
       title: 'Ready-to-Use Templates',
-      description:
-        'Scripts and layouts I used for real clients. Edit them for you.',
+      description: 'Scripts and layouts I used for real clients. Edit them for you.',
     },
     {
       title: 'Where Global Jobs Really Are',
@@ -180,8 +189,7 @@ export default function RemotePage() {
     },
     {
       title: 'Free Resume Book',
-      description:
-        'Simple layouts that look good to people and to job software.',
+      description: 'Simple layouts that look good to people and to job software.',
     },
   ];
 
@@ -209,7 +217,7 @@ export default function RemotePage() {
       },
       {
         image: '/assets/public.png',
-        imageAlt: 'Remote Work Setup',
+        imageAlt: 'Public speaking',
         title: 'Public Speaking',
       },
     ],
@@ -219,20 +227,56 @@ export default function RemotePage() {
   return (
     <div>
       <HeroSectionRemote />
-      <IsThisForYou points={targetAudiencePoints} />
-
-      <CourseContent modules={modules} />
-      <Testimonials href="/checkout-remote-work" />
-      <Bonuses bonuses={bonuses} />
-      <Pricing
-        originalPrice="50,000"
-        currentPrice="4,497"
-        valueItems={pricingValueItems}
-        discountPercentage="91% OFF"
-        href="/checkout-remote-work"
+      <RemoteProblemSection />
+      {/* <RemoteFalseBeliefsSection /> */}
+      {/* <RemoteStorySection /> */}
+      <IsThisForYou
+        points={targetAudiencePoints}
+        title="Who This Is Built For"
+        subtitle="For professionals in Pakistan who are tired of applying into silence — and ready for a clear, week-by-week system (not more random tips)."
+        bottomText=""
+        notForYouPoints={notForYouPoints}
+        notForYouTitle="This Is NOT For You If —"
+        showCrossSellFooter={false}
       />
-      <FAQ />
+      <CourseContent
+        modules={modules}
+        preLabel="The 6-Week Dollar Income System"
+        heading={
+          <>
+            Course <span className="text-orange-500">Curriculum</span>
+          </>
+        }
+        subheading="Numbered path from foundation to interviews — with clear outcomes after every module."
+        midCtaLabel="ENROLL NOW"
+        midCtaHref="#pricing"
+        midCtaFinePrint="Instant access · Lifetime · 60-Day Remote Offer Guarantee"
+      />
+      {/* <RemoteOpportunitySection /> */}
+      <Testimonials href="/checkout-remote-work" showSuccessStories={false} />
+      {/* <RemoteGuaranteeSection /> */}
+      <Bonuses
+        bonuses={bonuses}
+        sectionTitle={
+          <>
+            Everything That&apos;s Included —{' '}
+            <span className="text-orange-500">What It Would Cost Separately</span>
+          </>
+        }
+        sectionSubtitle="Here's what you get — and what it would cost you separately. Total standalone value: PKR 59,000. Your price today: PKR 4,797 (founding members; price increases as enrollment grows)."
+      />
+      <RemoteInstructorBioSection />
       <AboutMe statsImages={aboutMeData.statsImages} href={aboutMeData.href} />
+      <Pricing
+        originalPrice="59,000"
+        currentPrice="4,797"
+        valueItems={pricingValueItems}
+        discountPercentage="92% OFF"
+        href="/checkout-remote-work"
+        showCountdown={false}
+      />
+      {/* <RemoteFinalCtaSection /> */}
+      <FAQ faqs={remoteWorkFaqs} intro="Straight answers about skills, time, refunds, and the Tech Portal." />
       <Footer />
       <StickyBottomButton />
     </div>

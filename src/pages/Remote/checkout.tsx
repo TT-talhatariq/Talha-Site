@@ -221,13 +221,13 @@ export default function CheckoutRemoteWork() {
                     <span className="font-semibold">PKR 50,000</span>
                   </div>
                   <div className="flex justify-between text-blue-600">
-                    <span>Discount (91% OFF)</span>
-                    <span>-PKR 45,503</span>
+                    <span>Discount (90% OFF)</span>
+                    <span>-PKR 45,203</span>
                   </div>
                   <hr className="border-gray-200" />
                   <div className="flex justify-between text-xl font-bold">
                     <span>Total</span>
-                    <span className="text-blue-600">PKR 4,497</span>
+                    <span className="text-blue-600">PKR 4,797</span>
                   </div>
                 </div>
               </div>

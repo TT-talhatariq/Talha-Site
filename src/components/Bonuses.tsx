@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { type ReactNode } from 'react';
 import Image from 'next/image';
 
 interface Bonus {
@@ -9,7 +9,17 @@ interface Bonus {
   highlight?: boolean;
 }
 
-const Bonuses = ({ bonuses }: { bonuses: Bonus[] }) => {
+interface BonusesProps {
+  bonuses: Bonus[];
+  sectionTitle?: ReactNode;
+  sectionSubtitle?: string;
+}
+
+const Bonuses = ({
+  bonuses,
+  sectionTitle,
+  sectionSubtitle,
+}: BonusesProps) => {
  
 
 

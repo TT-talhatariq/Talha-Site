@@ -1,93 +1,78 @@
 'use client';
+
+import Link from 'next/link';
 import React from 'react';
+
 import NavBar from './NavBar';
 
-
-const HeroSection = () => {
-  return (  
+const HeroSectionRemote = () => {
+  return (
     <>
-    <NavBar
-      href="/checkout-remote-work"
-    />
-    <section className="relative bg-gradient-to-br from-white via-blue-50/30 to-orange-100/50 overflow-hidden">
-      {/* Enhanced background elements */}
-      <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-200/40 via-blue-100/30 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tl from-orange-200/50 via-orange-100/40 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
-      <div className="absolute top-1/2 left-1/3 w-[400px] h-[400px] bg-gradient-to-r from-purple-100/30 to-pink-100/30 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse animation-delay-4000"></div>
-      
+      <NavBar href="#pricing" />
 
-      
-      <div className="relative z-10 container mx-auto py-8">
-        {/* Centered content layout */}
-        <div className="container mx-auto px-4 py-2 lg:py-12">
-          <div className="flex flex-col lg:flex-row items-center lg:justify-between">
-            <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
-              <div className="space-y-2">
-                <p className="text-blue-600 text-sm font-semibold tracking-wide uppercase">
-                  WORK GLOBALLY & EARN IN USD
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-orange-100/50">
+        <div className="absolute top-0 left-0 h-[600px] w-[600px] animate-pulse rounded-full bg-gradient-to-br from-blue-200/40 via-blue-100/30 to-transparent mix-blend-multiply opacity-60 blur-3xl filter"></div>
+        <div className="animation-delay-2000 absolute bottom-0 right-0 h-[500px] w-[500px] animate-pulse rounded-full bg-gradient-to-tl from-orange-200/50 via-orange-100/40 to-transparent mix-blend-multiply opacity-50 blur-3xl filter"></div>
+        <div className="animation-delay-4000 absolute top-1/2 left-1/3 h-[400px] w-[400px] animate-pulse rounded-full bg-gradient-to-r from-purple-100/30 to-pink-100/30 mix-blend-multiply opacity-40 blur-3xl filter"></div>
+
+        <div className="relative z-10 container mx-auto py-8">
+          <div className="container mx-auto px-4 py-2 lg:py-12">
+            <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:justify-between">
+              <div className="w-full space-y-6 text-center lg:w-1/2 lg:text-left">
+                <p className="text-sm font-semibold uppercase tracking-wide text-blue-600">
+                  For Pakistani professionals with real skills
                 </p>
-                <h1 className="text-3xl lg:text-5xl font-bold leading-tight text-gray-900">
-                  Land <span className="text-orange-500">Remote Jobs</span> & Earn <span className="text-green-600">$1500-$5000</span> Monthly through <span className="text-blue-600">Upwork, LinkedIn</span> & <span className="text-orange-500">Global Companies</span>
+                <h1 className="text-3xl font-bold leading-tight text-gray-900 lg:text-5xl">
+                  The Reason You&apos;re Not Earning Remotely
+                  <br />
+                  <span className="text-orange-500">Has Nothing to Do With Your Skills</span>
                 </h1>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                Learn proven strategies to work from Pakistan for <span className="text-blue-600 font-semibold">international clients</span>
+                <p className="text-lg leading-relaxed text-gray-600 lg:text-xl">
+                  It&apos;s your visibility. Your positioning. Your approach. This 6-week system
+                  fixes all three and will help you land{' '}
+                  <span className="font-bold text-gray-900">$1,000–$5,000/month</span>
+                  {' '}
+                  in remote income without leaving Pakistan.
+                </p>
+                <div className="flex flex-col items-center gap-3 sm:flex-row lg:items-start">
+                  <Link
+                    href="#pricing"
+                    className="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-4 text-center text-base font-bold text-white shadow-lg transition hover:bg-blue-700"
+                  >
+                    Start Right Now
+                  </Link>
+                </div>
+                <p className="text-sm text-gray-500">
+                  Lifetime Access · Instant Enrollment
                 </p>
               </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing');
-                    pricingSection?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg lg-mb:0 mb-6"
-                >
-                 START RIGHT NOW
-                </button>
-              </div>
-              
-              {/* <p className="text-sm text-gray-500 italic">
-                Join today and lock in for the lowest-ever price
-              </p> */}
-{/*               
-              <div className="flex items-center justify-center lg:justify-start space-x-12">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-orange-500">36k+</div>
-                  <div className="text-gray-600 text-sm">Trusted By</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-orange-500">9+</div>
-                  <div className="text-gray-600 text-sm">Latest Modules</div>
-                </div>
-              </div> */}
-            </div>
-            
-            <div className="lg:w-1/2 flex justify-end">
-              <div className="relative">
-                <div className="bg-white rounded-2xl p-1 shadow-xl border border-gray-200">
-                  <div className="rounded-xl overflow-hidden">
-                    <iframe
-                      width="560"
-                      height="325"
-                      className="w-full aspect-video rounded-lg"
-                      title="Remote Work Masterclass Preview"
-                      src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0"
-                      loading="eager"
-                      allow="autoplay; encrypted-media; picture-in-picture; fullscreen; web-share; clipboard-write"
-                      allowFullScreen
-                      frameBorder="0"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                    />
+
+              <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
+                <div className="relative">
+                  <div className="rounded-2xl border border-gray-200 bg-white p-1 shadow-xl">
+                    <div className="overflow-hidden rounded-xl">
+                      <iframe
+                        width="560"
+                        height="325"
+                        className="aspect-video w-full rounded-lg"
+                        title="Remote Work Masterclass Preview"
+                        src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0"
+                        loading="eager"
+                        allow="autoplay; encrypted-media; picture-in-picture; fullscreen; web-share; clipboard-write"
+                        allowFullScreen
+                        frameBorder="0"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };
 
-export default HeroSection;
+export default HeroSectionRemote;
