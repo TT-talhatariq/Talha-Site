@@ -14,6 +14,7 @@ import {
   RemoteOpportunitySection,
   RemoteProblemSection,
   RemoteStorySection,
+  RemoteToolsSection,
 } from '@/components/remote/RemoteMarketingSections';
 import StickyBottomButton from '@/components/StickyBottomButton';
 import Testimonials from '@/components/Testimonials';
@@ -252,6 +253,7 @@ export default function RemotePage() {
         midCtaHref="#pricing"
         midCtaFinePrint="Instant access · Lifetime · 60-Day Remote Offer Guarantee"
       />
+      <RemoteToolsSection />
       {/* <RemoteOpportunitySection /> */}
       <Testimonials href="/checkout-remote-work" showSuccessStories={false} />
       {/* <RemoteGuaranteeSection /> */}

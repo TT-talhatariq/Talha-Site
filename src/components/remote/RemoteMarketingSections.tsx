@@ -251,6 +251,261 @@ export function RemoteGuaranteeSection() {
   );
 }
 
+export function RemoteToolsSection() {
+  const tools = [
+    {
+      number: '01',
+      title: 'LinkedIn Profile Optimizer',
+      description:
+        'Turn your profile into a remote-recruiter magnet. AI rewrites your headline, About section, and experience bullets — tailored to the exact role you want.',
+      includes: [
+        'Headline Generator',
+        'Summary Optimizer',
+        'Experience Rewriter',
+        'Roast My LinkedIn',
+      ],
+      accent: 'from-blue-500 to-indigo-500',
+      iconBg: 'bg-blue-500/10 text-blue-400',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+          <rect x="2" y="2" width="20" height="20" rx="4" />
+          <path d="M7 10v7" />
+          <circle cx="7" cy="7" r="1.2" />
+          <path d="M12 17v-4a2.5 2.5 0 0 1 5 0v4" />
+          <path d="M12 10v7" />
+        </svg>
+      ),
+    },
+    {
+      number: '02',
+      title: 'Upwork Proposal Generator',
+      description:
+        'Paste a job description. Get a tailored, copy-paste-ready proposal in under 2 minutes. No more staring at a blank box.',
+      accent: 'from-emerald-500 to-teal-500',
+      iconBg: 'bg-emerald-500/10 text-emerald-400',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+          <path d="M4 4h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+          <path d="M14 4v6h6" />
+          <path d="M7 14h8" />
+          <path d="M7 18h6" />
+        </svg>
+      ),
+    },
+    {
+      number: '03',
+      title: 'ATS Resume Builder',
+      description:
+        'Resumes that pass Applicant Tracking Systems and impress hiring managers. Structure, keywords, formatting — handled.',
+      accent: 'from-orange-500 to-amber-500',
+      iconBg: 'bg-orange-500/10 text-orange-400',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+          <rect x="5" y="3" width="14" height="18" rx="2" />
+          <path d="M9 8h6" />
+          <path d="M9 12h6" />
+          <path d="M9 16h4" />
+        </svg>
+      ),
+    },
+    {
+      number: '04',
+      title: 'Application Tracker',
+      description:
+        'Every application, interview, and follow-up in one place. Never lose track of where you applied or what to do next.',
+      accent: 'from-purple-500 to-fuchsia-500',
+      iconBg: 'bg-purple-500/10 text-purple-400',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+          <rect x="3" y="5" width="18" height="16" rx="2" />
+          <path d="M3 10h18" />
+          <path d="M8 3v4" />
+          <path d="M16 3v4" />
+          <path d="M8 15h2" />
+          <path d="M14 15h2" />
+        </svg>
+      ),
+    },
+    {
+      number: '05',
+      title: 'Interview Lab',
+      description:
+        'Practice real remote interview questions with AI. Get feedback on your STAR answers, technical explanations, and delivery.',
+      accent: 'from-rose-500 to-pink-500',
+      iconBg: 'bg-rose-500/10 text-rose-400',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+          <rect x="6" y="3" width="12" height="14" rx="6" />
+          <path d="M5 11a7 7 0 0 0 14 0" />
+          <path d="M12 18v3" />
+          <path d="M8 21h8" />
+        </svg>
+      ),
+    },
+    {
+      number: '06',
+      title: 'Career Roadmaps',
+      description:
+        'Step-by-step paths for frontend, backend, design, writing, marketing — updated for what global employers actually hire for in 2026.',
+      accent: 'from-cyan-500 to-sky-500',
+      iconBg: 'bg-cyan-500/10 text-cyan-400',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+          <path d="M4 6h10a3 3 0 0 1 0 6H10a3 3 0 0 0 0 6h10" />
+          <circle cx="4" cy="6" r="1.5" />
+          <circle cx="20" cy="18" r="1.5" />
+        </svg>
+      ),
+    },
+  ];
+
+  const extras = [
+    {
+      label: 'Remote Jobs Hub',
+      sub: 'Curated live job board',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+          <rect x="3" y="7" width="18" height="13" rx="2" />
+          <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+          <path d="M3 13h18" />
+        </svg>
+      ),
+    },
+    {
+      label: '370+ ATS-Safe Companies',
+      sub: 'Verified employer database',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+          <path d="M3 21V7l9-4 9 4v14" />
+          <path d="M9 21v-6h6v6" />
+          <path d="M3 11h18" />
+        </svg>
+      ),
+    },
+    {
+      label: 'Upwork Job Tracker',
+      sub: 'Track every proposal you send',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 2" />
+        </svg>
+      ),
+    },
+  ];
+
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-20 text-white lg:py-28">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-60"
+        style={{
+          backgroundImage:
+            'radial-gradient(60% 50% at 15% 10%, rgba(59,130,246,0.18), transparent 70%), radial-gradient(50% 40% at 90% 90%, rgba(249,115,22,0.14), transparent 70%)',
+        }}
+      />
+      <div className="pointer-events-none absolute inset-0 [background-image:linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)]" />
+
+      <div className="container relative mx-auto max-w-6xl px-4">
+        <div className="mb-14 text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-blue-300 backdrop-blur">
+            <span className="h-1.5 w-1.5 rounded-full bg-blue-400" />
+            The Tools Inside RemoteOS
+          </span>
+          <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-bold leading-tight lg:text-5xl">
+            Six AI-powered tools.
+            <br className="hidden sm:block" />{' '}
+            <span className="bg-gradient-to-r from-orange-400 via-orange-300 to-amber-300 bg-clip-text text-transparent">
+              Built for one job: getting you hired.
+            </span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-slate-300 lg:text-lg">
+            Your entire job-hunt workflow — profile, proposals, resume, interviews, and tracking — unified in one AI-powered workspace.
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {tools.map((tool) => (
+            <article
+              key={tool.number}
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-[0_1px_0_0_rgba(255,255,255,0.04)_inset] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.06]"
+            >
+              <div
+                className={`pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r ${tool.accent} opacity-60`}
+              />
+              <div className="mb-5 flex items-center justify-between">
+                <div
+                  className={`flex h-11 w-11 items-center justify-center rounded-xl ${tool.iconBg} ring-1 ring-white/10`}
+                >
+                  {tool.icon}
+                </div>
+                <span className="font-mono text-xs tracking-widest text-slate-500">
+                  {tool.number}
+                </span>
+              </div>
+
+              <h3 className="mb-2 text-lg font-semibold text-white">
+                {tool.title}
+              </h3>
+              <p className="mb-4 text-sm leading-relaxed text-slate-300">
+                {tool.description}
+              </p>
+
+              {tool.includes && (
+                <div className="mt-auto">
+                  <p className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-slate-500">
+                    Includes
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {tool.includes.map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-medium text-slate-200"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-r from-white/[0.04] via-white/[0.06] to-white/[0.04] p-6 lg:p-7">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-center gap-3">
+              <span className="inline-flex h-8 items-center rounded-full bg-orange-500/15 px-3 text-xs font-bold uppercase tracking-widest text-orange-300 ring-1 ring-orange-400/30">
+                Plus
+              </span>
+              <p className="text-sm font-medium text-slate-300 lg:text-base">
+                More resources bundled inside the Tech Portal:
+              </p>
+            </div>
+            <div className="grid w-full gap-3 sm:grid-cols-3 lg:w-auto lg:gap-4">
+              {extras.map((extra) => (
+                <div
+                  key={extra.label}
+                  className="flex items-center gap-3 rounded-xl border border-white/10 bg-slate-900/50 px-4 py-3"
+                >
+                  <span className="flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-white/5 text-orange-300 ring-1 ring-white/10">
+                    {extra.icon}
+                  </span>
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold text-white">
+                      {extra.label}
+                    </p>
+                    <p className="truncate text-xs text-slate-400">{extra.sub}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function RemoteInstructorBioSection() {
   const credentialTags = [
     'Founder — Ownex Labs',
