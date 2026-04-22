@@ -218,7 +218,7 @@ export function WebDevFinalCtaSection({
           href={checkoutHref}
           className="mb-8 inline-flex items-center justify-center rounded-full bg-orange-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-orange-600"
         >
-          ENROLL NOW — PKR 3,897
+          ENROLL NOW — PKR 4,497
         </Link>
         <ul className="mb-6 space-y-2 text-left text-sm text-slate-300">
           <li>✓ 6-Week Web Dev + Income System</li>
@@ -231,7 +231,7 @@ export function WebDevFinalCtaSection({
         </ul>
         <p className="mb-8 text-slate-300">
           <span className="line-through">Total Value: PKR 53,000</span>{' '}
-          <span className="font-bold text-white">Your Price: PKR 3,897</span>
+          <span className="font-bold text-white">Your Price: PKR 4,497</span>
         </p>
         <p className="text-sm text-slate-400">
           Secure Checkout · 7-Day Refund · 30-Day First Client Guarantee · Lifetime

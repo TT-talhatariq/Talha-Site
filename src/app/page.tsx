@@ -12,7 +12,7 @@ export default function Home() {
       subtitle: 'Complete Frontend & Backend Course',
       description:
         'Stop watching endless tutorials that lead nowhere! Learn the EXACT skills that got me $4000+ monthly clients. Build 15+ real projects and discover the 9 proven methods I use to earn consistently online.',
-      price: 'PKR 3,897',
+      price: 'PKR 4,497',
       features: [
         '🚀 15+ Real Projects (Not Boring Tutorials!)',
         '💻 Full Stack Web Dev Mastery',
