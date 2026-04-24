@@ -47,6 +47,7 @@ const HeroSectionRemote = () => {
                 </p>
               </div>
 
+              {/*
               <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
                 <div className="relative">
                   <div className="rounded-2xl border border-gray-200 bg-white p-1 shadow-xl">
@@ -67,6 +68,7 @@ const HeroSectionRemote = () => {
                   </div>
                 </div>
               </div>
+              */}
             </div>
           </div>
         </div>
