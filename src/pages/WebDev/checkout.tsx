@@ -43,11 +43,8 @@ export default function CheckoutWebDev() {
       // Create form data for OCR API
       const ocrFormData = new FormData();
       ocrFormData.append('file', file);
-      ocrFormData.append('apikey', 'K87899142388957'); // Free OCR.space API key
-      ocrFormData.append('language', 'eng');        
-      ocrFormData.append('isOverlayRequired', 'false');
 
-      const response = await fetch('https://api.ocr.space/parse/image', {
+      const response = await fetch('/api/ocr', {
         method: 'POST',
         body: ocrFormData
       });
@@ -100,8 +97,6 @@ export default function CheckoutWebDev() {
     setIsProcessing(true);
     
     try {
-      let ocrVerified = false;
-      
       // Process OCR validation if screenshot exists
       if (formData.screenshot) {
         const ocrValid = await processOCR(formData.screenshot);
@@ -110,7 +105,6 @@ export default function CheckoutWebDev() {
           setErrors(prev => ([ ...prev, 'We couldn\'t verify this payment screenshot. If this is a mistake, please send your details along with the screenshot via WhatsApp at 0325-7460090.' ] as string []));
           return;
         }
-        ocrVerified = true;
       }
       
       // Send enrollment email - keep processing state active

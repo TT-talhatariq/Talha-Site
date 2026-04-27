@@ -48,11 +48,8 @@ export default function CheckoutRemoteWork() {
       // Create form data for OCR API
       const ocrFormData = new FormData();
       ocrFormData.append('file', file);
-      ocrFormData.append('apikey', 'K87899142388957'); // Free OCR.space API key
-      ocrFormData.append('language', 'eng');
-      ocrFormData.append('isOverlayRequired', 'false');
 
-      const response = await fetch('https://api.ocr.space/parse/image', {
+      const response = await fetch('/api/ocr', {
         method: 'POST',
         body: ocrFormData,
       });
