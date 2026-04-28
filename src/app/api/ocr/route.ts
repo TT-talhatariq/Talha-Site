@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
 
     const ocrFormData = new FormData();
     ocrFormData.append('file', formData.get('file') as Blob);
-    ocrFormData.append('apikey', 'K87899142388957');
+    ocrFormData.append('apikey', process.env.OCR_API_KEY!);
     ocrFormData.append('language', 'eng');
     ocrFormData.append('isOverlayRequired', 'false');
 
