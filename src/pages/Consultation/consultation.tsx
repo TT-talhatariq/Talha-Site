@@ -66,7 +66,7 @@ export default function ConsultationPage() {
                 <span className="text-sm font-bold text-green-700">⏱️ 30 Minutes</span>
               </div>
               <div className="bg-blue-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-blue-200/50 shadow-sm">
-                <span className="text-sm font-bold text-blue-700">💰 PKR 2,999</span>
+                <span className="text-sm font-bold text-blue-700">💰 PKR 3,499</span>
               </div>
               <div className="bg-orange-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-orange-200/50 shadow-sm">
                 <span className="text-sm font-bold text-orange-700">🎯 Personalized</span>
@@ -143,7 +143,7 @@ export default function ConsultationPage() {
                 {/* Pricing */}
                 <div className="bg-white/80 rounded-2xl p-6 border border-blue-200 max-w-md mx-auto">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-blue-600 mb-2">PKR 2,999</div>
+                    <div className="text-4xl font-bold text-blue-600 mb-2">PKR 3,499</div>
                     <div className="text-gray-600">for 30 minutes</div>
                   </div>
                 </div>
