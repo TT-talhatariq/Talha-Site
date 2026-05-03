@@ -78,7 +78,7 @@ const webDevFaqs: FaqItem[] = [
   {
     question: "What's the refund policy?",
     answer:
-      '7-day no-questions refund from the day of enrollment. And if you complete the course and don\'t land your first client within 30 days — I work with you 1-on-1 until you do. If that still doesn\'t work, full refund.',
+      '7-day no-questions refund from the day of enrollment.',
   },
   {
     question: 'Do I get lifetime access?',
@@ -121,7 +121,7 @@ const remoteWorkFaqs: FaqItem[] = [
   {
     question: 'What\'s the refund policy?',
     answer:
-      'Two layers: 7-day no-questions refund if you change your mind early. And a 60-Day Remote Offer Guarantee — complete the steps, get a result, or get refunded.',
+      '7-day no-questions refund if you change your mind early.',
   },
   {
     question: 'Is this course only for developers?',
