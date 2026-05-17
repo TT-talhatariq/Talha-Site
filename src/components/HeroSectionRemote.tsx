@@ -47,19 +47,19 @@ const HeroSectionRemote = () => {
                 </p>
               </div>
 
-              {/*
+              
               <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
                 <div className="relative">
                   <div className="rounded-2xl border border-gray-200 bg-white p-1 shadow-xl">
                     <div className="overflow-hidden rounded-xl">
                       <iframe
                         width="560"
-                        height="325"
+                        height="315"
                         className="aspect-video w-full rounded-lg"
-                        title="Remote Work Masterclass Preview"
-                        src="https://www.youtube.com/embed/AMnbOT1UAf8?autoplay=1&mute=1&modestbranding=1&rel=0&showinfo=0"
+                        title="YouTube video player"
+                        src="https://www.youtube.com/embed/hmfXLf-C2Lo?si=lS48HDkUOdhhLOZi"
                         loading="eager"
-                        allow="autoplay; encrypted-media; picture-in-picture; fullscreen; web-share; clipboard-write"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                         frameBorder="0"
                         referrerPolicy="strict-origin-when-cross-origin"
@@ -68,7 +68,7 @@ const HeroSectionRemote = () => {
                   </div>
                 </div>
               </div>
-              */}
+             
             </div>
           </div>
         </div>

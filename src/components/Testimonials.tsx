@@ -83,7 +83,7 @@ const Testimonials = ({
                 <span className="text-xl" aria-hidden>
                   📍
                 </span>
-                <span>See 25+ reviews on Google Maps</span>
+                <span>See 54+ reviews on Google Maps</span>
                 <span className="text-sm font-normal opacity-90" aria-hidden>
                   ↗
                 </span>
