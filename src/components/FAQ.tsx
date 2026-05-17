@@ -145,6 +145,82 @@ const remoteWorkFaqs: FaqItem[] = [
   },
 ];
 
+const upworkFaqs: FaqItem[] = [
+  {
+    question: 'I already have an Upwork profile and get no responses. Will this help?',
+    answer:
+      'That\'s exactly who this course is for. Most profiles fail for the same fixable reasons — a weak title, an overview that lists skills instead of selling outcomes, and proposals with no hook. The course rebuilds all three with the formula that actually wins clients.',
+  },
+  {
+    question: 'Do I need experience or existing clients to start?',
+    answer:
+      'No. Module 3 shows you how to build portfolio proof even with zero paid clients — using sample work, numbers, and short result blurbs. Clients hire demonstrated capability, not just history.',
+  },
+  {
+    question: 'How long does it take to complete?',
+    answer:
+      'It\'s a focused 4-week system at 1–2 hours per day. It\'s self-paced — your profile can be live and your first proposals sent within the first week.',
+  },
+  {
+    question: 'Is the Upwork Proposal Generator a separate subscription?',
+    answer:
+      'No. It\'s included free with enrollment. Paste a job description and get a tailored, copy-paste-ready proposal in under 2 minutes — yours for as long as you\'re a student.',
+  },
+  {
+    question: 'What if my niche isn\'t development?',
+    answer:
+      'The system works for any Upwork category — design, writing, marketing, virtual assistance, data, video. The profile and proposal formulas are skill-agnostic.',
+  },
+  {
+    question: 'What\'s the refund policy?',
+    answer:
+      '7-day no-questions refund from the day of enrollment.',
+  },
+  {
+    question: 'Do I get lifetime access?',
+    answer:
+      'Yes. One payment, access forever — including every future update to the course.',
+  },
+];
+
+const linkedinFaqs: FaqItem[] = [
+  {
+    question: 'My LinkedIn gets no recruiter messages. Can this fix that?',
+    answer:
+      'Yes — that\'s the whole point of the course. Recruiters and clients don\'t message profiles that read like a resume. You\'ll rebuild your headline, About section, and Featured area so your profile converts visitors into conversations.',
+  },
+  {
+    question: 'Do I need a big following to make this work?',
+    answer:
+      'No. The 3C model is built for people starting from a small or inactive profile. Opportunities come from a clear message and a steady posting rhythm — not follower count.',
+  },
+  {
+    question: 'I\'m not comfortable posting content. Is that a problem?',
+    answer:
+      'No. The content module gives you hook formulas, real-lesson templates, and a soft-ask structure so posting feels natural — not like bragging. You start small and build a steady pace.',
+  },
+  {
+    question: 'How long does it take to complete?',
+    answer:
+      'A focused 4-week system at 1–2 hours per day, fully self-paced. Your optimized profile can be live within the first few days.',
+  },
+  {
+    question: 'Is the LinkedIn Profile Optimizer a separate subscription?',
+    answer:
+      'No. It\'s included free with enrollment. The AI tool rewrites your headline, About section, and experience bullets — tailored to the exact role or clients you want.',
+  },
+  {
+    question: 'What\'s the refund policy?',
+    answer:
+      '7-day no-questions refund from the day of enrollment.',
+  },
+  {
+    question: 'Do I get lifetime access?',
+    answer:
+      'Yes. Pay once, access forever — every update and new lesson included.',
+  },
+];
+
 interface FAQProps {
   faqs?: FaqItem[];
   intro?: string;
@@ -229,4 +305,4 @@ const FAQ = ({ faqs, intro }: FAQProps) => {
 };
 
 export default FAQ;
-export { remoteWorkFaqs, webDevFaqs };
+export { remoteWorkFaqs, webDevFaqs, upworkFaqs, linkedinFaqs };

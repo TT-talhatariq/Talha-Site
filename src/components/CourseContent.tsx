@@ -26,8 +26,9 @@ export interface CourseModule {
   items: string[];
   /** default = checkmark left of each line. stacked-with-separator = title, then centered ✅ between items (like a vertical checklist). */
   itemsLayout?: 'default' | 'stacked-with-separator';
-  image: string;
-  imageAlt: string;
+  /** Optional module illustration. When omitted, the module text spans the full width. */
+  image?: string;
+  imageAlt?: string;
   bgGradient: string;
 }
 
@@ -106,7 +107,9 @@ const CourseContent = ({
                 className={`${module.bgGradient} rounded-3xl border border-white/50 p-4 shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-[1.01] hover:shadow-xl lg:p-8`}
               >
                 <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
-                  <div className="space-y-6 lg:w-1/2">
+                  <div
+                    className={`space-y-6 ${module.image ? 'lg:w-1/2' : 'lg:w-full'}`}
+                  >
                     <button
                       type="button"
                       id={`course-module-trigger-${index}`}
@@ -164,27 +167,29 @@ const CourseContent = ({
                     </div>
                   </div>
 
-                  <div
-                    className={`flex justify-center lg:w-1/2 ${open ? 'flex' : 'hidden lg:flex'}`}
-                  >
-                    <div className="relative w-full max-w-lg lg:max-w-xl">
-                      <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-blue-400/30 via-blue-300/20 to-transparent opacity-60 blur-sm"></div>
-                      <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-orange-400/20 via-orange-300/15 to-transparent opacity-40 blur-md"></div>
+                  {module.image && (
+                    <div
+                      className={`flex justify-center lg:w-1/2 ${open ? 'flex' : 'hidden lg:flex'}`}
+                    >
+                      <div className="relative w-full max-w-lg lg:max-w-xl">
+                        <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-blue-400/30 via-blue-300/20 to-transparent opacity-60 blur-sm"></div>
+                        <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-orange-400/20 via-orange-300/15 to-transparent opacity-40 blur-md"></div>
 
-                      <div className="relative aspect-video overflow-hidden rounded-2xl border border-gray-200/50 bg-white shadow-xl backdrop-blur-sm">
-                        <Image
-                          src={module.image}
-                          alt={module.imageAlt}
-                          className="h-full w-full object-cover"
-                          width={700}
-                          height={500}
-                        />
+                        <div className="relative aspect-video overflow-hidden rounded-2xl border border-gray-200/50 bg-white shadow-xl backdrop-blur-sm">
+                          <Image
+                            src={module.image}
+                            alt={module.imageAlt ?? ''}
+                            className="h-full w-full object-cover"
+                            width={700}
+                            height={500}
+                          />
+                        </div>
+
+                        <div className="animation-delay-1000 absolute -top-3 -left-3 h-4 w-4 animate-pulse rounded-full bg-gradient-to-br from-blue-400 to-purple-400 opacity-40"></div>
+                        <div className="absolute -right-3 -bottom-3 h-6 w-6 animate-pulse rounded-full bg-gradient-to-br from-orange-400 to-red-400 opacity-30"></div>
                       </div>
-
-                      <div className="animation-delay-1000 absolute -top-3 -left-3 h-4 w-4 animate-pulse rounded-full bg-gradient-to-br from-blue-400 to-purple-400 opacity-40"></div>
-                      <div className="absolute -right-3 -bottom-3 h-6 w-6 animate-pulse rounded-full bg-gradient-to-br from-orange-400 to-red-400 opacity-30"></div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             );

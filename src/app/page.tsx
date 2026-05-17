@@ -54,6 +54,52 @@ export default function Home() {
       originalPrice: '50,000',
       discount: '90% OFF',
     },
+    {
+      id: 3,
+      title: 'Upwork Mastery — Win Clients & Land $1,000+ Projects',
+      subtitle: 'Crack Upwork Like a Pro',
+      description:
+        'STOP sending proposals into the void! A focused 4-week system to build a profile that converts and proposals that get replies — so you land your first $1,000+ client instead of competing on price.',
+      price: 'PKR 1,997',
+      features: [
+        '💼 The Upwork Client System (6 Modules)',
+        '✍️ Proposals That Get Replies in 48 Hours',
+        '🎯 A Profile That Reads Like a $1,000+ Freelancer',
+        '📋 The Proposal Playbook (Real Winning Proposals)',
+        '🤖 AI Upwork Proposal Generator Included',
+        '💰 Premium Pricing — Never Race to the Bottom',
+        '⭐ Clear Path to Top Rated & $4,000+/Month',
+      ],
+      image: '/assets/gif/3.png',
+      bgGradient: 'from-amber-50/40 via-orange-50/30 to-yellow-50/20',
+      badgeColor: 'bg-blue-600',
+      link: '/upwork',
+      originalPrice: '20,000',
+      discount: '90% OFF',
+    },
+    {
+      id: 4,
+      title: 'LinkedIn Mastery — Your Profile as a Client Magnet',
+      subtitle: 'Turn Views Into DMs',
+      description:
+        'Your LinkedIn is online — but invisible. A focused system to build a profile that turns views into DMs and a content rhythm that brings $3,000+/month opportunities straight to you.',
+      price: 'PKR 1,997',
+      features: [
+        '🔗 The LinkedIn Magnet System (6 Modules)',
+        '🧲 A Profile That Turns Views Into DMs',
+        '🎯 Niche & Positioning So You Stand Out',
+        '📝 Headline & About Templates Pack',
+        '🤖 AI LinkedIn Profile Optimizer Included',
+        '📈 A Content Rhythm You Can Actually Keep',
+        '🤝 Cold DM & Networking Scripts That Get Replies',
+      ],
+      image: '/assets/gif/4.png',
+      bgGradient: 'from-sky-50/40 via-blue-50/30 to-indigo-50/20',
+      badgeColor: 'bg-blue-600',
+      link: '/linkedin',
+      originalPrice: '20,000',
+      discount: '90% OFF',
+    },
   ];
 
   return (
