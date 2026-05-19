@@ -1,12 +1,43 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
+// Course slugs map to the routes /<slug>, /checkout-<slug>, /thank-you-<slug>
+const COURSES = [
+  { slug: 'web-dev', name: 'Web Development course' },
+  { slug: 'remote-work', name: 'Remote Work Mastery course' },
+  { slug: 'upwork', name: 'Upwork Mastery course' },
+  { slug: 'linkedin', name: 'LinkedIn Mastery course' },
+  { slug: 'consultation', name: '1-on-1 consultation' },
+];
+
+// Builds a WhatsApp message tailored to the course and page the user is on.
+const getWhatsAppMessage = (pathname: string): string => {
+  const path = pathname.toLowerCase();
+  const course = COURSES.find((c) => path.includes(c.slug));
+
+  if (!course) {
+    return "Hi Talha! I'm interested in your courses and want to start right now. Can you help me get started?";
+  }
+
+  if (path.includes('thank-you')) {
+    return `Hi Talha! I just enrolled in the ${course.name} and need help getting access.`;
+  }
+
+  if (path.includes('checkout')) {
+    return `Hi Talha! I'm enrolling in the ${course.name} and need help completing my enrollment.`;
+  }
+
+  return `Hi Talha! I'm interested in your ${course.name} and want to start right now. Can you help me get started?`;
+};
+
 const StickyBottomButton = () => {
+  const pathname = usePathname() ?? '';
+
   const handleWhatsAppClick = () => {
     const phoneNumber = '923257367496'; // Replace with your actual WhatsApp number
-    const message =
-      "Hi Talha! I'm interested in your course and want to start right now. Can you help me get started?";
+    const message = getWhatsAppMessage(pathname);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

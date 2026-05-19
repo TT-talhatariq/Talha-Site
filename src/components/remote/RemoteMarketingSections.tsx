@@ -501,6 +501,21 @@ export function RemoteToolsSection() {
             </div>
           </div>
         </div>
+
+        <div className="mt-12">
+          <p className="mb-5 text-center text-sm font-medium text-slate-400">
+            A look inside the Tech Portal
+          </p>
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-2 shadow-2xl ring-1 ring-white/10">
+            <Image
+              src="/assets/portal.png"
+              alt="Inside the Tech Portal — the AI career tools dashboard"
+              width={1510}
+              height={802}
+              className="h-auto w-full rounded-xl"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -616,7 +631,7 @@ export function RemoteFinalCtaSection({
         </ul>
         <p className="mb-8 text-slate-300">
           <span className="line-through">Total Value: PKR 59,000</span>{' '}
-          <span className="font-bold text-white">Your Price: PKR 4,797</span>
+          <span className="font-bold text-white">Your Price: PKR 3,997</span>
         </p>
         <p className="text-sm text-slate-400">
           Secure Checkout · 7-Day Refund · 60-Day Remote Offer Guarantee · Lifetime Access

@@ -36,7 +36,7 @@ export default function Home() {
       subtitle: 'Work Globally & Earn in USD',
       description:
         "TIRED of earning peanuts while your skills are worth GOLD? Break free from local salary limits! I'll show you the EXACT system I used to land $3000+ USD remote jobs and work with global clients from my bedroom.",
-      price: 'PKR 4,797',
+      price: 'PKR 3,997',
       features: [
         '🌍 LinkedIn Hacks That Get You NOTICED',
         '🎯 Niche Selection for Maximum Earnings',
@@ -52,7 +52,7 @@ export default function Home() {
       badgeColor: 'bg-blue-600',
       link: '/remote-work',
       originalPrice: '50,000',
-      discount: '90% OFF',
+      discount: '92% OFF',
     },
     {
       id: 3,
