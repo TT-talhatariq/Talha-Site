@@ -58,7 +58,7 @@ const HeroSection = () => {
                         height="325"
                         className="aspect-video w-full rounded-lg"
                         title="Web Development Masterclass Preview"
-                        src="https://www.youtube.com/embed/LDZd2nud-e8?si=QEUtS01MmNk8Vq6V&start=7"
+                        src="https://www.youtube.com/embed/BGvfFAQJLTU"
                         loading="eager"
                         allow="autoplay; encrypted-media; picture-in-picture; fullscreen; clipboard-write"
                         allowFullScreen

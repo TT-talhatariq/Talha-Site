@@ -11,7 +11,7 @@ const NavBar = ({ href = '#pricing' }: NavBarProps) => {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-orange-400 shadow-sm">
       <div className="bg-orange-500 px-4 py-2 text-center text-sm font-extrabold tracking-wide text-white sm:text-base">
-        🎉 BIG EID DISCOUNT is Live too 🎉
+        🎉 LIMITED TIME DISCOUNT is Live now 🎉
       </div>
       <div className="container mx-auto px-4 py-2 flex items-center justify-between">
         <Link href="/" className="flex items-center">
