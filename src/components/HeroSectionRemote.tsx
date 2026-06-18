@@ -57,7 +57,7 @@ const HeroSectionRemote = () => {
                         height="315"
                         className="aspect-video w-full rounded-lg"
                         title="YouTube video player"
-                        src="https://www.youtube.com/embed/hmfXLf-C2Lo?si=lS48HDkUOdhhLOZi"
+                        src="https://www.youtube.com/embed/fEvjxikCHgQ?si=Rw3ScmVbIEPy8HMA"
                         loading="eager"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
