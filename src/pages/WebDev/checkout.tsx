@@ -206,7 +206,7 @@ export default function CheckoutWebDev() {
                   <hr className="border-gray-200" />
                   <div className="flex justify-between text-xl font-bold">
                     <span>Total</span>
-                    <span className="text-blue-600">PKR 3,897</span>
+                    <span className="text-blue-600">PKR 3,987</span>
                   </div>
                 </div>
 

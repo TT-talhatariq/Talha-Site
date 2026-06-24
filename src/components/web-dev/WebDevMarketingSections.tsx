@@ -231,7 +231,7 @@ export function WebDevFinalCtaSection({
         </ul>
         <p className="mb-8 text-slate-300">
           <span className="line-through">Total Value: PKR 53,000</span>{' '}
-          <span className="font-bold text-white">Your Price: PKR 3,897</span>
+          <span className="font-bold text-white">Your Price: PKR 3,987</span>
         </p>
         <p className="text-sm text-slate-400">
           Secure Checkout · 7-Day Refund · 30-Day First Client Guarantee · Lifetime
