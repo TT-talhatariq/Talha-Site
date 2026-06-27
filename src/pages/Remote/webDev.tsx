@@ -265,13 +265,13 @@ export default function RemotePage() {
             <span className="text-orange-500">What It Would Cost Separately</span>
           </>
         }
-        sectionSubtitle="Here's what you get — and what it would cost you separately. Total standalone value: PKR 59,000. Your price today: PKR 3,997 (founding members; price increases as enrollment grows)."
+        sectionSubtitle="Here's what you get — and what it would cost you separately. Total standalone value: PKR 59,000. Your price today: PKR 4,797 (founding members; price increases as enrollment grows)."
       />
       <RemoteInstructorBioSection />
       <AboutMe statsImages={aboutMeData.statsImages} href={aboutMeData.href} />
       <Pricing
         originalPrice="59,000"
-        currentPrice="3,997"
+        currentPrice="4,797"
         valueItems={pricingValueItems}
         discountPercentage="92% OFF"
         href="/checkout-remote-work"
