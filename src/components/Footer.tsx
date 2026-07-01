@@ -10,7 +10,7 @@ const Footer = () => {
           <path d="M12.017 5.838a6.179 6.179 0 100 12.358 6.179 6.179 0 000-12.358zm0 10.18a4.001 4.001 0 110-8.003 4.001 4.001 0 010 8.003zm7.846-10.405a1.441 1.441 0 11-2.883 0 1.441 1.441 0 012.883 0z" />
         </svg>
       ),
-      url: 'https://www.instagram.com/learn_with_talha/',
+      url: 'https://www.instagram.com/talhas.school/',
     },
     {
       name: 'LinkedIn',
