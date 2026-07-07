@@ -76,7 +76,7 @@ export function WebDevOpportunitySection() {
           <p className="font-semibold text-white">The difference with this course: it teaches you both.</p>
           <p>
             <span className="font-semibold text-white">Part 1 — The Skill:</span> Web
-            development from zero to job-ready in 6 weeks. Real projects. Real
+            development from zero to job-ready in 8 weeks. Real projects. Real
             portfolio. Not tutorial clones.
           </p>
           <p>
@@ -144,7 +144,7 @@ export function WebDevInstructorBioSection() {
   const credentials = [
     'Founder — Ownex Labs',
     "Founder — Talha's School",
-    "Upwork Top Rated (100% Job Success)",
+    "Upwork Top Rated Plus (100% Job Success)",
     "Fiverr Choice (Top 1% of sellers)",
     'CTO — CollabAway (UK)',
     "Software Team Lead — CarZoomo (US)",
@@ -231,7 +231,7 @@ export function WebDevFinalCtaSection({
         </ul>
         <p className="mb-8 text-slate-300">
           <span className="line-through">Total Value: PKR 53,000</span>{' '}
-          <span className="font-bold text-white">Your Price: PKR 3,987</span>
+          <span className="font-bold text-white">Your Price: PKR 4,497</span>
         </p>
         <p className="text-sm text-slate-400">
           Secure Checkout · 7-Day Refund · 30-Day First Client Guarantee · Lifetime

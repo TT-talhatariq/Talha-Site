@@ -12,20 +12,16 @@ export function RemoteProblemSection() {
           <span className="text-orange-500">Here&apos;s Why It Didn&apos;t Work.</span>
         </h2>
         <div className="space-y-6 text-lg leading-relaxed text-gray-700">
-          <p>Most professionals trying to get remote work do the same things:</p>
+          <p>If you&apos;ve tried to go remote, you&apos;ve probably done all of this:</p>
           <ul className="space-y-3 border-l-2 border-blue-200 pl-4">
+            <li>Set up an Upwork profile. Sent proposals. Heard nothing back.</li>
             <li>
-            Set up an Upwork profile. Send proposals. Hear nothing back.
+              Updated your LinkedIn. Added &quot;Open to Work.&quot; Waited weeks, not a single
+              recruiter message.
             </li>
-            <li>
-              Update their LinkedIn. Add &quot;Open to Work.&quot; Wait weeks. No recruiter
-              messages.
-            </li>
-            <li>
-              Apply to remote job listings. no response or just rejections
-            </li>
+            <li>Applied to remote listings. Got silence, or a rejection.</li>
           </ul>
-          <p>And then they reach one of three conclusions:</p>
+          <p>So you started to wonder if it was one of these:</p>
           <p className="font-semibold text-gray-900">
             &quot;Pakistani applicants get filtered out.&quot;
             <br />
@@ -33,15 +29,16 @@ export function RemoteProblemSection() {
             <br />
             &quot;I don&apos;t have enough experience yet.&quot;
           </p>
-          <p className="font-semibold text-gray-900">Here&apos;s what&apos;s actually true:</p>
-          <p>Every one of those conclusions is wrong.</p>
+          <p className="font-semibold text-gray-900">Here&apos;s the truth: every one of those is wrong.</p>
           <p>
-            The professionals earning $2,000–$5,000/month remotely right now don&apos;t have
-            better skills than you. They don&apos;t have more experience. They don&apos;t have
-            connections you lack.
+            The Pakistani professionals earning{' '}
+            <span className="font-semibold text-gray-900">$2,000-$4,000/month</span> remotely
+            right now don&apos;t have better skills than you, more experience than you, or
+            connections you don&apos;t.
           </p>
           <p className="rounded-xl border border-orange-200 bg-orange-50/80 p-4 font-semibold text-gray-900">
-            They found opportunities in a smart way that you don&apos;t know yet
+            They just present themselves, and find opportunities, in a way you haven&apos;t been
+            taught yet. That&apos;s the entire gap. And it&apos;s fixable in 6 weeks.
           </p>
         </div>
       </div>
@@ -54,17 +51,17 @@ export function RemoteFalseBeliefsSection() {
     {
       myth: 'Pakistani applicants get filtered out before a human even sees the application.',
       truth:
-        'Clients on Upwork don\'t filter by country — they filter by profile quality. A weak profile from the US loses to a strong profile from Pakistan every time. We fix your profile.',
+        'Clients on Upwork don\'t filter by country, they filter by profile quality. A weak profile from the US loses to a strong profile from Pakistan every time. We fix your profile.',
     },
     {
-      myth: 'I don\'t have enough experience. I need 2–3 more years before I\'m competitive remotely.',
+      myth: 'I don\'t have enough experience. I need 2-3 more years before I\'m competitive remotely.',
       truth:
-        'Remote clients and employers don\'t hire resumes — they hire demonstrated capability. This course shows you exactly how to present what you already have so that it communicates maximum value.',
+        'Remote clients and employers don\'t hire resumes, they hire demonstrated capability. This course shows you exactly how to present what you already have so that it communicates maximum value.',
     },
     {
       myth: 'The market is too saturated. There are thousands of people competing for the same jobs.',
       truth:
-        'The market is saturated with average applications from people doing what everyone else does. The moment your profile and proposals are above average — you\'re not competing with thousands. You\'re competing with a handful.',
+        'The market is saturated with average applications from people doing what everyone else does. The moment your profile and proposals are above average, you\'re not competing with thousands. You\'re competing with a handful.',
     },
   ];
 
@@ -111,12 +108,12 @@ export function RemoteStorySection() {
         </h2>
         <div className="space-y-5 text-lg leading-relaxed text-gray-700">
           <p>
-            In 2022, I was a full-time software engineer at Arbisoft — one of
+            In 2022, I was a full-time software engineer at Arbisoft, one of
             Pakistan&apos;s biggest tech companies. Good job. Stable salary. In rupees.
           </p>
           <p>
-            I was watching people with similar skills — sometimes weaker skills —
-            earning $2,000–$4,000/month from home. Same platforms. Same experience level.
+            I was watching people with similar skills, sometimes weaker skills,
+            earning $2,000-$4,000/month from home. Same platforms. Same experience level.
             Different results.
           </p>
           <p>
@@ -159,10 +156,10 @@ export function RemoteStorySection() {
             <li>$50,000+ earned while holding a full-time engineering role.</li>
           </ul>
           <p className="rounded-xl border border-orange-200 bg-orange-50/80 p-4 text-lg font-semibold text-gray-900">
-            I built this course to give you that one conversation — and every tactical step
+            I built this course to give you that one conversation, and every tactical step
             that followed it.
           </p>
-          <p className="pt-4 text-right font-semibold text-gray-900">— Talha Tariq</p>
+          <p className="pt-4 text-right font-semibold text-gray-900">Talha Tariq</p>
         </div>
       </div>
     </section>
@@ -184,16 +181,16 @@ export function RemoteOpportunitySection() {
           </p>
           <p>
             Positioning is proactive. You build a profile so compelling that opportunities
-            come to you — recruiter messages, client invitations, inbound DMs.
+            come to you, recruiter messages, client invitations, inbound DMs.
           </p>
           <p className="font-semibold text-white">The Dollar Income System teaches positioning.</p>
           <p className="font-semibold text-white">Here&apos;s what that means in practice:</p>
           <ul className="space-y-3 border-l-2 border-orange-400/50 pl-4">
-            <li>Your LinkedIn profile becomes a lead magnet — not a digital resume</li>
-            <li>Your Upwork proposals get responses in 48 hours — not silence for weeks</li>
+            <li>Your LinkedIn profile becomes a lead magnet, not a digital resume</li>
+            <li>Your Upwork proposals get responses in 48 hours, not silence for weeks</li>
             <li>Your resume clears ATS systems and gets read by humans</li>
             <li>
-              Your interviews become conversations you control — not interrogations you
+              Your interviews become conversations you control, not interrogations you
               survive
             </li>
           </ul>
@@ -219,14 +216,14 @@ export function RemoteGuaranteeSection() {
           </p>
           <p>
             If you complete these steps and don&apos;t receive at least one serious interview
-            invitation or client inquiry within 60 days of enrollment — I&apos;ll refund every
+            invitation or client inquiry within 60 days of enrollment, I&apos;ll refund every
             rupee.
           </p>
           <p>No forms. No tricks. Just email me with proof you did the work.</p>
           <p className="font-semibold text-gray-900">Here&apos;s why I can offer this:</p>
           <p>
-            800+ students have gone through this system. The students who follow the steps
-            get results. The students who don&apos;t — I&apos;d honestly rather give them their money
+            700+ students have gone through this system. The students who follow the steps
+            get results. The students who don&apos;t, I&apos;d honestly rather give them their money
             back than have them say the system doesn&apos;t work.
           </p>
           <p className="font-bold text-gray-900">
@@ -238,12 +235,12 @@ export function RemoteGuaranteeSection() {
         <div className="rounded-2xl border-2 border-green-200 bg-green-50/80 p-6 text-left text-gray-800">
           <ul className="space-y-2">
             <li>
-              ✓ 60-Day Remote Offer Guarantee — complete the steps, get results or get
+              ✓ 60-Day Remote Offer Guarantee, complete the steps, get results or get
               refunded
             </li>
-            <li>✓ 7-Day No-Questions Refund — change your mind in the first week, full refund</li>
-            <li>✓ Lifetime Access — your investment never expires</li>
-            <li>✓ Ask Me Directly — personal feedback throughout the process</li>
+            <li>✓ 7-Day No-Questions Refund, change your mind in the first week, full refund</li>
+            <li>✓ Lifetime Access, your investment never expires</li>
+            <li>✓ Ask Me Directly, personal feedback throughout the process</li>
           </ul>
         </div>
       </div>
@@ -257,7 +254,7 @@ export function RemoteToolsSection() {
       number: '01',
       title: 'LinkedIn Profile Optimizer',
       description:
-        'Turn your profile into a remote-recruiter magnet. AI rewrites your headline, About section, and experience bullets — tailored to the exact role you want.',
+        'Turn your profile into a remote-recruiter magnet. AI rewrites your headline, About section, and experience bullets, tailored to the exact role you want.',
       includes: [
         'Headline Generator',
         'Summary Optimizer',
@@ -296,7 +293,7 @@ export function RemoteToolsSection() {
       number: '03',
       title: 'ATS Resume Builder',
       description:
-        'Resumes that pass Applicant Tracking Systems and impress hiring managers. Structure, keywords, formatting — handled.',
+        'Resumes that pass Applicant Tracking Systems and impress hiring managers. Structure, keywords, formatting, handled.',
       accent: 'from-orange-500 to-amber-500',
       iconBg: 'bg-orange-500/10 text-orange-400',
       icon: (
@@ -346,7 +343,7 @@ export function RemoteToolsSection() {
       number: '06',
       title: 'Career Roadmaps',
       description:
-        'Step-by-step paths for frontend, backend, design, writing, marketing — updated for what global employers actually hire for in 2026.',
+        'Step-by-step paths for frontend, backend, design, writing, marketing, updated for what global employers actually hire for in 2026.',
       accent: 'from-cyan-500 to-sky-500',
       iconBg: 'bg-cyan-500/10 text-cyan-400',
       icon: (
@@ -419,7 +416,7 @@ export function RemoteToolsSection() {
             </span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-slate-300 lg:text-lg">
-            Your entire job-hunt workflow — profile, proposals, resume, interviews, and tracking — unified in one AI-powered workspace.
+            Your entire job-hunt workflow, profile, proposals, resume, interviews, and tracking, unified in one AI-powered workspace.
           </p>
         </div>
 
@@ -509,7 +506,7 @@ export function RemoteToolsSection() {
           <div className="mx-auto max-w-4xl overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] p-2 shadow-2xl ring-1 ring-white/10">
             <Image
               src="/assets/portal.png"
-              alt="Inside the Tech Portal — the AI career tools dashboard"
+              alt="Inside the Tech Portal, the AI career tools dashboard"
               width={1510}
               height={802}
               className="h-auto w-full rounded-xl"
@@ -523,13 +520,13 @@ export function RemoteToolsSection() {
 
 export function RemoteInstructorBioSection() {
   const credentialTags = [
-    'Founder — Ownex Labs',
-    "Founder — Talha's School",
-    "Upwork Top Rated (100% Job Success)",
+    'Founder, Ownex Labs',
+    "Founder, Talha's School",
+    "Upwork Top Rated Plus (100% Job Success)",
     "Fiverr Choice (Top 1% of sellers)",
-    'CTO — CollabAway (UK)',
-    "Software Team Lead — CarZoomo (US)",
-    "Founding Engineer — Casaidy (US)",
+    'CTO, CollabAway (UK)',
+    "Software Team Lead, CarZoomo (US)",
+    "Founding Engineer, Casaidy (US)",
     "Senior Software Engineer - CarBacked (US)",
     "Senior Software Engineer - Coverage Creatives (US)",
     "Software Engineer - Arbisoft (PK)",
@@ -576,7 +573,7 @@ export function RemoteInstructorBioSection() {
         </p>
 
         <p className="mb-6 text-center text-base font-semibold text-gray-900">
-          Here&apos;s what I&apos;m doing now — and what I&apos;ve done in the past.
+          Here&apos;s what I&apos;m doing now, and what I&apos;ve done in the past.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
@@ -608,10 +605,10 @@ export function RemoteFinalCtaSection({
           Every Week You Wait Is Another Week of Earning in Rupees
         </h2>
         <p className="mb-4 text-lg text-slate-300">
-          While others earn in dollars — with the same skills.
+          While others earn in dollars, with the same skills.
         </p>
         <p className="mb-10 text-lg leading-relaxed text-slate-300">
-          The system is built. The guarantee is on the table. 800+ students have already
+          The system is built. The guarantee is on the table. 700+ students have already
           used it. The only variable is whether you decide to act today.
         </p>
         <Link
@@ -623,7 +620,7 @@ export function RemoteFinalCtaSection({
         <ul className="mb-6 space-y-2 text-left text-sm text-slate-300">
           <li>✓ The Dollar Income System (6 Modules)</li>
           <li>✓ The Proposal Playbook (real proposals that won real clients)</li>
-          <li>✓ The Tech Portal — 6 AI Career Tools</li>
+          <li>✓ The Tech Portal, 6 AI Career Tools</li>
           <li>✓ Ask Me Directly (50 spots available)</li>
           <li>✓ 700+ Remote Worker Community</li>
           <li>✓ Global Job Board Database</li>
@@ -631,7 +628,7 @@ export function RemoteFinalCtaSection({
         </ul>
         <p className="mb-8 text-slate-300">
           <span className="line-through">Total Value: PKR 59,000</span>{' '}
-          <span className="font-bold text-white">Your Price: PKR 4,797</span>
+          <span className="font-bold text-white">Your Price: PKR 4,497</span>
         </p>
         <p className="text-sm text-slate-400">
           Secure Checkout · 7-Day Refund · 60-Day Remote Offer Guarantee · Lifetime Access

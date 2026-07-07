@@ -19,7 +19,7 @@ export default function WebDevPage() {
     "You've tried applying for remote jobs or freelance work and got silence in return",
     'You want to earn in USD while living in Pakistan.',
     "You're DESPERATE to escape the 9-5 grind and work from anywhere.",
-    "You're willing to put in 2–3 hours a day for 6 weeks to change your financial reality.",
+    "You're willing to put in 2–3 hours a day for 8 weeks to change your financial reality.",
   ];
 
   const notForYouPoints = [
@@ -193,9 +193,9 @@ export default function WebDevPage() {
   const aboutMeData = {
     statsImages: [
       {
-        image: '/assets/upProfile.png',
-        imageAlt: 'Upwork Top Rated Profile',
-        title: 'Upwork Top Rated Freelancer',
+        image: '/assets/upwork-pr.png',
+        imageAlt: 'Upwork Top Rated Plus Profile',
+        title: 'Upwork Top Rated Plus Freelancer',
       },
       {
         image: '/assets/fiverr.png',
@@ -217,6 +217,11 @@ export default function WebDevPage() {
         imageAlt: 'Public speaking',
         title: 'Public Speaking',
       },
+      {
+        image: '/assets/elevate.jpeg',
+        imageAlt: 'Elevate Pay',
+        title: 'Elevate Pay',
+      }
     ],
   };
 
@@ -271,7 +276,7 @@ export default function WebDevPage() {
       <AboutMe {...aboutMeData} />
       <Pricing
         originalPrice="50,000"
-        currentPrice="3,987"
+        currentPrice="4,497"
         valueItems={pricingValueItems}
         discountPercentage="92% OFF"
       />

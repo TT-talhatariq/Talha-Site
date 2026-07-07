@@ -20,19 +20,18 @@ const HeroSectionRemote = () => {
             <div className="flex flex-col items-center gap-10 lg:flex-row lg:items-start lg:justify-between">
               <div className="w-full space-y-6 text-center lg:w-1/2 lg:text-left">
                 <p className="text-sm font-semibold uppercase tracking-wide text-blue-600">
-                  For Pakistani professionals with real skills
+                  For skilled Pakistani professionals still earning in rupees
                 </p>
                 <h1 className="text-3xl font-bold leading-tight text-gray-900 lg:text-5xl">
-                  The Reason You&apos;re Not Earning Remotely
-                  <br />
-                  <span className="text-orange-500">Has Nothing to Do With Your Skills</span>
+                  Land Remote Jobs of{' '}
+                  <span className="text-orange-500">$2,000 to $4,000 a Month From Home</span>{' '}
+                  With Your Same Skills
                 </h1>
                 <p className="text-lg leading-relaxed text-gray-600 lg:text-xl">
-                  It&apos;s your visibility. Your positioning. Your approach. This 6-week system
-                  fixes all three and will help you land{' '}
-                  <span className="font-bold text-gray-900">$1,000–$5,000/month</span>
-                  {' '}
-                  in remote income without leaving Pakistan.
+                  It&apos;s not your skills holding you back, it&apos;s visibility, positioning,
+                  and knowing where the real opportunities are. This{' '}
+                  <span className="font-bold text-gray-900">6-week system</span> fixes all three,
+                  so recruiters and clients start coming to you, without leaving Pakistan.
                 </p>
                 <div className="flex flex-col items-center gap-3 sm:flex-row lg:items-start">
                   <Link
@@ -43,7 +42,7 @@ const HeroSectionRemote = () => {
                   </Link>
                 </div>
                 <p className="text-sm text-gray-500">
-                  Lifetime Access · Instant Enrollment
+                  Lifetime Access · 60-Day Remote Offer Guarantee · 7-Day Refund
                 </p>
               </div>
 

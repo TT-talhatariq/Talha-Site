@@ -180,9 +180,9 @@ export default function UpworkPage() {
   const aboutMeData = {
     statsImages: [
       {
-        image: '/assets/upProfile.png',
-        imageAlt: 'Upwork Top Rated Profile',
-        title: 'Upwork Top Rated Freelancer',
+        image: '/assets/upwork-pr.png',
+        imageAlt: 'Upwork Top Rated Plus Profile',
+        title: 'Upwork Top Rated Plus Freelancer',
       },
       {
         image: '/assets/fiverr.png',

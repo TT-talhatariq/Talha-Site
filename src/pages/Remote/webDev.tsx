@@ -21,7 +21,7 @@ import Testimonials from '@/components/Testimonials';
 
 export default function RemotePage() {
   const targetAudiencePoints = [
-    'You have a skill — development, design, writing, marketing, data — and want to monetize it globally',
+    'You have a skill, development, design, writing, marketing, data, and want to monetize it globally',
     "You're employed locally in PKR and want to transition to dollar income without quitting your job first",
     "You've tried remote applications before and got zero results",
     'You want to work from home on your own terms',
@@ -30,14 +30,14 @@ export default function RemotePage() {
 
   const notForYouPoints: Array<string | NotForYouPoint> = [
     'You want overnight results without changing anything.',
-    "You're not willing to put in about 2–3 focused hours a day for six weeks.",
+    "You're not willing to put in about 2-3 focused hours a day for six weeks.",
   ];
 
   const modules: CourseModule[] = [
     {
       number: '1',
       title: 'Remote Work Foundation',
-      subtitle: '"Understand exactly why you haven\'t been hired yet — and what specifically to fix"',
+      subtitle: '"Understand exactly why you haven\'t been hired yet, and what specifically to fix"',
       bgGradient: 'bg-gradient-to-br from-white via-blue-50/40 to-indigo-100/30',
       items: [
         'Why remote companies hire and what they\'re actually filtering for',
@@ -62,12 +62,12 @@ export default function RemotePage() {
         'The exact tools Talha uses to build ATS-friendly resumes in under 2 hours',
       ],
       image: '/assets/ss1.png',
-      imageAlt: 'Student success message — earned the Top Rated badge',
+      imageAlt: 'Student success message, earned the Top Rated badge',
     },
     {
       number: '3',
       title: '8 Methods to Hunt Remote Jobs',
-      subtitle: '"A weekly system that produces consistent interview invitations — not random applications"',
+      subtitle: '"A weekly system that produces consistent interview invitations, not random applications"',
       bgGradient: 'bg-gradient-to-br from-white via-purple-50/40 to-violet-100/30',
       items: [
         'Insider job boards that most Pakistani professionals have never heard of',
@@ -101,14 +101,14 @@ export default function RemotePage() {
     {
       number: '5',
       title: 'Crack Upwork Like a Pro',
-      subtitle: '"Profile live, niche set, first proposal sent using the winning formula — this week"',
+      subtitle: '"Profile live, niche set, first proposal sent using the winning formula, this week"',
       bgGradient: 'bg-gradient-to-br from-white via-orange-50/40 to-amber-100/30',
       items: [
-        'Build a killer profile: photo, title, skills, and trust signals — all optimized',
+        'Build a killer profile: photo, title, skills, and trust signals, all optimized',
         'Write an overview that sells your offer and proof in one fast read',
         'Show portfolio proof with samples, numbers, and short blurbs',
         'Skip low-quality invites and bid only on roles that truly fit',
-        'Set premium packages and price floors — never race to the bottom',
+        'Set premium packages and price floors, never race to the bottom',
         'Write proposals with a strong hook, proof, plan, and one clear next step',
         'Scale from early wins to $4,000+/month with a disciplined search process',
       ],
@@ -137,13 +137,13 @@ export default function RemotePage() {
       imageAlt: 'Proposal Playbook',
       title: '📋 The Proposal Playbook',
       description:
-        'Real proposals that won real clients — deconstructed word by word. Copy the structure, adapt the words, send today.',
+        'Real proposals that won real clients, deconstructed word by word. Copy the structure, adapt the words, send today.',
       highlight: true,
     },
     {
       image: '/assets/image.png',
       imageAlt: 'Tech Portal AI Career Suite',
-      title: '🤖 The Tech Portal — AI Career Suite',
+      title: '🤖 The Tech Portal, AI Career Suite',
       description:
         '6 AI-powered tools: LinkedIn Profile Optimizer, Upwork Proposal Generator, ATS Resume Builder, Interview Lab, Portfolio Builder, Application Tracker.',
       highlight: true,
@@ -197,9 +197,9 @@ export default function RemotePage() {
   const aboutMeData = {
     statsImages: [
       {
-        image: '/assets/upProfile.png',
-        imageAlt: 'Upwork Top Rated Profile',
-        title: 'Upwork Top Rated Freelancer',
+        image: '/assets/upwork-pr.png',
+        imageAlt: 'Upwork Top Rated Plus Profile',
+        title: 'Upwork Top Rated Plus Freelancer',
       },
       {
         image: '/assets/fiverr.png',
@@ -229,15 +229,15 @@ export default function RemotePage() {
     <div>
       <HeroSectionRemote />
       <RemoteProblemSection />
-      {/* <RemoteFalseBeliefsSection /> */}
-      {/* <RemoteStorySection /> */}
+      {/* <RemoteStorySection />
+      <RemoteFalseBeliefsSection /> */}
       <IsThisForYou
         points={targetAudiencePoints}
         title="Who This Is Built For"
-        subtitle="For professionals in Pakistan who are tired of applying into silence — and ready for a clear, week-by-week system (not more random tips)."
+        subtitle="For professionals in Pakistan who are tired of applying into silence, and ready for a clear, week-by-week system (not more random tips)."
         bottomText=""
         notForYouPoints={notForYouPoints}
-        notForYouTitle="This Is NOT For You If —"
+        notForYouTitle="This Is NOT For You If"
         showCrossSellFooter={false}
       />
       <CourseContent
@@ -248,7 +248,7 @@ export default function RemotePage() {
             Course <span className="text-orange-500">Curriculum</span>
           </>
         }
-        subheading="Numbered path from foundation to interviews — with clear outcomes after every module."
+        subheading="Numbered path from foundation to interviews, with clear outcomes after every module."
         midCtaLabel="ENROLL NOW"
         midCtaHref="#pricing"
         midCtaFinePrint="Instant access · Lifetime · 60-Day Remote Offer Guarantee"
@@ -256,28 +256,28 @@ export default function RemotePage() {
       <RemoteToolsSection />
       {/* <RemoteOpportunitySection /> */}
       <Testimonials href="/checkout-remote-work" showSuccessStories={false} />
-      {/* <RemoteGuaranteeSection /> */}
+      <RemoteGuaranteeSection />
       <Bonuses
         bonuses={bonuses}
         sectionTitle={
           <>
-            Everything That&apos;s Included —{' '}
+            Everything That&apos;s Included:{' '}
             <span className="text-orange-500">What It Would Cost Separately</span>
           </>
         }
-        sectionSubtitle="Here's what you get — and what it would cost you separately. Total standalone value: PKR 59,000. Your price today: PKR 4,797 (founding members; price increases as enrollment grows)."
+        sectionSubtitle="Here's what you get, and what it would cost you separately. Total standalone value: PKR 59,000. Your price today: PKR 4,497 (founding members; price increases as enrollment grows)."
       />
       <RemoteInstructorBioSection />
       <AboutMe statsImages={aboutMeData.statsImages} href={aboutMeData.href} />
       <Pricing
         originalPrice="59,000"
-        currentPrice="4,797"
+        currentPrice="4,497"
         valueItems={pricingValueItems}
         discountPercentage="92% OFF"
         href="/checkout-remote-work"
         showCountdown={false}
       />
-      {/* <RemoteFinalCtaSection /> */}
+      <RemoteFinalCtaSection />
       <FAQ faqs={remoteWorkFaqs} intro="Straight answers about skills, time, refunds, and the Tech Portal." />
       <Footer />
       <StickyBottomButton />

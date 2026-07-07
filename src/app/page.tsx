@@ -12,7 +12,7 @@ export default function Home() {
       subtitle: 'Complete Frontend & Backend Course',
       description:
         'Stop watching endless tutorials that lead nowhere! Learn the EXACT skills that got me $4000+ monthly clients. Build 15+ real projects and discover the 9 proven methods I use to earn consistently online.',
-      price: 'PKR 3,987',
+      price: 'PKR 4,497',
       features: [
         '🚀 15+ Real Projects (Not Boring Tutorials!)',
         '💻 Full Stack Web Dev Mastery',
@@ -36,7 +36,7 @@ export default function Home() {
       subtitle: 'Work Globally & Earn in USD',
       description:
         "TIRED of earning peanuts while your skills are worth GOLD? Break free from local salary limits! I'll show you the EXACT system I used to land $3000+ USD remote jobs and work with global clients from my bedroom.",
-      price: 'PKR 4,797',
+      price: 'PKR 4,497',
       features: [
         '🌍 LinkedIn Hacks That Get You NOTICED',
         '🎯 Niche Selection for Maximum Earnings',

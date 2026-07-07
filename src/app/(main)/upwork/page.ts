@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Stop sending Upwork proposals into the void. A focused 4-week system to build a profile that converts and proposals that get replies — land your first $1,000+ client from Pakistan.',
   keywords:
-    'upwork course, upwork proposals, win upwork clients, upwork profile optimization, freelancing course Pakistan, upwork success, upwork top rated, proposal writing, upwork for beginners, Talha Tariq course',
+    'upwork course, upwork proposals, win upwork clients, upwork profile optimization, freelancing course Pakistan, upwork success, Upwork Top Rated Plus, proposal writing, upwork for beginners, Talha Tariq course',
   openGraph: {
     title: 'Upwork Mastery - Win Clients & Land $1,000+ Projects',
     description:
