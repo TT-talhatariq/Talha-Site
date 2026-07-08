@@ -201,7 +201,7 @@ export default function CheckoutWebDev() {
                   </div>
                   <div className="flex justify-between text-green-600">
                     <span>Discount (92% OFF)</span>
-                    <span>-PKR 45,503</span>
+                    <span>-PKR 46,013</span>
                   </div>
                   <hr className="border-gray-200" />
                   <div className="flex justify-between text-xl font-bold">
