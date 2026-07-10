@@ -628,7 +628,7 @@ export function RemoteFinalCtaSection({
         </ul>
         <p className="mb-8 text-slate-300">
           <span className="line-through">Total Value: PKR 59,000</span>{' '}
-          <span className="font-bold text-white">Your Price: PKR 4,497</span>
+          <span className="font-bold text-white">Your Price: PKR 3,987</span>
         </p>
         <p className="text-sm text-slate-400">
           Secure Checkout · 7-Day Refund · 60-Day Remote Offer Guarantee · Lifetime Access
