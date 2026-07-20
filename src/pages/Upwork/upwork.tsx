@@ -46,6 +46,8 @@ export default function UpworkPage() {
         'Niche selection — picking a lane that pays, instead of being a cheap generalist',
         "The mindset shift: you sell client outcomes, not a list of your skills",
       ],
+      image: '/assets/paymenttt.png',
+      imageAlt: 'Upwork foundations and niche setup',
     },
     {
       number: '2',
@@ -207,6 +209,8 @@ export default function UpworkPage() {
         title="Who This Is Built For"
         subtitle="For freelancers in Pakistan who are tired of sending proposals into silence — and ready for a clear, step-by-step Upwork system."
         bottomText=""
+        imageSrc="/assets/3points.png"
+        imageAlt="Upwork Course - Is this for you?"
         notForYouPoints={notForYouPoints}
         notForYouTitle="This Is NOT For You If —"
         showCrossSellFooter={false}

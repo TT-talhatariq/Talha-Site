@@ -4,6 +4,13 @@ import Link from 'next/link';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 
+const navLinks = [
+  { label: 'Home', href: '/#home' },
+  { label: 'Instructor', href: '/#instructor' },
+  { label: 'Courses', href: '/#courses' },
+  { label: 'Reviews', href: '/reviews' },
+];
+
 export default function Home() {
   const courses = [
     {
@@ -23,7 +30,7 @@ export default function Home() {
         '💼 Job Interview Prep (Land Remote Jobs)',
         '⚡ From Zero to First Client in 30 Days',
       ],
-      image: '/assets/gif/1.png',
+      image: '/assets/web_dev.png',
       bgGradient: 'from-blue-50/40 via-indigo-50/30 to-purple-50/20',
       badgeColor: 'bg-blue-600',
       link: '/web-dev',
@@ -47,7 +54,7 @@ export default function Home() {
         '⚡ Personal Branding That Attracts Clients',
         '🚀 From Local Jobs to Global Opportunities',
       ],
-      image: '/assets/gif/2.png',
+      image: '/assets/workkk.png',
       bgGradient: 'from-green-50/40 via-emerald-50/30 to-teal-50/20',
       badgeColor: 'bg-blue-600',
       link: '/remote-work',
@@ -70,7 +77,7 @@ export default function Home() {
         '💰 Premium Pricing — Never Race to the Bottom',
         '⭐ Clear Path to Top Rated & $4,000+/Month',
       ],
-      image: '/assets/gif/3.png',
+      image: '/assets/upwork.png',
       bgGradient: 'from-amber-50/40 via-orange-50/30 to-yellow-50/20',
       badgeColor: 'bg-blue-600',
       link: '/upwork',
@@ -93,7 +100,7 @@ export default function Home() {
         '📈 A Content Rhythm You Can Actually Keep',
         '🤝 Cold DM & Networking Scripts That Get Replies',
       ],
-      image: '/assets/gif/4.png',
+      image: '/assets/linkediiin.png',
       bgGradient: 'from-sky-50/40 via-blue-50/30 to-indigo-50/20',
       badgeColor: 'bg-blue-600',
       link: '/linkedin',
@@ -105,8 +112,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-gray-50/30 to-blue-50/20">
       {/* Hero Section */}
-      <NavBar />
-      <section className="relative py-16 lg:py-24 overflow-hidden">
+      <NavBar href="#courses" navLinks={navLinks} />
+      <section id="home" className="relative py-16 lg:py-24 overflow-hidden">
         {/* Background elements */}
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-blue-200/30 via-blue-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gradient-to-tl from-orange-200/30 via-orange-100/20 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse animation-delay-2000"></div>
@@ -115,34 +122,35 @@ export default function Home() {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="space-y-4">
               <p className="text-orange-600 text-sm font-semibold tracking-wide uppercase">
-                WELCOME TO TALHA&apos;S SCHOOL
+                Talha&apos;s School · A Practical Tech Academy
               </p>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Hey, I&apos;m <span className="text-blue-600">Talha</span> 👋
+                Learn <span className="text-blue-600">In-Demand Tech Skills</span>{' '}
+                &amp; Land Your{' '}
+                <span className="text-green-600">Dream Career</span>
               </h1>
-              <h2 className="text-2xl lg:text-4xl font-bold text-gray-800">
-                From <span className="text-red-600">Broke Student</span> to{' '}
-                <span className="text-green-600">Financial Freedom</span>
-              </h2>
               <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                <strong>STOP struggling with your career!</strong> I went from
-                earning peanuts to{' '}
-                <span className="text-green-600 font-bold">
-                  dream income monthly
-                </span>{' '}
-                using the EXACT strategies I&apos;m about to teach you. No
-                fluff, no theory - just{' '}
+                A practical, project-based academy where{' '}
                 <span className="text-blue-600 font-semibold">
-                  REAL methods that actually work
+                  1000+ students
                 </span>{' '}
-                in 2026.
+                have gone from complete beginners to confident, job-ready
+                professionals and started{' '}
+                <span className="text-green-600 font-bold">earning online</span>.
+                Web development, freelancing, remote work and more. No endless
+                tutorials, just real skills and a supportive community.
               </p>
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-green-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-green-200/50 shadow-sm">
                 <span className="text-sm font-bold text-green-700">
-                  🔥 1000+ Success Stories
+                  🔥 1000+ Students
+                </span>
+              </div>
+              <div className="bg-blue-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-blue-200/50 shadow-sm">
+                <span className="text-sm font-bold text-blue-700">
+                  ⭐ 4.9 on Google (109 reviews)
                 </span>
               </div>
               <div className="bg-orange-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-orange-200/50 shadow-sm">
@@ -152,19 +160,133 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Urgency Message */}
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-2xl p-6 max-w-2xl mx-auto">
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-red-700 mb-2">
-                  ⚠️ WARNING: Limited Time Offer!
-                </h3>
-                <p className="text-red-600 font-semibold">
-                  These heavy discounts won&apos;t last — prices go back to
-                  normal soon.
-                  <span className="block text-sm mt-1">
-                    Don&apos;t let this opportunity slip away!
-                  </span>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="#courses"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-colors shadow-lg"
+              >
+                🚀 Explore Courses
+              </a>
+              <Link
+                href="/reviews"
+                className="bg-white hover:bg-gray-50 text-gray-800 font-bold py-4 px-8 rounded-full border-2 border-gray-200 transition-colors shadow-sm"
+              >
+                ⭐ See Student Reviews
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Instructor / Story Section */}
+      <section
+        id="instructor"
+        className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-white via-blue-50/20 to-orange-50/20"
+      >
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-blue-200/20 via-blue-100/15 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-gradient-to-tr from-orange-200/20 via-orange-100/15 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            {/* Photo */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-blue-200/40 to-orange-200/40 rounded-3xl blur-2xl"></div>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                <Image
+                  src="/assets/talha.jpg"
+                  alt="Talha Tariq, Founder & Instructor at Talha's School"
+                  width={600}
+                  height={700}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Story */}
+            <div className="space-y-6">
+              <p className="text-orange-600 text-sm font-semibold tracking-wide uppercase">
+                Meet Your Instructor
+              </p>
+              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Hey, I&apos;m <span className="text-blue-600">Talha</span> 👋
+              </h2>
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-700">
+                From <span className="text-red-600">Broke Student</span> to{' '}
+                <span className="text-green-600">Financial Freedom</span>
+              </h3>
+              <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
+                <p>
+                  Not long ago, I was a struggling student with no connections
+                  and no roadmap, just a laptop and a lot of determination. I
+                  taught myself web development, made every mistake in the book,
+                  and slowly figured out what actually works to land clients and
+                  remote jobs.
                 </p>
+                <p>
+                  Today I&apos;m a professional software engineer earning a{' '}
+                  <span className="text-green-600 font-bold">
+                    dollarized income
+                  </span>{' '}
+                  from global clients, and I&apos;ve built{' '}
+                  <span className="text-blue-600 font-semibold">
+                    Talha&apos;s School
+                  </span>{' '}
+                  to hand you the exact roadmap I wish I&apos;d had. No fluff, no
+                  theory, just the real methods that got me and 1000+ students
+                  results.
+                </p>
+              </div>
+
+              {/* Credentials */}
+              <div className="rounded-2xl bg-white/80 border border-gray-100 p-6 shadow-sm">
+                <p className="mb-4 text-sm font-bold uppercase tracking-wide text-gray-500">
+                  A Few Things I&apos;ve Done
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
+                  {[
+                    'Founder, Ownex Labs',
+                    "Founder, Talha's School",
+                    'Upwork Top Rated Plus (100% Job Success)',
+                    'Fiverr Choice (Top 1% of sellers)',
+                    'CTO, CollabAway (UK) · Software Team Lead, CarZoomo (US)',
+                    'Founding Engineer, Casaidy (US)',
+                    'Senior Software Engineer, CarBacked (US) · Arbisoft (PK)',
+                    'Author of 5 Books',
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-gray-700"
+                    >
+                      <span className="mt-0.5 text-blue-600" aria-hidden="true">
+                        ✓
+                      </span>
+                      <span className="font-medium">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="rounded-2xl bg-white/80 border border-gray-100 p-4 text-center shadow-sm">
+                  <p className="text-2xl font-bold text-blue-600">1000+</p>
+                  <p className="text-xs text-gray-500 font-medium">Students</p>
+                </div>
+                <div className="rounded-2xl bg-white/80 border border-gray-100 p-4 text-center shadow-sm">
+                  <p className="text-2xl font-bold text-orange-500">4.9★</p>
+                  <p className="text-xs text-gray-500 font-medium">
+                    Google Rating
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <a
+                  href="#courses"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full transition-colors shadow-lg"
+                >
+                  🚀 Start Learning With Me
+                </a>
               </div>
             </div>
           </div>
@@ -172,7 +294,18 @@ export default function Home() {
       </section>
 
       {/* Courses Section */}
-      <section className="py-16 lg:py-0 relative bg-gradient-to-b from-white via-blue-50/20 to-orange-50/30 overflow-hidden">
+      <section
+        id="courses"
+        className="py-16 lg:py-24 relative bg-gradient-to-b from-white via-blue-50/20 to-orange-50/30 overflow-hidden"
+      >
+        <div className="container mx-auto px-4 relative z-10 mb-12 text-center">
+          <p className="text-orange-600 text-sm font-semibold tracking-wide uppercase mb-2">
+            Our Courses
+          </p>
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
+            Pick Your <span className="text-blue-600">Path to Earning</span>
+          </h2>
+        </div>
         {/* Section background gradients */}
         <div className="absolute top-0 left-1/4 w-[300px] h-[300px] bg-gradient-to-br from-blue-300/20 via-blue-200/15 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"></div>
         <div className="absolute bottom-0 right-1/4 w-[250px] h-[250px] bg-gradient-to-tl from-orange-300/20 via-orange-200/15 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse animation-delay-2000"></div>

@@ -46,7 +46,7 @@ export default function RemotePage() {
         'How pay and options can grow over time in a remote career.',
         'Your first remote job, step by step, even with little experience',
       ],
-      image: '/assets/earr.png',
+      image: '/assets/paymenttt.png',
       imageAlt: 'Remote work foundation and career path',
     },
     {
@@ -95,7 +95,7 @@ export default function RemotePage() {
         '3C model: clear message, steady posts, chats to calls.',
         'Networking and cold DMs: comments, intros, one angle, one ask.',
       ],
-      image: '/assets/gif/4.png',
+      image: '/assets/linkediiin.png',
       imageAlt: 'LinkedIn for remote income',
     },
     {
@@ -112,7 +112,7 @@ export default function RemotePage() {
         'Write proposals with a strong hook, proof, plan, and one clear next step',
         'Scale from early wins to $4,000+/month with a disciplined search process',
       ],
-      image: '/assets/gif/3.png',
+      image: '/assets/upwork.png',
       imageAlt: 'Upwork profile and proposals',
     },
     {
@@ -236,6 +236,8 @@ export default function RemotePage() {
         title="Who This Is Built For"
         subtitle="For professionals in Pakistan who are tired of applying into silence, and ready for a clear, week-by-week system (not more random tips)."
         bottomText=""
+        imageSrc="/assets/3points.png"
+        imageAlt="Remote Work Course - Is this for you?"
         notForYouPoints={notForYouPoints}
         notForYouTitle="This Is NOT For You If"
         showCrossSellFooter={false}

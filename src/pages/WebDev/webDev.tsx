@@ -41,7 +41,7 @@ export default function WebDevPage() {
         '2 complete portfolio projects (yours to keep)',
         'UI/UX fundamentals — what makes a site look professional',
       ],
-      image: '/assets/gif/1.png',
+      image: '/assets/web_dev.png',
       imageAlt: 'Web development foundations',
     },
     {
@@ -74,7 +74,7 @@ export default function WebDevPage() {
         'One-Person Agency Model',
         'And 2 more methods covered in full',
       ],
-      image: '/assets/earr.png',
+      image: '/assets/paymenttt.png',
       imageAlt: 'Nine income streams',
     },
     {
@@ -92,7 +92,7 @@ export default function WebDevPage() {
         'Scaling from your first $100 to $4,000+/month',
       ],
    
-      image: '/assets/gif/3.png',
+      image: '/assets/upwork.png',
       imageAlt: 'Upwork profile and proposals',
     },
     {
@@ -111,7 +111,7 @@ export default function WebDevPage() {
         'Cold Outreach Strategies',
       ],
       itemsLayout: 'stacked-with-separator',
-      image: '/assets/gif/4.png',
+      image: '/assets/linkediiin.png',
       imageAlt: 'LinkedIn for remote jobs',
     },
     {
@@ -144,7 +144,7 @@ export default function WebDevPage() {
       highlight: true,
     },
     {
-      image: '/assets/upwork.png',
+      image: '/assets/upwork-ebook.png',
       imageAlt: 'Upwork launch',
       title: 'Bonus: The Upwork Launch System',
       description:
@@ -249,6 +249,8 @@ export default function WebDevPage() {
         title="This Is for You If ...."
         subtitle="If you are serious about earning online, read on."
         bottomText="If you're stuck, overwhelmed, or ready to finally start - this workshop is built for you. 🏆"
+        imageSrc="/assets/3points.png"
+        imageAlt="Web Development Course - Is this for you?"
         notForYouPoints={notForYouPoints}
         notForYouTitle="This Is NOT For You If ...."
       />

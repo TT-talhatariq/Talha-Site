@@ -9,6 +9,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset anchored sections so they clear the sticky navbar */
+:target,
+#home,
+#instructor,
+#courses,
+#reviews {
+  scroll-margin-top: 7rem;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -46,6 +46,8 @@ export default function LinkedInPage() {
         'The shift from "digital resume" to "magnet" — and why it changes everything',
         'Setting a goal: recruiter inbound, client inbound, or both',
       ],
+      image: '/assets/paymenttt.png',
+      imageAlt: 'LinkedIn foundations and personal brand',
     },
     {
       number: '2',
@@ -207,6 +209,8 @@ export default function LinkedInPage() {
         title="Who This Is Built For"
         subtitle="For professionals in Pakistan whose LinkedIn is online but invisible — and who want a clear system to turn it into inbound opportunities."
         bottomText=""
+        imageSrc="/assets/3points.png"
+        imageAlt="LinkedIn Course - Is this for you?"
         notForYouPoints={notForYouPoints}
         notForYouTitle="This Is NOT For You If —"
         showCrossSellFooter={false}
