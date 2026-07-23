@@ -224,7 +224,7 @@ export default function CheckoutUpwork() {
                   <hr className="border-gray-200" />
                   <div className="flex justify-between text-xl font-bold">
                     <span>Total</span>
-                    <span className="text-blue-600">PKR 1,997</span>
+                    <span className="text-blue-600">PKR 2,499</span>
                   </div>
                 </div>
               </div>

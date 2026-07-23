@@ -67,7 +67,7 @@ export default function Home() {
       subtitle: 'Crack Upwork Like a Pro',
       description:
         'STOP sending proposals into the void! A focused 4-week system to build a profile that converts and proposals that get replies — so you land your first $1,000+ client instead of competing on price.',
-      price: 'PKR 1,997',
+      price: 'PKR 2,499',
       features: [
         '💼 The Upwork Client System (6 Modules)',
         '✍️ Proposals That Get Replies in 48 Hours',
@@ -90,7 +90,7 @@ export default function Home() {
       subtitle: 'Turn Views Into DMs',
       description:
         'Your LinkedIn is online — but invisible. A focused system to build a profile that turns views into DMs and a content rhythm that brings $3,000+/month opportunities straight to you.',
-      price: 'PKR 1,997',
+      price: 'PKR 2,499',
       features: [
         '🔗 The LinkedIn Magnet System (6 Modules)',
         '🧲 A Profile That Turns Views Into DMs',

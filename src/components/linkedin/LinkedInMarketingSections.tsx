@@ -98,7 +98,7 @@ export function LinkedInFinalCtaSection({
           href={checkoutHref}
           className="mb-8 inline-flex items-center justify-center rounded-full bg-orange-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-orange-600"
         >
-          ENROLL NOW — PKR 1,997
+          ENROLL NOW — PKR 2,499
         </Link>
         <ul className="mb-6 space-y-2 text-left text-sm text-slate-300">
           <li>✓ The LinkedIn Magnet System (6 Modules)</li>

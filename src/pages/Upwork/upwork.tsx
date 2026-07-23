@@ -238,13 +238,13 @@ export default function UpworkPage() {
             <span className="text-orange-500">In One Course</span>
           </>
         }
-        sectionSubtitle="Your price today: PKR 1,997 (founding members; price increases as enrollment grows)."
+        sectionSubtitle="Your price today: PKR 2,499 (founding members; price increases as enrollment grows)."
       />
       <RemoteInstructorBioSection />
       <AboutMe statsImages={aboutMeData.statsImages} href={aboutMeData.href} />
       <Pricing
         originalPrice="20,000"
-        currentPrice="1,997"
+        currentPrice="2,499"
         valueItems={pricingValueItems}
         discountPercentage="90% OFF"
         href="/checkout-upwork"
