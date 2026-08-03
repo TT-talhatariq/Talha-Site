@@ -116,6 +116,19 @@ const Testimonials = ({
                 </div>
               </div>
 
+              <div className="col-span-1 rounded-2xl bg-white p-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl lg:col-span-2">
+                <div className="aspect-[3/2] overflow-hidden rounded-xl bg-gray-100">
+                  <Image
+                    src="/ss6.png"
+                    alt="Client Success Story"
+                    width={600}
+                    height={400}
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+              </div>
+              
+
               <div className="rounded-2xl bg-white p-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="aspect-[3/4] overflow-hidden rounded-xl bg-gray-100">
                   <Image
@@ -135,11 +148,13 @@ const Testimonials = ({
                     alt="Upwork Success"
                     width={300}
                     height={400}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-contain"
                   />
                 </div>
               </div>
             </div>
+
+            
 
             <div className="mt-12 mb-8 text-center lg:mb-0">
               <p className="mb-6 text-lg text-gray-600">Ready to join these successful students? 🚀</p>
