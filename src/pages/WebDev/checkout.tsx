@@ -274,20 +274,20 @@ export default function CheckoutWebDev() {
                       <div className="space-y-4 text-gray-800">
                         <div className="flex items-center">
                           <span className="font-semibold">🏦 Bank:</span>
-                          <span className="ml-2">Meezan Bank</span>
+                          <span className="ml-2">UBL Bank</span>
                         </div>
                         <div className="flex items-center">
                           <span className="font-semibold">👤 Name:</span>
-                          <span className="ml-2">TALHA TARIQ ✅</span>
+                          <span className="ml-2">Talha&apos;s School ✅</span>
                         </div>
                         <CopyableBankField
                           label="💳 Account Number:"
-                          displayText="02250113348743"
+                          displayText="2458390476065"
                         />
                         <CopyableBankField
                           label="🌐 IBAN:"
-                          displayText="PK64 MEZN 0002 2501 1334 8743"
-                          copyText="PK64MEZN0002250113348743"
+                          displayText="PK63 UNIL 0109 0003 9047 6065"
+                          copyText="PK63UNIL0109000390476065"
                           valueClassName="bg-blue-50 px-4 py-3 rounded-lg border-2 border-blue-200 text-lg tracking-wider"
                         />
                       </div>
