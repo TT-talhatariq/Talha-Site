@@ -310,6 +310,7 @@ export default function CheckoutWebDev() {
                           <div className="bg-white px-3 py-2 rounded border">
                             <div>JazzCash</div>
                             <div>NayaPay</div>
+                            <div>EasyPaisa</div>
                           </div>
                         </div>
                       </div>
