@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { sendEnrollmentEmail } from '@/utils/emailTemplates';
 import { useRouter } from 'next/navigation';
 import { CopyableBankField } from '@/components/CopyableBankField';
+import { verifyPaymentScreenshot } from '@/lib/verifyPayment';
 
 export default function CheckoutWebDev() {
   const [formData, setFormData] = useState({
@@ -39,45 +40,13 @@ export default function CheckoutWebDev() {
   const processOCR = async (file: File) => {
     try {
       setIsProcessing(true);
-      
-      // Create form data for OCR API
-      const ocrFormData = new FormData();
-      ocrFormData.append('file', file);
 
-      const response = await fetch('/api/ocr', {
-        method: 'POST',
-        body: ocrFormData
-      });
-
-      const result = await response.json();
-      
-      if (result.ParsedResults && result.ParsedResults[0]) {
-        const extractedText = result.ParsedResults[0].ParsedText.toLowerCase();
-        setOcrResult(extractedText);
-        // console.log(extractedText);
-        
-        
-        // Validate payment screenshot
-        const validPaymentKeywords = [
-        'Talha Tariq', '03257460090', 'talha tariq', '0090'
-        ];
-        
-        const hasValidKeywords = validPaymentKeywords.some(keyword => 
-          extractedText.includes(keyword)
-        );
-        
-        if (!hasValidKeywords) {
-          return false;
-        }
-        
-        return true;
-      } else {
-        return false;
-      }
+      const result = await verifyPaymentScreenshot(file);
+      return result;
     } catch (error) {
       console.error('OCR Error:', error);
-      return false;
-    } 
+      return { verified: false, error: undefined };
+    }
   };
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -99,10 +68,10 @@ export default function CheckoutWebDev() {
     try {
       // Process OCR validation if screenshot exists
       if (formData.screenshot) {
-        const ocrValid = await processOCR(formData.screenshot);
-        if (!ocrValid) {
+        const ocr = await processOCR(formData.screenshot);
+        if (!ocr.verified) {
           setIsProcessing(false);
-          setErrors(prev => ([ ...prev, 'We couldn\'t verify this payment screenshot. If this is a mistake, please send your details along with the screenshot via WhatsApp at 0325-7460090.' ] as string []));
+          setErrors(prev => ([ ...prev, ocr.error ?? 'We couldn\'t verify this payment screenshot. If this is a mistake, please send your details along with the screenshot via WhatsApp at 0325-7460090.' ] as string []));
           return;
         }
       }
@@ -111,8 +80,8 @@ export default function CheckoutWebDev() {
       try {
         console.log('Sending enrollment email...');
         await sendEnrollmentEmail(
-          { ...formData }, 
-          'web-dev', 
+          { ...formData },
+          'web-dev',
           formData.screenshot || undefined
         );
         console.log('Enrollment email sent successfully');

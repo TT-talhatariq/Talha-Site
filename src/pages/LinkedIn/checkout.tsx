@@ -10,6 +10,8 @@ import { sendEnrollmentEmail } from '@/utils/emailTemplates';
 
 import { CopyableBankField } from '@/components/CopyableBankField';
 
+import { verifyPaymentScreenshot } from '@/lib/verifyPayment';
+
 export default function CheckoutLinkedIn() {
   const [formData, setFormData] = useState({
     name: '',
@@ -45,44 +47,11 @@ export default function CheckoutLinkedIn() {
     try {
       setIsProcessing(true);
 
-      // Create form data for OCR API
-      const ocrFormData = new FormData();
-      ocrFormData.append('file', file);
-
-      const response = await fetch('/api/ocr', {
-        method: 'POST',
-        body: ocrFormData,
-      });
-
-      const result = await response.json();
-
-      if (result.ParsedResults && result.ParsedResults[0]) {
-        const extractedText = result.ParsedResults[0].ParsedText.toLowerCase();
-        setOcrResult(extractedText);
-
-        // Validate payment screenshot
-        const validPaymentKeywords = [
-          'Talha Tariq',
-          '03257460090',
-          'talha tariq',
-          '0090',
-        ];
-
-        const hasValidKeywords = validPaymentKeywords.some((keyword) =>
-          extractedText.includes(keyword),
-        );
-
-        if (!hasValidKeywords) {
-          return false;
-        }
-
-        return true;
-      } else {
-        return false;
-      }
+      const result = await verifyPaymentScreenshot(file);
+      return result;
     } catch (error) {
       console.error('OCR Error:', error);
-      return false;
+      return { verified: false, error: undefined };
     }
   };
 
@@ -105,9 +74,10 @@ export default function CheckoutLinkedIn() {
     try {
       // Process OCR validation if screenshot exists
       if (formData.screenshot) {
-        const ocrValid = await processOCR(formData.screenshot);
-        if (!ocrValid) {
+        const ocr = await processOCR(formData.screenshot);
+        if (!ocr.verified) {
           setErrors([
+            ocr.error ??
             "We couldn't verify this payment screenshot. If this is a mistake, please send your details along with the screenshot via WhatsApp at 0325-7460090.",
           ]);
           setIsProcessing(false);
