@@ -4,8 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { type ReactNode } from 'react';
 
-const DEFAULT_GOOGLE_MAPS_REVIEWS =
-  'https://share.google/eazZVgGu4KtcOrmcU';
+const DEFAULT_REVIEWS_HREF = '/reviews';
 
 interface Quote {
   text: string;
@@ -14,7 +13,7 @@ interface Quote {
 
 interface TestimonialsProps {
   href?: string;
-  /** Link to Google Maps / Google reviews. Pass empty string to hide. */
+  /** Link to the reviews page, or an external profile. Pass empty string to hide. */
   googleMapsReviewsHref?: string;
   preHeading?: string;
   heading?: ReactNode;
@@ -27,7 +26,7 @@ interface TestimonialsProps {
 
 const Testimonials = ({
   href = '#pricing',
-  googleMapsReviewsHref = DEFAULT_GOOGLE_MAPS_REVIEWS,
+  googleMapsReviewsHref = DEFAULT_REVIEWS_HREF,
   preHeading,
   heading,
   subheading,
@@ -35,6 +34,10 @@ const Testimonials = ({
   statsBar,
   showSuccessStories = true,
 }: TestimonialsProps) => {
+  const isExternalReviewsHref = /^https?:\/\//.test(googleMapsReviewsHref);
+  const reviewsLinkClassName =
+    'inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 text-base font-bold text-white shadow-lg transition hover:bg-blue-700 hover:shadow-xl sm:w-auto sm:min-w-[280px]';
+
   const defaultHeading = (
     <>
       Let&apos;s hear their <span className="text-orange-500">feedback ✍️</span>
@@ -72,22 +75,31 @@ const Testimonials = ({
                 Verified on Google
               </p>
               <p className="mb-4 text-sm text-gray-600">
-                Read real reviews from students — same profile as on Google Maps.
+                Read real reviews from students — the same feedback we collected on Google.
               </p>
-              <a
-                href={googleMapsReviewsHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3.5 text-base font-bold text-white shadow-lg transition hover:bg-blue-700 hover:shadow-xl sm:w-auto sm:min-w-[280px]"
-              >
-                <span className="text-xl" aria-hidden>
-                  📍
-                </span>
-                <span>See 110+ reviews on Google Maps</span>
-                <span className="text-sm font-normal opacity-90" aria-hidden>
-                  ↗
-                </span>
-              </a>
+              {isExternalReviewsHref ? (
+                <a
+                  href={googleMapsReviewsHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={reviewsLinkClassName}
+                >
+                  <span className="text-xl" aria-hidden>
+                    ⭐
+                  </span>
+                  <span>See 110+ reviews on Google Maps</span>
+                  <span className="text-sm font-normal opacity-90" aria-hidden>
+                    ↗
+                  </span>
+                </a>
+              ) : (
+                <Link href={googleMapsReviewsHref} className={reviewsLinkClassName}>
+                  <span className="text-xl" aria-hidden>
+                    ⭐
+                  </span>
+                  <span>See all 110+ reviews</span>
+                </Link>
+              )}
             </div>
           ) : null}
         </div>

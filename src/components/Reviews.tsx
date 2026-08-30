@@ -4,6 +4,12 @@ import React from 'react';
 
 const GOOGLE_MAPS_REVIEWS = 'https://share.google/eazZVgGu4KtcOrmcU';
 
+/**
+ * The Google Business profile is suspended, so links out to it land on an error
+ * page. Flip this back to true once it is reinstated to restore both CTAs.
+ */
+const GOOGLE_PROFILE_LIVE = false;
+
 interface Review {
   name: string;
   time: string;
@@ -441,14 +447,16 @@ const Reviews = () => {
                 Based on 109 Google reviews
               </span>
             </div>
-            <a
-              href={GOOGLE_MAPS_REVIEWS}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow transition hover:bg-blue-700 sm:ml-2"
-            >
-              See all reviews ↗
-            </a>
+            {GOOGLE_PROFILE_LIVE ? (
+              <a
+                href={GOOGLE_MAPS_REVIEWS}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-bold text-white shadow transition hover:bg-blue-700 sm:ml-2"
+              >
+                See all reviews ↗
+              </a>
+            ) : null}
           </div>
         </div>
 
@@ -482,18 +490,20 @@ const Reviews = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-12 text-center">
-          <a
-            href={GOOGLE_MAPS_REVIEWS}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border-2 border-blue-200 bg-white px-8 py-4 font-bold text-blue-700 shadow-md transition hover:border-blue-300 hover:shadow-lg"
-          >
-            <GoogleGlyph />
-            Read all 109 reviews on Google
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
+        {GOOGLE_PROFILE_LIVE ? (
+          <div className="mt-12 text-center">
+            <a
+              href={GOOGLE_MAPS_REVIEWS}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-blue-200 bg-white px-8 py-4 font-bold text-blue-700 shadow-md transition hover:border-blue-300 hover:shadow-lg"
+            >
+              <GoogleGlyph />
+              Read all 109 reviews on Google
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        ) : null}
       </div>
     </section>
   );
