@@ -278,9 +278,9 @@ export default function WebDevPage() {
       <AboutMe {...aboutMeData} />
       <Pricing
         originalPrice="50,000"
-        currentPrice="3,987"
+        currentPrice="3,500"
         valueItems={pricingValueItems}
-        discountPercentage="92% OFF"
+        discountPercentage="93% OFF"
       />
       <FAQ faqs={webDevFaqs} intro="Straight answers about the course, access, refunds, and the Tech Portal." />
       <Footer />

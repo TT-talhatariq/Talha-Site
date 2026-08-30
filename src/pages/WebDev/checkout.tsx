@@ -169,13 +169,13 @@ export default function CheckoutWebDev() {
                     <span className="font-semibold">PKR 50,000</span>
                   </div>
                   <div className="flex justify-between text-green-600">
-                    <span>Discount (92% OFF)</span>
-                    <span>-PKR 46,013</span>
+                    <span>Discount (93% OFF)</span>
+                    <span>-PKR 46,500</span>
                   </div>
                   <hr className="border-gray-200" />
                   <div className="flex justify-between text-xl font-bold">
                     <span>Total</span>
-                    <span className="text-blue-600">PKR 3,987</span>
+                    <span className="text-blue-600">PKR 3,500</span>
                   </div>
                 </div>
 
