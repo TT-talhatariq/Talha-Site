@@ -17,9 +17,6 @@ interface NavBarProps {
 const NavBar = ({ href = '#pricing', navLinks }: NavBarProps) => {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-orange-400 shadow-sm">
-      <div className="bg-green-600 px-4 py-2 text-center text-sm font-extrabold tracking-wide text-white sm:text-base">
-        🇵🇰 Mega Azadi Sale is Live 🇵🇰
-      </div>
       <div className="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
         <Link href="/" className="flex items-center">
           <Image
