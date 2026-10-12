@@ -138,3 +138,11 @@ button {
   bottom: 1.5rem;  /* ~bottom-6 */
   z-index: 9999;   /* ~z-50 */
 }
+
+/* Horizontal strips that scroll by swipe or on their own; no visible bar. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

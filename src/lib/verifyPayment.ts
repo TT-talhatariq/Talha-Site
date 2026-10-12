@@ -19,7 +19,7 @@ export interface PaymentVerification {
 }
 
 const GENERIC_ERROR =
-  "We couldn't verify this payment screenshot. If this is a mistake, please send your details along with the screenshot via WhatsApp at 0325-7460090.";
+  "We couldn't verify this payment screenshot. If this is a mistake, please send your details along with the screenshot via WhatsApp at 0325-7367496.";
 
 /** Re-encode to a modest JPEG so the upload is fast on Pakistani mobile data. */
 async function toUploadBlob(file: File): Promise<Blob> {

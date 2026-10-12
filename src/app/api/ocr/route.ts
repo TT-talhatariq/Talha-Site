@@ -54,8 +54,8 @@ export async function POST(request: NextRequest) {
   if (!limit.allowed) {
     const message =
       limit.reason === 'global'
-        ? 'Verification is temporarily unavailable. Please send your screenshot via WhatsApp at 0325-7460090.'
-        : 'Too many verification attempts. Please send your screenshot via WhatsApp at 0325-7460090.';
+        ? 'Verification is temporarily unavailable. Please send your screenshot via WhatsApp at 0325-7367496.'
+        : 'Too many verification attempts. Please send your screenshot via WhatsApp at 0325-7367496.';
 
     return NextResponse.json(
       { verified: false, error: message, rateLimited: true },

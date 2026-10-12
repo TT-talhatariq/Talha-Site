@@ -87,7 +87,7 @@ const Pricing = ({
             <span className="text-blue-600">EARNING IN DOLLARS</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            The original price of the workshop is even more than 50,000 as the
+            The original price of the workshop is PKR {originalPrice} as the
             immense modules value and my 3 years of experience, secrets and arts
             of many things I compiled into it. But seeing inflation, making it
             affordable for everyone in Pakistan.

@@ -34,8 +34,8 @@ export default function Home() {
       bgGradient: 'from-blue-50/40 via-indigo-50/30 to-purple-50/20',
       badgeColor: 'bg-blue-600',
       link: '/web-dev',
-      originalPrice: '50,000',
-      discount: '93% OFF',
+      originalPrice: '40,000',
+      discount: '91% OFF',
     },
     {
       id: 2,
@@ -58,8 +58,8 @@ export default function Home() {
       bgGradient: 'from-green-50/40 via-emerald-50/30 to-teal-50/20',
       badgeColor: 'bg-blue-600',
       link: '/remote-work',
-      originalPrice: '50,000',
-      discount: '90% OFF',
+      originalPrice: '59,000',
+      discount: '93% OFF',
     },
     {
       id: 3,
@@ -82,7 +82,7 @@ export default function Home() {
       badgeColor: 'bg-blue-600',
       link: '/upwork',
       originalPrice: '20,000',
-      discount: '90% OFF',
+      discount: '88% OFF',
     },
     {
       id: 4,
@@ -105,7 +105,7 @@ export default function Home() {
       badgeColor: 'bg-blue-600',
       link: '/linkedin',
       originalPrice: '20,000',
-      discount: '90% OFF',
+      discount: '88% OFF',
     },
   ];
 

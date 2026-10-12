@@ -71,7 +71,7 @@ export default function ThankYouWebDev() {
                 </div>
                 <p className="text-gray-600 leading-relaxed">
                   Shortly, we&apos;ll send you a welcome email with your login details and access instructions. 
-                  If you don&apos;t receive it within 1 day, contact on the WhatsApp support number.
+                  If you don&apos;t receive it within 6 hours, contact on the WhatsApp support number.
                 </p>
               </div>
 

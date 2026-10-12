@@ -275,7 +275,7 @@ export default function RemotePage() {
         originalPrice="59,000"
         currentPrice="3,987"
         valueItems={pricingValueItems}
-        discountPercentage="92% OFF"
+        discountPercentage="93% OFF"
         href="/checkout-remote-work"
         showCountdown={false}
       />

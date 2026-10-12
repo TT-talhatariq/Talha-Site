@@ -3,6 +3,8 @@
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
+import { whatsappUrl } from '@/lib/whatsapp';
+
 // Course slugs map to the routes /<slug>, /checkout-<slug>, /thank-you-<slug>
 const COURSES = [
   { slug: 'web-dev', name: 'Web Development course' },
@@ -35,11 +37,12 @@ const getWhatsAppMessage = (pathname: string): string => {
 const StickyBottomButton = () => {
   const pathname = usePathname() ?? '';
 
+  // Checkout has its own labelled WhatsApp buttons, and the bubble would
+  // cover the sticky submit button on mobile.
+  if (pathname.includes('checkout')) return null;
+
   const handleWhatsAppClick = () => {
-    const phoneNumber = '923257367496'; // Replace with your actual WhatsApp number
-    const message = getWhatsAppMessage(pathname);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl(getWhatsAppMessage(pathname)), '_blank');
   };
 
   return (

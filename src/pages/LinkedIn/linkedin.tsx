@@ -246,7 +246,7 @@ export default function LinkedInPage() {
         originalPrice="20,000"
         currentPrice="2,499"
         valueItems={pricingValueItems}
-        discountPercentage="90% OFF"
+        discountPercentage="88% OFF"
         href="/checkout-linkedin"
         showCountdown={false}
       />

@@ -4,7 +4,6 @@ interface FormData {
   name: string;
   email: string;
   whatsapp: string;
-  city: string;
 }
 
 export type CourseType = 'web-dev' | 'remote-work' | 'upwork' | 'linkedin';
@@ -59,11 +58,6 @@ const buildEnrollmentEmail = (formData: FormData, header: EmailHeader) => {
                 <div class="section">
                     <div class="label">📱 WhatsApp Number:</div>
                     <div class="value">${formData.whatsapp}</div>
-                </div>
-
-                <div class="section">
-                    <div class="label">🏙️ City:</div>
-                    <div class="value">${formData.city}</div>
                 </div>
             </div>
         </div>
@@ -122,6 +116,19 @@ const courseEmailConfig: Record<
   },
 };
 
+const EMAIL_SERVICE_ORIGIN = 'https://hm-backend-u080.onrender.com';
+
+/**
+ * Render's free tier sleeps the backend, and a cold start takes 30-60s.
+ * Poke it when checkout opens so it is awake by the time the buyer submits.
+ */
+export const warmUpEmailService = () => {
+  fetch(EMAIL_SERVICE_ORIGIN, { mode: 'no-cors' }).catch(() => {});
+};
+
+/** Fail rather than leave a buyer who has already paid on a spinner. */
+const EMAIL_TIMEOUT_MS = 30_000;
+
 // Email sending service
 export const sendEnrollmentEmail = async (
   formData: FormData,
@@ -143,9 +150,10 @@ export const sendEnrollmentEmail = async (
       emailFormData.append('file', screenshotFile);
     }
 
-    const response = await fetch('https://hm-backend-u080.onrender.com/learn-with-talha/send-email', {
+    const response = await fetch(`${EMAIL_SERVICE_ORIGIN}/learn-with-talha/send-email`, {
       method: 'POST',
-      body: emailFormData
+      body: emailFormData,
+      signal: AbortSignal.timeout(EMAIL_TIMEOUT_MS),
     });
 
     if (!response.ok) {
