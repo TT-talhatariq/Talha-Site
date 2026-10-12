@@ -19,7 +19,7 @@ export default function Home() {
       subtitle: 'Complete Frontend & Backend Course',
       description:
         'Stop watching endless tutorials that lead nowhere! Learn the EXACT skills that got me $4000+ monthly clients. Build 15+ real projects and discover the 9 proven methods I use to earn consistently online.',
-      price: 'PKR 3,500',
+      price: 'PKR 3,897',
       features: [
         '🚀 15+ Real Projects (Not Boring Tutorials!)',
         '💻 Full Stack Web Dev Mastery',
@@ -35,7 +35,7 @@ export default function Home() {
       badgeColor: 'bg-blue-600',
       link: '/web-dev',
       originalPrice: '40,000',
-      discount: '91% OFF',
+      discount: '90% OFF',
     },
     {
       id: 2,

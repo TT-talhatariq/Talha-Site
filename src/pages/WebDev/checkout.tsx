@@ -23,9 +23,9 @@ export default function CheckoutWebDev() {
         <PriceSummary
           item="Masterclass"
           originalPrice="PKR 40,000"
-          discountLabel="Discount (91% OFF)"
-          discountAmount="PKR 36,500"
-          total="PKR 3,500"
+          discountLabel="Discount (90% OFF)"
+          discountAmount="PKR 36,103"
+          total="PKR 3,897"
           discountClassName="text-green-600"
         />
       }
