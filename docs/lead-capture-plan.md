@@ -3,7 +3,10 @@
 Goal: recover buyers who start checkout but do not finish (about 83% today),
 without adding a single step to the checkout form.
 
-Status: **planned, not built yet.** Decisions needed are at the bottom.
+Status: **built.** Capture lives in this repo (`src/app/api/leads`, `src/lib/lead*.ts`);
+the table, SQL functions and the `/admin/leads` page live in the LMS repo
+(`db/migrations/checkout_leads.sql`, `app/admin/leads`). Admin and sales can both open it.
+Set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` (server-only) in this site's environment.
 
 ---
 

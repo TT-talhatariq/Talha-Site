@@ -7,6 +7,7 @@ export default function CheckoutUpwork() {
   return (
     <CheckoutPage
       courseType="upwork"
+      leadCourse="upwork"
       courseName="Upwork Mastery course"
       backHref="/upwork"
       backLabel="Back to Main Page"

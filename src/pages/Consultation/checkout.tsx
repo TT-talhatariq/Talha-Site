@@ -7,6 +7,7 @@ export default function CheckoutConsultation() {
     <CheckoutPage
       // No consultation-specific email template yet.
       courseType="remote-work"
+      leadCourse="consultation"
       courseName="1-on-1 consultation"
       backHref="/consultation"
       backLabel="Back to Consultation Page"

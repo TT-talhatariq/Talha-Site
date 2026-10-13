@@ -9,6 +9,8 @@ import CheckoutVideo from '@/components/checkout/CheckoutVideo';
 import SeatsLeft from '@/components/checkout/SeatsLeft';
 import StudentProof from '@/components/checkout/StudentProof';
 import { CopyableBankField } from '@/components/CopyableBankField';
+import type { LeadCourse } from '@/lib/leads';
+import { useLeadCapture } from '@/lib/useLeadCapture';
 import { verifyPaymentScreenshot } from '@/lib/verifyPayment';
 import { whatsappUrl } from '@/lib/whatsapp';
 import {
@@ -52,6 +54,8 @@ type Problem = 'unverified' | 'unsent';
 export interface CheckoutPageProps {
   /** Which enrollment email template to send. */
   courseType: CourseType;
+  /** Which course this checkout sells, recorded with the buyer's lead. */
+  leadCourse: LeadCourse;
   /** Used in WhatsApp messages, e.g. "Web Development course". */
   courseName: string;
   backHref: string;
@@ -72,6 +76,7 @@ export interface CheckoutPageProps {
 
 export default function CheckoutPage({
   courseType,
+  leadCourse,
   courseName,
   backHref,
   backLabel,
@@ -102,6 +107,15 @@ export default function CheckoutPage({
   useEffect(() => {
     warmUpEmailService();
   }, []);
+
+  // Quietly saves name + WhatsApp as they type so support can follow up with
+  // buyers who leave. Never blocks or surfaces errors on checkout.
+  const { track: trackLead, flush: flushLead, advance: advanceLead } =
+    useLeadCapture(leadCourse);
+
+  useEffect(() => {
+    trackLead(formData);
+  }, [formData, trackLead]);
 
   useEffect(() => {
     if (!screenshot) return;
@@ -146,6 +160,7 @@ export default function CheckoutPage({
     if (!file) return;
 
     setScreenshot(file);
+    advanceLead('screenshot_uploaded');
     setErrors((prev) =>
       prev.filter((error) => error !== 'Payment screenshot is required'),
     );
@@ -163,6 +178,7 @@ export default function CheckoutPage({
     try {
       const verification = await verifyPaymentScreenshot(screenshot);
       if (!verification.verified) {
+        advanceLead('verification_failed');
         setProblem('unverified');
         return;
       }
@@ -177,6 +193,7 @@ export default function CheckoutPage({
         return;
       }
 
+      advanceLead('enrolled');
       router.push(thankYouHref);
     } finally {
       setIsProcessing(false);
@@ -277,6 +294,7 @@ export default function CheckoutPage({
                           autoComplete="name"
                           value={formData.name}
                           onChange={updateField('name')}
+                          onBlur={flushLead}
                           className={inputClass}
                           placeholder="Enter your full name"
                         />
@@ -295,6 +313,7 @@ export default function CheckoutPage({
                           inputMode="email"
                           value={formData.email}
                           onChange={updateField('email')}
+                          onBlur={flushLead}
                           className={inputClass}
                           placeholder="your@email.com"
                         />
@@ -313,6 +332,7 @@ export default function CheckoutPage({
                           inputMode="tel"
                           value={formData.whatsapp}
                           onChange={updateField('whatsapp')}
+                          onBlur={flushLead}
                           className={inputClass}
                           placeholder="0300 1234567"
                         />
@@ -543,6 +563,10 @@ export default function CheckoutPage({
                           : `🚀 ${submitLabel}`}
                       </button>
                     </div>
+
+                    <p className="text-center text-xs text-gray-500">
+                      We may WhatsApp you about your enrollment.
+                    </p>
 
                     <p className="text-center text-sm text-gray-500">
                       💡 Don&apos;t judge it by the low discounted price, the

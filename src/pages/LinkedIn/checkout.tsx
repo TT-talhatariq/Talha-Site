@@ -7,6 +7,7 @@ export default function CheckoutLinkedIn() {
   return (
     <CheckoutPage
       courseType="linkedin"
+      leadCourse="linkedin"
       courseName="LinkedIn Mastery course"
       backHref="/linkedin"
       backLabel="Back to Main Page"

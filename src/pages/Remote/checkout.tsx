@@ -7,6 +7,7 @@ export default function CheckoutRemoteWork() {
   return (
     <CheckoutPage
       courseType="remote-work"
+      leadCourse="remote-work"
       courseName="Remote Work Mastery course"
       backHref="/remote-work"
       backLabel="Back to Main Page"

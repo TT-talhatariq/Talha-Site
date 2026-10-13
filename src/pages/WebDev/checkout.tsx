@@ -8,6 +8,7 @@ export default function CheckoutWebDev() {
   return (
     <CheckoutPage
       courseType="web-dev"
+      leadCourse="web-dev"
       courseName="Web Development course"
       backHref="/web-dev"
       backLabel="Back to Main Page"
