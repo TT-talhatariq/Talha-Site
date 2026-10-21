@@ -67,7 +67,7 @@ export default function WebDevPage() {
       items: [
         'Freelancing on Upwork and LinkedIn (the #1 fastest path)',
         'Remote Job Mastery - (Land $2000+ monthly jobs from your bedroom)',
-        'Teaching - earn PKR 20,000–80,000/month by teachings',
+        'Teaching - earn PKR 20,000–80,000/month',
         'Digital Products - (passive income)',
         'LinkedIn - (Get clients into your DMs)',
         'Consultation - your first PKR 5,000/hour service',

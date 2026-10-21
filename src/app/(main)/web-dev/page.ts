@@ -4,13 +4,13 @@ import WebDevPage from '@/pages/WebDev/webDev';
 
 export const metadata: Metadata = {
   title:
-    'Master Web Development & 9 Proven Ways to Earn PKR 500k+ Monthly | Talha Tariq',
+    'Master Web Development & 9 Proven Ways to Earn PKR 80,000+ a Month | Talha Tariq',
   description:
-    'Stop watching endless tutorials! Learn the EXACT skills that got me $4000+ monthly clients. Master HTML, CSS, JavaScript & React with 15+ real projects. Discover 9 proven methods to earn PKR 500k+ monthly through web development.',
+    'Stop watching endless tutorials! Learn the EXACT skills that got me $4000+ monthly clients. Master HTML, CSS, JavaScript & React with 15+ real projects. Discover 9 proven methods to earn PKR 80,000+ a month through web development.',
   keywords:
     'web development course, learn web development, HTML CSS JavaScript, React course, freelancing course, upwork success, remote jobs, web development projects, earn money online, Pakistani web developer, Talha Tariq course, frontend backend development, programming course Pakistan',
   openGraph: {
-    title: 'Master Web Development & 9 Proven Ways to Earn PKR 500k+ Monthly',
+    title: 'Master Web Development & 9 Proven Ways to Earn PKR 80,000+ a Month',
     description:
       'Stop watching endless tutorials! Learn the EXACT skills that got me $4000+ monthly clients. 15+ real projects + 9 proven earning methods.',
     type: 'website',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Master Web Development & 9 Proven Ways to Earn PKR 500k+ Monthly',
+    title: 'Master Web Development & 9 Proven Ways to Earn PKR 80,000+ a Month',
     description:
       'Stop watching endless tutorials! Learn the EXACT skills that got me $4000+ monthly clients. 15+ real projects + 9 proven earning methods.',
   },

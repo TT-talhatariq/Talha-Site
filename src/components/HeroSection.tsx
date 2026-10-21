@@ -28,12 +28,12 @@ const HeroSection = () => {
                   Learn AI-Powered <span className="text-orange-500">Web Dev</span> with{' '}
                   <span className="text-blue-600">15+ Projects</span>
                   <br />
-                  and Unlock the <span className="text-orange-500">9+ Proven Methods</span>{' '}
-                  to Earn at Least <span className="text-green-600">400k+</span> a Month
+                  and Unlock the <span className="text-orange-500">9 Proven Methods</span>{' '}
+                  to Earn <span className="text-green-600">PKR 80,000+</span> a Month
                 </h1>
                 <p className="text-lg leading-relaxed text-gray-600 lg:text-xl">
-                  After learning web, in 6 weeks, you&apos;ll have the exact system go from
-                 0 to $2,000+/month online.
+                  In 8 weeks, go from zero to building real websites, and getting paid
+                  for them.
                 </p>
 
                 <div className="flex flex-col items-center gap-3 sm:flex-row lg:items-start">

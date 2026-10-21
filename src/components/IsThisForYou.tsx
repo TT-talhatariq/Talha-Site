@@ -59,7 +59,7 @@ const IsThisForYou = ({
             <h2 className="text-4xl font-bold text-gray-900 lg:text-5xl">
               {showLegacyYouHighlight ? (
                 <>
-                  This is for
+                  This is for{' '}
                   <span className="relative inline-block rounded px-2 py-1 text-orange-500">
                     You
                   </span>{' '}

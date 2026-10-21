@@ -35,7 +35,7 @@ const defaultFaqs: FaqItem[] = [
   {
     question: 'How long does it take to complete the course?',
     answer:
-      "The course is self-paced, but most students complete it in 6-8 weeks dedicating 2-3 hours per day. Remember, you have lifetime access, so you can take as much time as you need.",
+      "The course is self-paced, but most students complete it in 8 weeks dedicating 2-3 hours per day. Remember, you have lifetime access, so you can take as much time as you need.",
   },
   {
     question: 'What kind of support do I get?',
@@ -58,7 +58,7 @@ const webDevFaqs: FaqItem[] = [
   {
     question: 'How long will it take to complete?',
     answer:
-      'The course is designed for 6–8 weeks at 2–3 hours per day. It\'s self-paced — go faster if you want, slower if you need to.',
+      'The course is designed for 8 weeks at 2–3 hours per day. It\'s self-paced — go faster if you want, slower if you need to.',
   },
   {
     question: 'Will I get access to Talha directly?',
@@ -106,7 +106,7 @@ const remoteWorkFaqs: FaqItem[] = [
   {
     question: 'How long does it take to complete?',
     answer:
-      '6–8 weeks at 2–3 hours per day. Self-paced — go faster or slower based on your schedule.',
+      '6 weeks at 2–3 hours per day. Self-paced — go faster or slower based on your schedule.',
   },
   {
     question: 'What if I\'ve already tried Upwork and LinkedIn and gotten zero results?',

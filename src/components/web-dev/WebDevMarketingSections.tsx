@@ -50,7 +50,7 @@ export function WebDevProblemSection() {
             How to present, position, and sell what they already know.
           </p>
           <p>
-            That&apos;s not a coding skill. It&apos;s a system. And it can be learned in 6
+            That&apos;s not a coding skill. It&apos;s a system. And it can be learned in 8
             weeks. That&apos;s what this course teaches.
           </p>
         </div>
@@ -82,7 +82,7 @@ export function WebDevOpportunitySection() {
           <p>
             <span className="font-semibold text-white">Part 2 — The System:</span> The
             9-Stream Income Blueprint — the exact 9 methods I&apos;ve used (and watched
-            700+ students use) to turn web skills into PKR 80,000–400,000/month in
+            700+ students use) to turn web skills into PKR 80,000+ a month in
             online income.
           </p>
           <p>You learn both. You leave with both.</p>
