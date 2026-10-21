@@ -162,7 +162,7 @@ export default function WebDevPage() {
     {
       image: '/assets/comm.jpeg',
       imageAlt: 'Community',
-      title: 'Bonus: The 700+ Student Community',
+      title: 'Bonus: The 1,500+ Student Community',
       description:
         'Join our exclusive community where passionate learners help each other.',
       highlight: false,

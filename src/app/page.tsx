@@ -132,7 +132,7 @@ export default function Home() {
               <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                 A practical, project-based academy where{' '}
                 <span className="text-blue-600 font-semibold">
-                  1000+ students
+                  1,500+ students
                 </span>{' '}
                 have gone from complete beginners to confident, job-ready
                 professionals and started{' '}
@@ -145,7 +145,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-green-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-green-200/50 shadow-sm">
                 <span className="text-sm font-bold text-green-700">
-                  🔥 1000+ Students
+                  🔥 1,500+ Students
                 </span>
               </div>
               <div className="bg-blue-50/80 backdrop-blur-sm rounded-full px-6 py-3 border border-blue-200/50 shadow-sm">
@@ -233,7 +233,7 @@ export default function Home() {
                     Talha&apos;s School
                   </span>{' '}
                   to hand you the exact roadmap I wish I&apos;d had. No fluff, no
-                  theory, just the real methods that got me and 1000+ students
+                  theory, just the real methods that got me and 1,500+ students
                   results.
                 </p>
               </div>

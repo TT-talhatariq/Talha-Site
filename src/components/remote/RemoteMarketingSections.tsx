@@ -222,7 +222,7 @@ export function RemoteGuaranteeSection() {
           <p>No forms. No tricks. Just email me with proof you did the work.</p>
           <p className="font-semibold text-gray-900">Here&apos;s why I can offer this:</p>
           <p>
-            700+ students have gone through this system. The students who follow the steps
+            1,500+ students have gone through this system. The students who follow the steps
             get results. The students who don&apos;t, I&apos;d honestly rather give them their money
             back than have them say the system doesn&apos;t work.
           </p>
@@ -608,7 +608,7 @@ export function RemoteFinalCtaSection({
           While others earn in dollars, with the same skills.
         </p>
         <p className="mb-10 text-lg leading-relaxed text-slate-300">
-          The system is built. The guarantee is on the table. 700+ students have already
+          The system is built. The guarantee is on the table. 1,500+ students have already
           used it. The only variable is whether you decide to act today.
         </p>
         <Link

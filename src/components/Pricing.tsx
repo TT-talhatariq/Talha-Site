@@ -216,7 +216,7 @@ const Pricing = ({
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-sm font-medium">700+ Happy Students</span>
+                <span className="text-sm font-medium">1,500+ Happy Students</span>
               </div>
             </div>
           </div>

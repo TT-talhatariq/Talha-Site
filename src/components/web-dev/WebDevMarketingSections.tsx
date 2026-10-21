@@ -82,7 +82,7 @@ export function WebDevOpportunitySection() {
           <p>
             <span className="font-semibold text-white">Part 2 — The System:</span> The
             9-Stream Income Blueprint — the exact 9 methods I&apos;ve used (and watched
-            700+ students use) to turn web skills into PKR 400k+ a month in
+            1,500+ students use) to turn web skills into PKR 400k+ a month in
             online income.
           </p>
           <p>You learn both. You leave with both.</p>
@@ -118,7 +118,7 @@ export function WebDevGuaranteeSection() {
           </p>
           <p>
             I put this guarantee on the course for one reason: I&apos;ve seen this system
-            work for 700+ students. The ones who follow through get results. The ones
+            work for 1,500+ students. The ones who follow through get results. The ones
             who don&apos;t — I&apos;d rather refund them than have them say it didn&apos;t work.
           </p>
           <p className="font-bold text-gray-900">
@@ -210,7 +210,7 @@ export function WebDevFinalCtaSection({
         </h2>
         <p className="mb-10 text-lg leading-relaxed text-slate-300">
           Every week you wait is another week someone else with the same skills — or
-          weaker skills — earns what you could be earning. The system is here. 700+
+          weaker skills — earns what you could be earning. The system is here. 1,500+
           students have used it. The guarantee is on the table. The only question is
           whether you&apos;re going to act on it.
         </p>
@@ -226,7 +226,7 @@ export function WebDevFinalCtaSection({
           <li>✓ The Upwork Launch System</li>
           <li>✓ The Tech Portal — 6 AI Career Tools</li>
           <li>✓ Direct Mentor Access (first 100 students)</li>
-          <li>✓ 1,000+ Student Community</li>
+          <li>✓ 1,500+ Student Community</li>
           <li>✓ Lifetime Access + All Future Updates</li>
         </ul>
         <p className="mb-8 text-slate-300">
