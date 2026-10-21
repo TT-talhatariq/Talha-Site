@@ -29,7 +29,7 @@ const HeroSection = () => {
                   <span className="text-blue-600">15+ Projects</span>
                   <br />
                   and Unlock the <span className="text-orange-500">9 Proven Methods</span>{' '}
-                  to Earn <span className="text-green-600">PKR 80,000+</span> a Month
+                  to Earn at Least <span className="text-green-600">PKR 400k+</span> a Month
                 </h1>
                 <p className="text-lg leading-relaxed text-gray-600 lg:text-xl">
                   In 8 weeks, go from zero to building real websites, and getting paid

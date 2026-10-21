@@ -23,7 +23,7 @@ export default function Home() {
       features: [
         '🚀 15+ Real Projects (Not Boring Tutorials!)',
         '💻 Full Stack Web Dev Mastery',
-        '💰 9 PROVEN Ways to Earn PKR 80,000+/Month',
+        '💰 9 PROVEN Ways to Earn PKR 400k+/Month',
         '🎯 Upwork & LinkedIn Domination Secrets',
         '📈 Portfolio That Gets You HIRED',
         '🔥 Freelancing Strategies That Actually Work',

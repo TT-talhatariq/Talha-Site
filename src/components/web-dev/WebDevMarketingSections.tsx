@@ -82,7 +82,7 @@ export function WebDevOpportunitySection() {
           <p>
             <span className="font-semibold text-white">Part 2 — The System:</span> The
             9-Stream Income Blueprint — the exact 9 methods I&apos;ve used (and watched
-            700+ students use) to turn web skills into PKR 80,000+ a month in
+            700+ students use) to turn web skills into PKR 400k+ a month in
             online income.
           </p>
           <p>You learn both. You leave with both.</p>
