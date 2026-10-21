@@ -10,6 +10,7 @@ import SeatsLeft from '@/components/checkout/SeatsLeft';
 import StudentProof from '@/components/checkout/StudentProof';
 import { CopyableBankField } from '@/components/CopyableBankField';
 import type { LeadCourse } from '@/lib/leads';
+import { markPurchasePending } from '@/lib/purchaseEvent';
 import { useLeadCapture } from '@/lib/useLeadCapture';
 import { verifyPaymentScreenshot } from '@/lib/verifyPayment';
 import { whatsappUrl } from '@/lib/whatsapp';
@@ -194,6 +195,7 @@ export default function CheckoutPage({
       }
 
       advanceLead('enrolled');
+      markPurchasePending(leadCourse);
       router.push(thankYouHref);
     } finally {
       setIsProcessing(false);

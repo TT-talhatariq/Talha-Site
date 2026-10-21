@@ -3,8 +3,11 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import StickyBottomButton from "@/components/StickyBottomButton";
+import { usePurchaseEvent } from '@/lib/purchaseEvent';
 
 export default function ThankYouWebDev() {
+  usePurchaseEvent('remote-work');
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-orange-100/50 relative overflow-hidden">
       {/* Background elements */}

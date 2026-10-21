@@ -6,8 +6,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import StickyBottomButton from '@/components/StickyBottomButton';
+import { usePurchaseEvent } from '@/lib/purchaseEvent';
 
 export default function ThankYouConsultation() {
+  usePurchaseEvent('consultation');
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50/30 to-orange-100/50 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-blue-200/40 via-blue-100/30 to-transparent rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-pulse"></div>
