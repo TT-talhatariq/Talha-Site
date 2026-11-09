@@ -33,7 +33,7 @@ export const STAGE_RANK: Record<LeadStage, number> = {
  * Keep in step with the totals on the checkout pages in src/pages/*.
  */
 export const COURSE_PRICE_PKR: Record<LeadCourse, number> = {
-  'web-dev': 3897,
+  'web-dev': 3500,
   'remote-work': 3987,
   upwork: 2499,
   linkedin: 2499,
